@@ -10,6 +10,6 @@ cd "$HOME/334/raspberrypi" || exit
 
 git add ip.md
 
-git commit -m "Update IP Address"
+git commit -m "Update IP Address on $(date)"
 
 git push origin main
