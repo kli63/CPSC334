@@ -2,11 +2,14 @@
 
 IP=$(hostname -I | awk '{print $1}')
 
-FILE_PATH="$HOME/334/raspberrypi/ip.md"
+FILE_PATH="$HOME/CPSC334/raspberrypi/ip.md"
 
 echo $IP > $FILE_PATH
 
-cd "$HOME/334/raspberrypi" || exit
+cd "$HOME/CPSC334/raspberrypi" || exit
+
+git config --global user.email "kli131163@gmail.com"
+git config --global user.name "kli63"
 
 git add ip.md
 
