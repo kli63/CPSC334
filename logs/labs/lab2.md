@@ -9,4 +9,7 @@
 - [x]  **Write a bash script** that writes the current IP address to the ip.md file in your repo and (**if SSH Key is working**) uploads to github.
 
 # New Actions: Systemd and Config File Backup
-- [ ]  Automate uploading so that every time the system boots, the script is run and the IP uploaded to GitHub [Systemd/.bashrc]
+- [x]  Automate uploading so that every time the system boots, the script is run and the IP uploaded to GitHub [Systemd/.bashrc]
+- [x]  Create a repo for your config files on GitHub or use same as the ip.md file
+- [x]  Discover what config files are important to your system (environment) and add code to your startup script/process to copy those config files to your local config repo [CLI].
+- [x]  **Push your configs** to GitHub so you can easily recreate your system functionality when your SD card fails.
