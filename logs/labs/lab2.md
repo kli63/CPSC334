@@ -12,4 +12,10 @@
 - [x]  Automate uploading so that every time the system boots, the script is run and the IP uploaded to GitHub [Systemd/.bashrc]
 - [x]  Create a repo for your config files on GitHub or use same as the ip.md file
 - [x]  Discover what config files are important to your system (environment) and add code to your startup script/process to copy those config files to your local config repo [CLI].
-- [x]  **Push your configs** to GitHub so you can easily recreate your system functionality when your SD card fails.
+- [x]  **Push your configs** to GitHub so you can easily recreate your system functionality when your SD card fails.'
+
+# Methodology
+- Utilized this website to learn basics of systemd: https://linuxhandbook.com/create-systemd-services/, and created systemd file. Ran into issues with permission and folder previleges and missing files.
+- Fixed permissions in the systemd file:
+- User=student334
+- WorkingDirectory=/home/student334
