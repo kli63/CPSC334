@@ -24,7 +24,7 @@ cd "$REPO_PATH" || exit
 git config --global user.email "kli131163@gmail.com"
 git config --global user.name "kli63"
 
-git add ip.md configs/config.txt configs/.bashrc configs/fstab configs/hostname configs/hosts scripts/update-on-boot.sh
+git add ip.md configs/config.txt configs/.bashrc configs/fstab configs/hostname configs/hosts scripts/update-on-boot.sh scripts/.bashrc
 
 git commit -m "Update IP and config files on $(date)"
 
