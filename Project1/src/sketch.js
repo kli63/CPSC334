@@ -35,9 +35,9 @@ function deepCopyGrid(grid) {
 function draw() {
   background(255);
 
-  if (!gridLoaded || !grid || rows === 0 || cols === 0) {
-    return;
-  }
+  // if (!gridLoaded || !grid || rows === 0 || cols === 0) {
+  //   return;
+  // }
 
   adjustCellSize();
 
