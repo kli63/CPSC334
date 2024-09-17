@@ -1,6 +1,7 @@
 #!/bin/bash
+sudo fuser -k 8000/tcp
 
-python3 -m http.server &
+python3 -m http.server 8000 &
 
 sleep 2
 
