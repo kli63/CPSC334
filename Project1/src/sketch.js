@@ -8,12 +8,12 @@ let rows = 0, cols = 0;
 let previousCsvIndex = -1;
 let currentGridIndex = 0;
 let timeInterval = 10000; 
-let randomnessFactor = 0.15; 
+let randomnessFactor = 0.3; 
 let frameSpeed = 60;
 let inTransition = false;
-let transitionDuration = 10000; 
+let transitionDuration = 5000; 
 let transitionStartTime = 0;
-let transitionComplete = false; // Flag to track if transition is complete
+let transitionComplete = false;
 
 const baseDecayRate = 0.80;
 const maxAgingFactor = 0.1;
@@ -135,9 +135,9 @@ function playGame() {
 
 function startTransition() {
   inTransition = true;
-  transitionComplete = false;  // Reset the transition complete flag
+  transitionComplete = false;
   transitionStartTime = millis();
-  loadGrid(false);  // Load the next grid for transition
+  loadGrid(false); 
 }
 
 function transitionBetweenFaces() {
@@ -147,16 +147,14 @@ function transitionBetweenFaces() {
   }
 
   let newGrid = deepCopyGrid(grid);
-  transitionComplete = true;  // Assume the transition is complete unless a mismatch is found
+  transitionComplete = true;
 
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
-      // Random chance of transitioning
-      if (newGrid[i][j] !== nextGrid[i][j] && random(1) < 0.1) {  // Random 10% chance per frame
+      if (newGrid[i][j] !== nextGrid[i][j] && random(1) < 0.05) { 
         newGrid[i][j] = nextGrid[i][j];
       }
 
-      // If any cell isn't yet transitioned, the transition is not complete
       if (newGrid[i][j] !== nextGrid[i][j]) {
         transitionComplete = false;
       }
@@ -171,10 +169,9 @@ function transitionBetweenFaces() {
 
   grid = newGrid;
 
-  // If the transition is complete, start the Game of Life with the new grid
-  if (transitionComplete) {
+  if (transitionComplete || (millis() - transitionStartTime) > transitionDuration) {
     inTransition = false;
-    lastSwitchTime = millis();  // Reset the last switch time
+    lastSwitchTime = millis();
     initializeAgeHealthGrids();
   }
 }
@@ -204,7 +201,7 @@ function loadGrid(isInitial) {
       grid = tempGrid;
       initializeAgeHealthGrids();
     } else {
-      nextGrid = tempGrid;  // Prepare for transition
+      nextGrid = tempGrid;
     }
   }, (error) => {
     console.error("Error loading grid file:", error);
