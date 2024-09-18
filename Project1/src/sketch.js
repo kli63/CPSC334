@@ -7,11 +7,11 @@ let cellWidth, cellHeight;
 let rows = 0, cols = 0; 
 let previousCsvIndex = -1;
 let currentGridIndex = 0;
-let timeInterval = 10000; 
+let timeInterval = 30000; 
 let randomnessFactor = 0.3; 
 let frameSpeed = 60;
 let inTransition = false;
-let transitionDuration = 5000; 
+let transitionDuration = 30000; 
 let transitionStartTime = 0;
 let transitionComplete = false;
 
