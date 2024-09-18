@@ -8,7 +8,7 @@ let rows = 0, cols = 0;
 let previousCsvIndex = -1;
 let currentGridIndex = 0;
 let timeInterval = 30000; 
-let randomnessFactor = 0.3; 
+let randomnessFactor = 0.2; 
 let frameSpeed = 60;
 let inTransition = false;
 let transitionDuration = 30000; 
