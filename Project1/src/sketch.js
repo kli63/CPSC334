@@ -38,8 +38,15 @@ function adjustCellSize() {
   if (rows > 0 && cols > 0) {
     cellWidth = width / cols;
     cellHeight = height / rows;
+
+    if (width > 1920) {
+      randomnessFactor = 0.2;
+    } else if (width < 1280) { 
+      randomnessFactor = 0.15;
+    }
   }
 }
+
 
 function deepCopyGrid(grid) {
   if (!grid || !grid.length) return [];
