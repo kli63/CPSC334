@@ -18,6 +18,8 @@
 
 sudo fuser -k 8000/tcp
 
+cd /home/student334/CPSC334/Project1s
+
 python3 -m http.server 8000 &
 
 if [ -z "$DISPLAY" ]; then
