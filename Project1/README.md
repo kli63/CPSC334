@@ -13,4 +13,8 @@ This project was designed to be compatible with a Raspberry Pi, so some of these
 2. cd into the `/CPSC334/Project1/scripts` folder and run `sudo chmod +x play.sh`
 3. To run the art piece manually, you can simply run `./play.sh`, and a chromium browser will open and play.
 4. To run this art piece on boot of the Raspberry pi:
-  - 
+    - cd into the `/etc/systemd/system` folder and run `sudo nano play.service`. You can simply copy the contents of `/CPSC334/Project1/scripts/play.service` here.
+    - Do the following commands:
+        - `sudo systemctl daemon-reload`
+        - `sudo systemctl enable play.service`
+    - To
