@@ -1,0 +1,11 @@
+[Unit]
+Description=Play on Boot
+After=network.target
+
+[Service]
+ExecStart=/home/student334/CPSC334/Project1/scripts/play.sh
+User=student334
+WorkingDirectory=/home/student334/CPSC334/Project1
+
+[Install]
+WantedBy=multi-user.target
