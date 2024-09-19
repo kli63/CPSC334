@@ -2,7 +2,7 @@
 
 sudo fuser -k 8000/tcp
 
-cd /home/student334/CPSC334/Project1
+cd ..
 
 python3 -m http.server 8000 &
 
