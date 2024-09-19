@@ -3,8 +3,8 @@ This is generative art display is a play on [Conway's Game of Life](https://en.w
 
 # Links
 Starting on Boot: https://youtu.be/q375IicIMTA \
-512x512: https://youtu.be/GD1Niac8U8c \
-256x256: https://youtu.be/EDJGp88Q70I
+256x256: https://youtu.be/GD1Niac8U8c \
+512x512: https://youtu.be/EDJGp88Q70I
 
 # Usage:
 This project was designed to be compatible with a Raspberry Pi, so some of these instructions are directly related to running it on boot for your Pi. This project is of course usable without a Pi, given that you run it on some Linux system (I was developing this on WSL), and you may disregard any instructions as you see fit.
