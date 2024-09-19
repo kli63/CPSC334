@@ -2,8 +2,8 @@
 This is generative art display is a play on [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), using images of [human portraits](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq/data?select=00031.png) as the initial state. The generative aspect of this art piece is derived from a few aspects of the project's implementation. First, is a slight subversion of Conway's Game of Life, which is famously deterministic and not generative. Although my project maintains the basic rules of life and death within the game, it also introduces randomness into the survival and death of the cells through the addition of uniquely generated health, aging, and fitness functions for each cell. These factors, as well as some degree of luck, ultimately help play into whether or not a certain cell will become alive or dead. Newly alive cells start with increased health and fitness, making them more resilient, while aging cells gradually lose fitness and become more prone to death, adding a layer of stochasticity to the traditionally predictable ruleset. Furthermore, the order of the portraits themselves are randomly selected. Lastly, the transition between the faces is generative and unpredictable, as the portraits gradually morph from one face to the next in a dynamic transition stage where cells in the grid randomly move toward the new initial state. As a result, no two iterations of this piece will ever be the same, and the portraits will fade, deform, and transform continuously as an allusion to nature and life's memory, decay, and cyclic ephemerality. 
 
 # Links
-Starting on Boot: https://youtu.be/q375IicIMTA
-512x512: https://youtu.be/GD1Niac8U8c
+Starting on Boot: https://youtu.be/q375IicIMTA \
+512x512: https://youtu.be/GD1Niac8U8c \
 256x256: https://youtu.be/EDJGp88Q70I
 
 # Usage:
