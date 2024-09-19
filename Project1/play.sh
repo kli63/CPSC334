@@ -1,4 +1,21 @@
 #!/bin/bash
+
+install_if_missing() {
+  if ! dpkg -s "$1" >/dev/null 2>&1; then
+    echo "Installing $1..."
+    sudo apt-get update
+    sudo apt-get install -y "$1"
+  else
+    echo "$1 is already installed."
+  fi
+}
+
+install_if_missing python3
+install_if_missing python3-pip
+install_if_missing xdotool
+install_if_missing wmctrl
+install_if_missing chromium-browser
+
 sudo fuser -k 8000/tcp
 
 python3 -m http.server 8000 &
