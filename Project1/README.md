@@ -17,4 +17,7 @@ This project was designed to be compatible with a Raspberry Pi, so some of these
     - Do the following commands:
         - `sudo systemctl daemon-reload`
         - `sudo systemctl enable play.service`
-    - To
+    - Do the following commands:
+        - `sudo systemctl start play.service`
+        - `sudo systemctl status play.service`
+5. You should now be able to reboot your Pi, and this program will start on boot (see video to see that process working in live video)
