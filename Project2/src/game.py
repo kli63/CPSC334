@@ -15,8 +15,9 @@ from World import *
 # GPIO setup for buttons
 GPIO.setmode(GPIO.BCM)
 START_BUTTON_PIN = 2
-SHOOT_BUTTON_PIN = 3
-BOMB_BUTTON_PIN = 4
+SHOOT_BUTTON_PIN = 2
+BOMB_BUTTON_PIN = 3
+CROUCH_SWITCH_PIN = 4
 
 GPIO.setup(START_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(SHOOT_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -89,26 +90,34 @@ def input():
     # Read joystick data
     x_val, y_val = read_joystick()
 
-    if x_val is not None and y_val is not None:
-        if x_val < JOYSTICK_DEADZONE_X - THRESHOLD:
-            app.moving_left = True
-            app.moving_right = False
-        elif x_val > JOYSTICK_DEADZONE_X + THRESHOLD:
-            app.moving_right = True
-            app.moving_left = False
-        else:
-            keys = pygame.key.get_pressed()
-            if not keys[pygame.K_a]:  # Only set to False if 'a' is not pressed
-                app.moving_left = False
-            if not keys[pygame.K_d]:  # Only set to False if 'd' is not pressed
+    # Manage crouching
+    keys = pygame.key.get_pressed()
+    if app.crouched:  # If already crouched, keep player crouched and stop movement
+        player.update_action(3)
+        app.moving_left = False
+        app.moving_right = False
+        player.jump = False
+    else:
+        # Joystick movement and jump
+        if x_val is not None and y_val is not None:
+            if x_val < JOYSTICK_DEADZONE_X - THRESHOLD:
+                app.moving_left = True
                 app.moving_right = False
+            elif x_val > JOYSTICK_DEADZONE_X + THRESHOLD:
+                app.moving_right = True
+                app.moving_left = False
+            else:
+                if not keys[pygame.K_a]:  # Only set to False if 'a' is not pressed
+                    app.moving_left = False
+                if not keys[pygame.K_d]:  # Only set to False if 'd' is not pressed
+                    app.moving_right = False
 
-        if y_val < JOYSTICK_DEADZONE_Y - THRESHOLD and player.alive:
-            player.jump = True
-        else:
-            player.jump = False
+            if y_val < JOYSTICK_DEADZONE_Y - THRESHOLD and player.alive:
+                player.jump = True
+            else:
+                player.jump = False
 
-
+    # Handle key inputs
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
@@ -124,6 +133,9 @@ def input():
                 app.bomb = True
             if event.key == pygame.K_w and player.alive:
                 player.jump = True
+            if event.key == pygame.K_s and player.alive:
+                app.crouched = True
+                player.update_action(3)  # Lock player in crouching
             if event.key == pygame.K_ESCAPE:
                 run = False
 
@@ -136,6 +148,8 @@ def input():
                 app.shoot = False
             if event.key == pygame.K_q:
                 app.bomb_thrown = False
+            if event.key == pygame.K_s:
+                app.crouched = False  # Unlock crouch when 's' is released
 
 def render():
     global run, player, world, health_bar
