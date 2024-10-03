@@ -34,6 +34,7 @@ class GameApplication:
 		self.shoot = False
 		self.bomb = False
 		self.bomb_thrown = False
+		self.crouched = False
 
 		self.enemy_group = pygame.sprite.Group()
 		self.projectile_group = pygame.sprite.Group()
