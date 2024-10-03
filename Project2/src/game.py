@@ -9,6 +9,17 @@ from Misc import *
 from Character import *
 from World import *
 
+import RPi.GPIO as GPIO
+import serial
+import time
+
+GPIO.setmode(GPIO.BCM)
+START_BUTTON_PIN = 2
+SHOOT_BUTTON_PIN = 2
+
+GPIO.setup(START_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(SHOOT_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
 app = GameApplication()
 
 intro_fade = ScreenFade(1, app.black, 4, app)
@@ -37,6 +48,14 @@ world, player, health_bar = load_level(app.level)
 
 def input():
     global run
+    
+    if GPIO.input(START_BUTTON_PIN) == GPIO.LOW and not app.start_game:
+        app.start_game = True
+        app.start_intro = True
+
+    # GPIO input for shooting
+    app.shoot = GPIO.input(SHOOT_BUTTON_PIN) == GPIO.LOW
+    
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
@@ -69,7 +88,7 @@ def render():
     global run, player, world, health_bar
     if not app.start_game:
         app.screen.fill(app.black)
-        if start_button.draw(app.screen):
+        if start_button.draw(app.screen) or GPIO.input(START_BUTTON_PIN) == GPIO.LOW:  # Start on button press
             app.start_game = True
             app.start_intro = True
         if exit_button.draw(app.screen):
@@ -78,12 +97,12 @@ def render():
         app.draw_bg()
         world.draw()
         health_bar.draw(player.health)
-        app.draw_text('Fireballs: ', app.white, 10, 35)
+        app.draw_text('AMMO: ', app.white, 10, 35)
         for x in range(player.mana):
-            app.screen.blit(app.projectile_asset, (100 + (x * 10), 40))
-        app.draw_text('Bombs: ', app.white, 10, 60)
+            app.screen.blit(app.projectile_asset, (90 + (x * 10), 40))
+        app.draw_text('GRENADES: ', app.white, 10, 60)
         for x in range(player.bombs):
-            app.screen.blit(app.bomb_asset, (100 + (x * 15), 60))
+            app.screen.blit(app.bomb_asset, (135 + (x * 15), 60))
 
         player.draw()
         app.enemy_group.draw(app.screen)
@@ -97,11 +116,12 @@ def render():
 
         if not player.alive:
             if death_fade.fade():
-                if restart_button.draw(app.screen):
+                if restart_button.draw(app.screen) or GPIO.input(START_BUTTON_PIN) == GPIO.LOW:
                     death_fade.fade_counter = 0
                     app.start_intro = True
                     app.bg_scroll = 0
                     world, player, health_bar = load_level(app.level)
+
 
 def update():
     global run, player, world, health_bar
@@ -162,5 +182,6 @@ while run:
     update()
     render()
     pygame.display.update()
+    
 
 pygame.quit()
