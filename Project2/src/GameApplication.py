@@ -70,7 +70,7 @@ class GameApplication:
 
 		self.projectile_asset = pygame.image.load('../assets/icons/projectile.png').convert_alpha()
 		self.bomb_asset = pygame.image.load('../assets/icons/bomb.png').convert_alpha()
-		self.health_box_asset = pygame.image.load('../assets/icons/health_potions.png').convert_alpha()
+		self.health_box_asset = pygame.image.load('../assets/icons/health_potion.png').convert_alpha()
 		self.mana_box_asset = pygame.image.load('../assets/icons/mana_potion.png').convert_alpha()
 
 		self.pickup_types = {
