@@ -85,7 +85,7 @@ class World():
 						environment_object = EnvironmentObject(asset, x * self.app.tile_size, y * self.app.tile_size, self.app)
 						self.app.environment_object_group.add(environment_object)
 					elif tile == 11:
-						player = Player(['Idle', 'Run', 'Jump', 'Death'], x * self.app.tile_size, y * self.app.tile_size, 
+						player = Player(['Idle', 'Run', 'Jump', 'Crouch', 'Death'], x * self.app.tile_size, y * self.app.tile_size, 
 						 1.65, 5, 20, 5, self.app)
 						health_bar = HealthBar(10, 10, player.health, player.health, self.app)
 					elif tile == 12:
