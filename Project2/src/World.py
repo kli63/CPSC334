@@ -38,25 +38,25 @@ class Exit(pygame.sprite.Sprite):
 		self.rect.x += self.app.screen_scroll
 
 
-class ItemBox(pygame.sprite.Sprite):
-	def __init__(self, item_boxes, item_type, x, y, app):
+class Pickup(pygame.sprite.Sprite):
+	def __init__(self, pickup_types, pickup_type, x, y, app):
 		pygame.sprite.Sprite.__init__(self)
 		self.app = app
-		self.item_type = item_type
-		self.image = item_boxes[self.item_type]
+		self.pickup_type = pickup_type
+		self.image = pickup_types[self.pickup_type]
 		self.rect = self.image.get_rect()
 		self.rect.midtop = (x + self.app.tile_size // 2, y + (self.image.get_height() - self.app.tile_size))
 
 	def update(self, player):
 		self.rect.x += self.app.screen_scroll
 		if pygame.sprite.collide_rect(self, player):
-			if self.item_type == 'Health':
+			if self.pickup_type == 'Health':
 				player.health += 25
 				if player.health > player.max_health:
 					player.health = player.max_health
-			elif self.item_type == 'Mana':
+			elif self.pickup_type == 'Mana':
 				player.mana += 8
-			elif self.item_type == 'Bomb':
+			elif self.pickup_type == 'Bomb':
 				player.bombs += 3
 			self.kill()
 
@@ -93,13 +93,13 @@ class World():
 						1.65, 1, 100000, 0, self.app)
 						self.app.enemy_group.add(enemy)
 					elif tile == 13:
-						item_box = ItemBox(self.app.item_boxes, 'Mana', x * self.app.tile_size, y * self.app.tile_size, self.app)
+						item_box = Pickup(self.app.pickup_types, 'Mana', x * self.app.tile_size, y * self.app.tile_size, self.app)
 						self.app.item_box_group.add(item_box)
 					elif tile == 14:
-						item_box = ItemBox(self.app.item_boxes, 'Bomb', x * self.app.tile_size, y * self.app.tile_size, self.app)
+						item_box = Pickup(self.app.pickup_types, 'Bomb', x * self.app.tile_size, y * self.app.tile_size, self.app)
 						self.app.item_box_group.add(item_box)
 					elif tile == 15:
-						item_box = ItemBox(self.app.item_boxes, 'Health', x * self.app.tile_size, y * self.app.tile_size, self.app)
+						item_box = Pickup(self.app.pickup_types, 'Health', x * self.app.tile_size, y * self.app.tile_size, self.app)
 						self.app.item_box_group.add(item_box)
 					elif tile == 16:
 						exit = Exit(asset, x * self.app.tile_size, y * self.app.tile_size, self.app)

@@ -40,7 +40,7 @@ class GameApplication:
 		self.projectile_group = pygame.sprite.Group()
 		self.bomb_group = pygame.sprite.Group()
 		self.explosion_group = pygame.sprite.Group()
-		self.item_box_group = pygame.sprite.Group()
+		self.pickup_group = pygame.sprite.Group()
 		self.environment_object_group = pygame.sprite.Group()
 		self.lava_group = pygame.sprite.Group()
 		self.exit_group = pygame.sprite.Group()
@@ -73,7 +73,7 @@ class GameApplication:
 		self.health_box_asset = pygame.image.load('../assets/icons/health_box.png').convert_alpha()
 		self.mana_box_asset = pygame.image.load('../assets/icons/mana_box.png').convert_alpha()
 
-		self.item_boxes = {
+		self.pickup_types = {
 			'Health': self.health_box_asset,
 			'Mana': self.mana_box_asset,
 			'Bomb': self.bomb_asset
@@ -100,8 +100,8 @@ class GameApplication:
 		bar_height = 5
 		filled_width = (current_mana / max_mana) * bar_width
 
-		pygame.draw.rect(self.screen, self.black, (x - 2, y - 2, bar_width + 4, bar_height + 4))  # Black border
-		pygame.draw.rect(self.screen, (0, 0, 255), (x, y, filled_width, bar_height))  # Blue mana bar
+		pygame.draw.rect(self.screen, self.black, (x - 2, y - 2, bar_width + 4, bar_height + 4)) 
+		pygame.draw.rect(self.screen, (0, 0, 255), (x, y, filled_width, bar_height)) 
 
 
 
@@ -116,7 +116,7 @@ class GameApplication:
 		self.projectile_group.empty()
 		self.bomb_group.empty()
 		self.explosion_group.empty()
-		self.item_box_group.empty()
+		self.pickup_group.empty()
 		self.environment_object_group.empty()
 		self.lava_group.empty()
 		self.exit_group.empty()
