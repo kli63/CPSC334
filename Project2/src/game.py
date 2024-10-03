@@ -89,9 +89,7 @@ def input():
     # Read joystick data
     x_val, y_val = read_joystick()
 
-    # Apply thresholds for joystick movement
     if x_val is not None and y_val is not None:
-        # X-Axis movement (left/right)
         if x_val < JOYSTICK_DEADZONE_X - THRESHOLD:
             app.moving_left = True
             app.moving_right = False
@@ -99,14 +97,17 @@ def input():
             app.moving_right = True
             app.moving_left = False
         else:
-            app.moving_left = False
-            app.moving_right = False
-        
-        # Y-Axis movement (jump)
+            keys = pygame.key.get_pressed()
+            if not keys[pygame.K_a]:  # Only set to False if 'a' is not pressed
+                app.moving_left = False
+            if not keys[pygame.K_d]:  # Only set to False if 'd' is not pressed
+                app.moving_right = False
+
         if y_val < JOYSTICK_DEADZONE_Y - THRESHOLD and player.alive:
             player.jump = True
         else:
-            player.jump = False  # Reset jumping when the joystick is centered or pushed down
+            player.jump = False
+
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
