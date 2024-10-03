@@ -88,13 +88,14 @@ class GameApplication:
 
 		for x in range(10):
 			self.screen.blit(self.bg_back_asset, ((x * back_width) - self.bg_scroll * 0.6, 0))
+			self.screen.blit(self.bg_rock_asset, ((x * back_width) + (back_width // 2) - (rock_width // 2) - (self.bg_scroll * 0.65), self.screen_height - self.bg_rock_asset.get_height() - 50))
+   
 	
 		lava_start = int(-(self.bg_scroll * 0.7 % lava_width))
 		for lava_x in range(lava_start, self.screen_width, lava_width):
 			self.screen.blit(self.bg_lava_asset, (lava_x, self.screen_height - self.bg_lava_asset.get_height()))
-		for x in range(10):
-			self.screen.blit(self.bg_rock_asset, ((x * back_width) + (back_width // 2) - (rock_width // 2) - (self.bg_scroll * 0.65), self.screen_height - self.bg_rock_asset.get_height() - 50))
-   
+		
+
 	def draw_text(self, text, text_col, x, y):
 		asset = self.font.render(text, True, text_col)
 		self.screen.blit(asset, (x, y))
