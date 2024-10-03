@@ -1,5 +1,8 @@
 import pygame
 import csv
+import serial  # For joystick serial communication
+import RPi.GPIO as GPIO
+import time
 
 from GameApplication import GameApplication
 from Button import *
@@ -9,16 +12,18 @@ from Misc import *
 from Character import *
 from World import *
 
-import RPi.GPIO as GPIO
-import serial
-import time
-
+# GPIO setup for buttons
 GPIO.setmode(GPIO.BCM)
 START_BUTTON_PIN = 2
-SHOOT_BUTTON_PIN = 2
+SHOOT_BUTTON_PIN = 3
+BOMB_BUTTON_PIN = 4
 
 GPIO.setup(START_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(SHOOT_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(BOMB_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+# Initialize serial communication for joystick with ESP32
+ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)  # Adjust port as necessary
 
 app = GameApplication()
 
@@ -29,9 +34,23 @@ start_button = Button(app.screen_width // 2 - 130, app.screen_height // 2 - 150,
 exit_button = Button(app.screen_width // 2 - 110, app.screen_height // 2 + 50, app.exit_asset, 1)
 restart_button = Button(app.screen_width // 2 - 100, app.screen_height // 2 - 50, app.restart_asset, 2)
 
+# Read joystick data from ESP32
+def read_joystick():
+    if ser.in_waiting > 0:
+        line = ser.readline().decode('utf-8').strip()
+        if line.startswith("X:"):
+            try:
+                x_val, y_val = line.split(',')
+                x_val = int(x_val.split(':')[1])
+                y_val = int(y_val.split(':')[1])
+                return x_val, y_val
+            except (IndexError, ValueError):
+                return None, None
+    return None, None
 
+# Load level data
 def load_level(level):
-    world_data = app.reset_level() 
+    world_data = app.reset_level()
     with open(f'../assets/level_data/level{level}.csv', newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')
         for x, row in enumerate(reader):
@@ -45,17 +64,50 @@ def load_level(level):
 
 world, player, health_bar = load_level(app.level)
 
+# Define joystick dead zones and thresholds for movement
+JOYSTICK_DEADZONE_X = 2780  # Dead center for X
+JOYSTICK_DEADZONE_Y = 2850  # Dead center for Y
+THRESHOLD = 200  # Range for dead zone (adjustable)
 
+# Handle input from GPIO and joystick
 def input():
     global run
     
+    # Check GPIO for start, shoot, and bomb buttons
     if GPIO.input(START_BUTTON_PIN) == GPIO.LOW and not app.start_game:
         app.start_game = True
         app.start_intro = True
 
-    # GPIO input for shooting
     app.shoot = GPIO.input(SHOOT_BUTTON_PIN) == GPIO.LOW
-    
+
+    if GPIO.input(BOMB_BUTTON_PIN) == GPIO.LOW:
+        app.bomb = True
+    else:
+        app.bomb = False
+        app.bomb_thrown = False
+
+    # Read joystick data
+    x_val, y_val = read_joystick()
+
+    # Apply thresholds for joystick movement
+    if x_val is not None and y_val is not None:
+        # X-Axis movement (left/right)
+        if x_val < JOYSTICK_DEADZONE_X - THRESHOLD:
+            app.moving_left = True
+            app.moving_right = False
+        elif x_val > JOYSTICK_DEADZONE_X + THRESHOLD:
+            app.moving_right = True
+            app.moving_left = False
+        else:
+            app.moving_left = False
+            app.moving_right = False
+        
+        # Y-Axis movement (jump)
+        if y_val < JOYSTICK_DEADZONE_Y - THRESHOLD and player.alive:
+            player.jump = True
+        else:
+            player.jump = False  # Reset jumping when the joystick is centered or pushed down
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
@@ -100,7 +152,7 @@ def render():
         app.draw_text('AMMO: ', app.white, 10, 35)
         for x in range(player.mana):
             app.screen.blit(app.projectile_asset, (90 + (x * 10), 40))
-        app.draw_text('GRENADES: ', app.white, 10, 60)
+        app.draw_text('BOMBS: ', app.white, 10, 60)
         for x in range(player.bombs):
             app.screen.blit(app.bomb_asset, (135 + (x * 15), 60))
 
@@ -155,11 +207,11 @@ def update():
             app.bomb_thrown = True
 
         if player.in_air:
-            player.update_action(2) 
+            player.update_action(2)  # Jump
         elif app.moving_left or app.moving_right:
-            player.update_action(1)
+            player.update_action(1)  # Run
         else:
-            player.update_action(0) 
+            player.update_action(0)  # Idle
 
         app.screen_scroll, level_complete = player.move(world)
         app.bg_scroll -= app.screen_scroll
@@ -182,6 +234,6 @@ while run:
     update()
     render()
     pygame.display.update()
-    
 
 pygame.quit()
+GPIO.cleanup()
