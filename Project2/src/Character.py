@@ -96,16 +96,13 @@ class Character(pygame.sprite.Sprite):
 		if pygame.sprite.spritecollide(self, self.app.lava_group, False):
 			self.health = 0
 
-		# Check if player reaches exit
 		level_complete = False
 		if pygame.sprite.spritecollide(self, self.app.exit_group, False):
 			level_complete = True
 
-		# Check if player falls off the screen
 		if self.rect.bottom > self.app.screen_height:
 			self.health = 0
 
-		# Ensure player doesn't go beyond screen bounds
 		if self.char_type == 'player':
 			if self.rect.left + dx < 0 or self.rect.right + dx > self.app.screen_width:
 				dx = 0
