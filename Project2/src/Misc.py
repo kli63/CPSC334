@@ -11,9 +11,12 @@ class HealthBar():
     def draw(self, health):
         self.health = health
         ratio = self.health / self.max_health
-        pygame.draw.rect(self.app.screen, self.app.black, (self.x - 2, self.y - 2, 154, 24))
-        pygame.draw.rect(self.app.screen, self.app.red, (self.x, self.y, 150, 20))
-        pygame.draw.rect(self.app.screen, self.app.green, (self.x, self.y, 150 * ratio, 20))
+        bar_width = 150
+        bar_height = 5
+
+        pygame.draw.rect(self.app.screen, self.app.black, (self.x - 2, self.y - 2, bar_width + 4, bar_height + 4))  # Black border
+        pygame.draw.rect(self.app.screen, self.app.red, (self.x, self.y, bar_width * ratio, bar_height))  # Red health bar
+
 
 
 class ScreenFade():

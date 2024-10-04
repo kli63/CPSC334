@@ -10,7 +10,7 @@ class GameApplication:
 		self.screen_height = int(self.screen_width * 0.8)
 		self.fps = 60
 
-		self.gravity = 0.6
+		self.gravity = 0.7
 		self.scroll_thresh = 200
 		self.rows = 16
 		self.cols = 150
@@ -90,16 +90,25 @@ class GameApplication:
 		for x in range(10):
 			self.screen.blit(self.bg_back_asset, ((x * back_width) - self.bg_scroll * 0.6, 0))
 			self.screen.blit(self.bg_rock_asset, ((x * back_width) + (back_width // 2) - (rock_width // 2) - (self.bg_scroll * 0.65), self.screen_height - self.bg_rock_asset.get_height() - 50))
-   
-	
+
 		lava_start = int(-(self.bg_scroll * 0.7 % lava_width))
 		for lava_x in range(lava_start, self.screen_width, lava_width):
 			self.screen.blit(self.bg_lava_asset, (lava_x, self.screen_height - self.bg_lava_asset.get_height()))
-		
+
+	def draw_mana_bar(self, x, y, current_mana, max_mana, overcharge_mana):
+		bar_width = 150
+		bar_height = 5
+		filled_width = (current_mana / max_mana) * bar_width
+
+		pygame.draw.rect(self.screen, self.black, (x - 2, y - 2, bar_width + 4, bar_height + 4))  # Black border
+		pygame.draw.rect(self.screen, (0, 0, 255), (x, y, filled_width, bar_height))  # Blue mana bar
+
+
 
 	def draw_text(self, text, text_col, x, y):
 		asset = self.font.render(text, True, text_col)
 		self.screen.blit(asset, (x, y))
+
 
 
 	def reset_level(self):

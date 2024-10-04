@@ -11,8 +11,8 @@ class Character(pygame.sprite.Sprite):
 		self.char_type = char_type
 		self.speed = speed
 		self.mana = mana
-		self.start_mana = mana
-		self.shoot_cooldown = 0
+		self.max_mana = mana
+		self.overcharge_mana = 0
 		self.bombs = bombs
 		self.health = 100
 		self.max_health = self.health
@@ -21,16 +21,55 @@ class Character(pygame.sprite.Sprite):
 		self.jump = False
 		self.in_air = True
 		self.flip = False
-		self.animation_list = []
-		self.frame_index = 0
-		self.action = 0
+		self.shoot_cooldown = 0
+		self.mana_cooldown = 0 
+		self.mana_cooldown_max = self.app.fps * 1.5 
 		self.update_time = pygame.time.get_ticks()
 		self.move_counter = 0
 		self.vision = pygame.Rect(0, 0, 150, 20)
+		self.animation_list = []
+		self.frame_index = 0
+		self.action = 0
 		self.idling = False
 		self.idling_counter = 0
 		self.animation_types = animation_types
 		self.load_animations(animation_types, x, y, scale)
+
+	def update(self):
+		self.update_animation()
+		self.check_alive()
+		if self.shoot_cooldown > 0:
+			self.shoot_cooldown -= 1
+		if self.mana_cooldown > 0:
+			self.mana_cooldown -= 1
+		else:
+			self.regenerate_mana()
+
+	def regenerate_mana(self):
+		if self.mana < self.max_mana:
+			self.mana += self.max_mana / (15 * self.app.fps)
+			if self.mana > self.max_mana:
+				self.mana = self.max_mana
+
+	def shoot(self):
+		if self.shoot_cooldown == 0 and self.mana > 0:
+			self.shoot_cooldown = 20
+			projectile = Projectile(self.rect.centerx + (0.75 * self.rect.size[0] * self.direction),
+									self.rect.centery, self.direction, self.app)
+			self.app.projectile_group.add(projectile)
+			mana_used = 1
+			if self.overcharge_mana > 0:
+				self.overcharge_mana -= mana_used
+				if self.overcharge_mana < 0:
+					self.mana += self.overcharge_mana 
+					self.overcharge_mana = 0
+			else:
+				self.mana -= mana_used
+			self.mana_cooldown = self.app.fps 
+
+	def collect_mana_box(self, overcharge_amount):
+		self.overcharge_mana += overcharge_amount
+
 
 	def load_animations(self, animation_types, x, y, scale):
 		for animation in animation_types:
@@ -46,12 +85,6 @@ class Character(pygame.sprite.Sprite):
 		self.rect.center = (x, y)
 		self.width = self.image.get_width()
 		self.height = self.image.get_height()
-
-	def update(self):
-		self.update_animation()
-		self.check_alive()
-		if self.shoot_cooldown > 0:
-			self.shoot_cooldown -= 1
 
 	def move(self, world):
 		screen_scroll = 0

@@ -213,7 +213,7 @@ def render():
     global run, player, world, health_bar
     if not app.start_game:
         app.screen.fill(app.black)
-        if start_button.draw(app.screen) or GPIO.input(START_BUTTON_PIN) == GPIO.LOW: 
+        if start_button.draw(app.screen) or GPIO.input(START_BUTTON_PIN) == GPIO.LOW:
             app.start_game = True
             app.start_intro = True
         if exit_button.draw(app.screen):
@@ -221,13 +221,19 @@ def render():
     else:
         app.draw_bg()
         world.draw()
+
+        text_y_pos = 35
+
+        app.draw_text('Health: ', app.white, 10, text_y_pos)
         health_bar.draw(player.health)
-        app.draw_text('Fireballs: ', app.white, 10, 35)
-        for x in range(player.mana):
-            app.screen.blit(app.projectile_asset, (100 + (x * 10), 40))
-        app.draw_text('Bombs: ', app.white, 10, 60)
+
+        app.draw_text('Mana: ', app.white, 10, text_y_pos + 30)
+        app.draw_mana_bar(100, text_y_pos + 40, player.mana, player.max_mana, player.overcharge_mana)
+
+        app.draw_text('Bombs: ', app.white, 10, text_y_pos + 60)
         for x in range(player.bombs):
-            app.screen.blit(app.bomb_asset, (100 + (x * 15), 60))
+            resized_bomb = pygame.transform.scale(app.bomb_asset, (10, 10))  # Resize bomb icons
+            app.screen.blit(resized_bomb, (100 + (x * 15), text_y_pos + 65))
 
         player.draw()
         app.enemy_group.draw(app.screen)
@@ -246,6 +252,8 @@ def render():
                     app.start_intro = True
                     app.bg_scroll = 0
                     world, player, health_bar = load_level(app.level)
+
+
 
 run = True
 while run:

@@ -55,7 +55,7 @@ class ItemBox(pygame.sprite.Sprite):
 				if player.health > player.max_health:
 					player.health = player.max_health
 			elif self.item_type == 'Mana':
-				player.mana += 15
+				player.mana += 8
 			elif self.item_type == 'Bomb':
 				player.bombs += 3
 			self.kill()
@@ -86,8 +86,8 @@ class World():
 						self.app.environment_object_group.add(environment_object)
 					elif tile == 11:
 						player = Player(['Idle', 'Run', 'Jump', 'Crouch', 'Death'], x * self.app.tile_size, y * self.app.tile_size, 
-						 1.65, 5, 20, 5, self.app)
-						health_bar = HealthBar(10, 10, player.health, player.health, self.app)
+						 1.65, 5, 8, 5, self.app)
+						health_bar = HealthBar(100, 42, player.health, player.health, self.app)
 					elif tile == 12:
 						enemy = Enemy(['Idle', 'Flying', 'Death'], x * self.app.tile_size, y * self.app.tile_size, 
 						1.65, 1, 100000, 0, self.app)
