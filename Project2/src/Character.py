@@ -67,7 +67,7 @@ class Character(pygame.sprite.Sprite):
 				self.mana -= mana_used
 			self.mana_cooldown = self.app.fps 
 
-	def collect_mana_box(self, overcharge_amount):
+	def collect_mana_potion(self, overcharge_amount):
 		self.overcharge_mana += overcharge_amount
 
 
