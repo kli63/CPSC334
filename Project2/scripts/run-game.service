@@ -1,12 +1,15 @@
 [Unit]
 Description=Run Foxy Game
-After=network.target
+After=network.target graphical.target
 
 [Service]
 ExecStart=/home/student334/CPSC334/Project2/scripts/run-game.sh
 User=student334
 WorkingDirectory=/home/student334/CPSC334/Project2/scripts/
 Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Restart=always
+RestartSec=10
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
