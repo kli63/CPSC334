@@ -47,7 +47,7 @@ class GameApplication:
   
 	def load_assets(self):
 		pygame.init()
-		pygame.mixer.init()
+		# pygame.mixer.init()
 		pygame.font.init()
 
 		self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
