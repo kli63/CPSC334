@@ -14,8 +14,8 @@ class HealthBar():
         bar_width = 150
         bar_height = 5
 
-        pygame.draw.rect(self.app.screen, self.app.black, (self.x - 2, self.y - 2, bar_width + 4, bar_height + 4))  # Black border
-        pygame.draw.rect(self.app.screen, self.app.red, (self.x, self.y, bar_width * ratio, bar_height))  # Red health bar
+        pygame.draw.rect(self.app.screen, self.app.black, (self.x - 2, self.y - 2, bar_width + 4, bar_height + 4)) 
+        pygame.draw.rect(self.app.screen, self.app.red, (self.x, self.y, bar_width * ratio, bar_height)) 
 
 
 

@@ -93,14 +93,14 @@ class World():
 						1.65, 1, 100000, 0, self.app)
 						self.app.enemy_group.add(enemy)
 					elif tile == 13:
-						item_box = Pickup(self.app.pickup_types, 'Mana', x * self.app.tile_size, y * self.app.tile_size, self.app)
-						self.app.item_box_group.add(item_box)
+						pickup = Pickup(self.app.pickup_types, 'Mana', x * self.app.tile_size, y * self.app.tile_size, self.app)
+						self.app.pickup_group.add(pickup)
 					elif tile == 14:
-						item_box = Pickup(self.app.pickup_types, 'Bomb', x * self.app.tile_size, y * self.app.tile_size, self.app)
-						self.app.item_box_group.add(item_box)
+						pickup = Pickup(self.app.pickup_types, 'Bomb', x * self.app.tile_size, y * self.app.tile_size, self.app)
+						self.app.pickup_group.add(pickup)
 					elif tile == 15:
-						item_box = Pickup(self.app.pickup_types, 'Health', x * self.app.tile_size, y * self.app.tile_size, self.app)
-						self.app.item_box_group.add(item_box)
+						pickup = Pickup(self.app.pickup_types, 'Health', x * self.app.tile_size, y * self.app.tile_size, self.app)
+						self.app.pickup_group.add(pickup)
 					elif tile == 16:
 						exit = Exit(asset, x * self.app.tile_size, y * self.app.tile_size, self.app)
 						self.app.exit_group.add(exit)

@@ -12,7 +12,6 @@ from Misc import *
 from Character import *
 from World import *
 
-# GPIO setup for buttons
 GPIO.setmode(GPIO.BCM)
 START_BUTTON_PIN = 2
 SHOOT_BUTTON_PIN = 2
@@ -232,8 +231,8 @@ def render():
 
         app.draw_text('Bombs: ', app.white, 10, text_y_pos + 60)
         for x in range(player.bombs):
-            resized_bomb = pygame.transform.scale(app.bomb_asset, (10, 10))  # Resize bomb icons
-            app.screen.blit(resized_bomb, (100 + (x * 15), text_y_pos + 65))
+            resized_bomb = pygame.transform.scale(app.bomb_asset, (20, 20)) 
+            app.screen.blit(resized_bomb, (100 + (x * 15), text_y_pos + 60))
 
         player.draw()
         app.enemy_group.draw(app.screen)
