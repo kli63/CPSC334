@@ -17,9 +17,9 @@ This project was designed to be compatible with a Raspberry Pi, so some of these
   - `sudo apt-get install python3-pygame`
   - `sudo apt-get install python3-serial`
 3. cd into the `/CPSC334/Project2/scripts` folder and run `sudo chmod +x run-game.sh`
-4. To play the game manually, you can simply run `./run-game.sh`, or in the `/CPSC334/Project2/src` directory, run `python3 game.py`.
+4. To play the game manually, you can simply run `./run-game.sh`, or in the `/CPSC334/Module2/Task2/src` directory, run `python3 game.py`.
 5. To run this game on boot of the Raspberry pi:
-    - cd into the `/etc/systemd/system` folder and run `sudo nano run-game.service`. You can simply copy the contents of `/CPSC334/Project2/scripts/run-game.service` here.
+    - cd into the `/etc/systemd/system` folder and run `sudo nano run-game.service`. You can simply copy the contents of `/CPSC334/Module2/Task2/scripts/run-game.service` here.
     - Do the following commands:
         - `sudo systemctl daemon-reload`
         - `sudo systemctl enable run-game.service`

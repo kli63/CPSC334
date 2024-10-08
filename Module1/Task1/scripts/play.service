@@ -3,11 +3,11 @@ Description=Play on Boot
 After=network.target
 
 [Service]
-ExecStart=/home/student334/CPSC334/Project1/scripts/play.sh
+ExecStart=/home/student334/CPSC334/Module1/Task1/scripts/play.sh
 Restart=always
 RestartSec=5
 User=student334
-WorkingDirectory=/home/student334/CPSC334/Project1/scripts
+WorkingDirectory=/home/student334/CPSC334/Moduel1/Task1/scripts
 
 [Install]
 WantedBy=multi-user.target

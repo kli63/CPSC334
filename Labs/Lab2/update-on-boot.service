@@ -1,0 +1,11 @@
+[Unit]
+Description=Upload IP and Config Files to GitHub
+After=network.target
+
+[Service]
+ExecStart=/home/student334/update-on-boot.sh
+User=student334
+WorkingDirectory=/home/student334
+
+[Install]
+WantedBy=multi-user.target
