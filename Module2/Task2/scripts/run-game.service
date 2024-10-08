@@ -3,9 +3,9 @@ Description=Run Foxy Game
 After=network.target graphical.target
 
 [Service]
-ExecStart=/home/student334/CPSC334/Project2/scripts/run-game.sh
+ExecStart=/home/student334/CPSC334/Module2/Task2/scripts/run-game.sh
 User=student334
-WorkingDirectory=/home/student334/CPSC334/Project2/scripts/
+WorkingDirectory=/home/student334/CPSC334/Module2/Task2/scripts/
 Environment=DISPLAY=:0
 Environment=XDG_RUNTIME_DIR=/run/user/1000
 Restart=always
