@@ -1,0 +1,2 @@
+- Started with usb connection to laptop and serial, testing outputs (ended up working), utilized this resource: https://esp32io.com/tutorials/esp32-light-sensor
+- 
