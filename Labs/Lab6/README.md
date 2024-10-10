@@ -1,2 +1,3 @@
 - Started with usb connection to laptop and serial, testing outputs (ended up working), utilized this resource: https://esp32io.com/tutorials/esp32-light-sensor
-- 
+- Connected to wifi! Using Wifi.h and ssid = "yale wireless"
+- Set up socket and was able to print to terminal between esp32 and raspberry pi
