@@ -2,7 +2,7 @@
 #define LIGHT_SENSOR_PIN 34
 
 const char* ssid = "yale wireless";
-const char* server_ip = "172.29.24.162";
+const char* server_ip = "172.29.31.198";
 const int server_port = 10000;
 
 void setup() {

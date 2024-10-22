@@ -1,5 +1,12 @@
-import socket
 import pygame
+import socket
+
+hostname = socket.gethostname()
+ip_address = socket.gethostbyname_ex(hostname)[-1][-1]
+print(f"IP Address: {ip_address}")
+
+
+print(socket.gethostbyname(socket.gethostname()))
 
 pygame.init()
 width, height = 800, 600
