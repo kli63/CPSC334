@@ -1,13 +1,12 @@
 from tkinter import Tk, Label, Button, Frame
 from picamera2 import Picamera2
 import cv2
-import numpy as np
 import PIL.Image, PIL.ImageTk
 import os
 import time
 
 class CameraApp:
-    def __init__(self, root, camera, save_dir="../../assets/images"):
+    def __init__(self, root, camera, save_dir="../../images"):
         # initializing variables and setting up the gui
         self.root = root
         self.camera = camera
@@ -15,9 +14,6 @@ class CameraApp:
         self.frame = None
         self.captured_image = None
         self.image_captured = False
-
-        # Load pre-trained segmentation model (e.g., MobileNet)
-        self.net = cv2.dnn.readNetFromONNX("../../assets/model/tiny-yolov3-11.onnx")  # Replace with your ONNX model path
 
         # ensuring the save directory exists
         os.makedirs(self.save_dir, exist_ok=True)
@@ -66,51 +62,19 @@ class CameraApp:
         # starting the continuous frame update
         self.update_frame()
 
-    def process_frame(self, frame):
-        """
-        Process the frame to blur the background and keep people in focus.
-        """
-        h, w = frame.shape[:2]
-
-        # Create a blob from the frame and pass it to the segmentation model
-        blob = cv2.dnn.blobFromImage(frame, scalefactor=1/255.0, size=(224, 224), mean=(0, 0, 0), swapRB=True, crop=False)
-        self.net.setInput(blob)
-        output = self.net.forward()  # Forward pass
-
-        # Reshape output to match the input image
-        segmentation_map = output[0, 0]  # Assuming the person class is at index 0
-        segmentation_map = cv2.resize(segmentation_map, (w, h))
-
-        # Create a binary mask for the person
-        _, binary_mask = cv2.threshold(segmentation_map, 0.5, 1, cv2.THRESH_BINARY)
-        binary_mask = binary_mask.astype(np.uint8)
-
-        # Blur the background
-        blurred_frame = cv2.GaussianBlur(frame, (21, 21), 0)
-
-        # Combine the original frame and blurred frame using the mask
-        foreground = cv2.bitwise_and(frame, frame, mask=binary_mask)
-        background = cv2.bitwise_and(blurred_frame, blurred_frame, mask=cv2.bitwise_not(binary_mask))
-        processed_frame = cv2.add(foreground, background)
-
-        return processed_frame
-
     def update_frame(self):
         # continuously updating the camera preview
         if not self.image_captured:
             frame = self.camera.capture_array()  # capturing the camera frame
             frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)  # converting frame to bgr
-
+            
             # cropping the frame to 480x480 by trimming sides
             left_crop = (640 - 480) // 2
             cropped_frame = frame[:, left_crop:left_crop + 480]
+            self.frame = cropped_frame  # save cropped frame for later use
 
-            # Apply background blur
-            processed_frame = self.process_frame(cropped_frame)
-            self.frame = processed_frame  # Save the processed frame for later use
-
-            # converting the processed frame to tkinter-compatible format
-            img = PIL.Image.fromarray(cv2.cvtColor(processed_frame, cv2.COLOR_BGR2RGB))
+            # converting the cropped frame to tkinter-compatible format
+            img = PIL.Image.fromarray(cv2.cvtColor(cropped_frame, cv2.COLOR_BGR2RGB))
             imgtk = PIL.ImageTk.PhotoImage(image=img)
             self.label.imgtk = imgtk
             self.label.configure(image=imgtk, text="")  # clear text if any
@@ -131,7 +95,7 @@ class CameraApp:
     def save_image(self):
         # saving the captured image to the specified directory
         if self.image_captured:
-            # resize the processed image to 1024x1024 for saving
+            # resize the cropped image to 1024x1024 for saving
             resized_image = cv2.resize(self.captured_image, (1024, 1024))
 
             timestamp = time.strftime("%Y%m%d_%H%M%S")  # generating a unique filename
