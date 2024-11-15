@@ -87,3 +87,15 @@ Traceback (most recent call last):
 2024-11-14 22:22:42 initInitialise: Can't lock /var/run/pigpio.pid
 
 
+Traceback (most recent call last):
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Camera/camera.py", line 188, in <module>
+    app = CameraApp(root, picam2)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Camera/camera.py", line 20, in __init__
+    self.net = cv2.dnn.readNetFromONNX("deeplabv3_mnv2.onnx")  # Replace with your ONNX model path
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.6.0) ./modules/dnn/src/onnx/onnx_importer.cpp:255: error: (-5:Bad argument) Can't read ONNX file: deeplabv3_mnv2.onnx in function 'ONNXImporter'
+
+/dev/video0:         38606 38607
+
+

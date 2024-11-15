@@ -38,7 +38,7 @@ class CameraApp:
         camera_container.pack(expand=True)
 
         # creating a label to display the camera preview with fixed size
-        self.label = Label(camera_container, width=640, height=480)
+        self.label = Label(camera_container, width=480, height=480)
         self.label.pack()
 
         # Create button frame that's tied to camera width
@@ -67,10 +67,14 @@ class CameraApp:
         if not self.image_captured:
             frame = self.camera.capture_array()  # capturing the camera frame
             frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)  # converting frame to bgr
-            self.frame = frame
+            
+            # cropping the frame to 480x480 by trimming sides
+            left_crop = (640 - 480) // 2
+            cropped_frame = frame[:, left_crop:left_crop + 480]
+            self.frame = cropped_frame  # save cropped frame for later use
 
-            # converting the frame to tkinter-compatible format
-            img = PIL.Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+            # converting the cropped frame to tkinter-compatible format
+            img = PIL.Image.fromarray(cv2.cvtColor(cropped_frame, cv2.COLOR_BGR2RGB))
             imgtk = PIL.ImageTk.PhotoImage(image=img)
             self.label.imgtk = imgtk
             self.label.configure(image=imgtk, text="")  # clear text if any
@@ -91,7 +95,7 @@ class CameraApp:
     def save_image(self):
         # saving the captured image to the specified directory
         if self.image_captured:
-            # resize the captured image to 1024x1024
+            # resize the cropped image to 1024x1024 for saving
             resized_image = cv2.resize(self.captured_image, (1024, 1024))
 
             timestamp = time.strftime("%Y%m%d_%H%M%S")  # generating a unique filename
