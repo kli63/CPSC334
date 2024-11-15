@@ -10,4 +10,8 @@
 
 `sudo apt install python3-pil python3-pil.imagetk`
 
+`sudo apt install git-lfs`
+
+`git lfs install`
+
 for installing camera: https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/5MP-OV5647/
