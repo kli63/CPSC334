@@ -108,7 +108,8 @@ Traceback (most recent call last):
 cv2.error: OpenCV(4.6.0) ./modules/dnn/src/onnx/onnx_graph_simplifier.cpp:842: error: (-210:Unsupported format or combination of formats) Unsupported data type: BOOL in function 'getMatFromTensor'
 
 c@1/ov5647@36 - Selected sensor format: 640x480-SGBRG10_1X10 - Selected unicam format: 640x480-pGAA
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: Created TensorFlow Lit
+e XNNPACK delegate for CPU.
 Model loaded successfully
 Capturing image
 Starting image processing
@@ -127,5 +128,41 @@ Processing failed
 
 rror in vector conversion: [Errno 2] No such file or directory: 'images/../../assets/images/image_20241115_021758.jpg.svg'
 ./camera.sh: line 7: 135538 Killed                  python3 camera.py
+
+
+
+Lines:   0%|                                           | 0/490 [00:00<?, ?it/s]Error during drawing: 'NoneType' object has no attribute 'total'
+Exception in thread Thread-7 (drawing_thread):
+Traceback (most recent call last):
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Robot/robot.py", line 58, in drawing_thread
+    self.bg.plot_file(json_path)
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/BrachioGraphCaricature/plotter.py", line 195, in plot_file
+    self.plot_lines(lines, bounds, angular_step, wait, resolution, flip=True)
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/BrachioGraphCaricature/plotter.py", line 213, in plot_lines
+    for line in tqdm.tqdm(lines, desc="Lines", leave=False):
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Robot/robot.py", line 45, in custom_tqdm_init
+    if progress_callback and progress_bar.total:
+                             ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'total'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Robot/robot.py", line 73, in drawing_thread
+    self.bg.park()
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/BrachioGraphCaricature/plotter.py", line 501, in park
+    self.move_angles(self.servo_1_parked_angle, self.servo_2_parked_angle)
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/BrachioGraphCaricature/plotter.py", line 426, in move_angles
+    for step in tqdm.tqdm(
+                ^^^^^^^^^^
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Robot/robot.py", line 45, in custom_tqdm_init
+    if progress_callback and progress_bar.total:
+                             ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'total'
 
 

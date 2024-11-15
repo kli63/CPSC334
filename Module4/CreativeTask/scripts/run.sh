@@ -21,7 +21,10 @@ if ! python3 -c "import tflite_runtime" 2>/dev/null; then
     pip3 install --extra-index-url https://www.piwheels.org/simple tflite-runtime
 fi
 
-cd ../src/Robot
+cd ../src/BrachioGraphCaricature
+pip install -r requirements.txt
+
+cd ../Robot
 
 # Run the robot script
-python3 robot.py
+python3 run.py

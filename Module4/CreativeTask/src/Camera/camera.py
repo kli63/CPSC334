@@ -17,7 +17,7 @@ import cairosvg
 
 # Now import linedraw
 try:
-    from CPSC334.Module4.CreativeTask.src.Robot.linedraw import vectorise, makesvg, lines_to_file
+    from CPSC334.Module4.CreativeTask.src.Robot.process import vectorise, makesvg, lines_to_file
     print("Successfully imported linedraw")
 except Exception as e:
     print(f"Error importing linedraw: {e}")
