@@ -17,7 +17,7 @@ class CameraApp:
         self.image_captured = False
 
         # Load pre-trained segmentation model (e.g., MobileNet)
-        self.net = cv2.dnn.readNetFromONNX("deeplabv3_mnv2.onnx")  # Replace with your ONNX model path
+        self.net = cv2.dnn.readNetFromONNX("../../assets/model/tiny-yolov3-11.onnx")  # Replace with your ONNX model path
 
         # ensuring the save directory exists
         os.makedirs(self.save_dir, exist_ok=True)

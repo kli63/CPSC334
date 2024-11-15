@@ -98,4 +98,12 @@ cv2.error: OpenCV(4.6.0) ./modules/dnn/src/onnx/onnx_importer.cpp:255: error: (-
 
 /dev/video0:         38606 38607
 
+Traceback (most recent call last):
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Camera/camera.py", line 188, in <module>
+    app = CameraApp(root, picam2)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student334/CPSC334/Module4/CreativeTask/src/Camera/camera.py", line 20, in __init__
+    self.net = cv2.dnn.readNetFromONNX("../../assets/model/tiny-yolov3-11.onnx")  # Replace with your ONNX model path
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.6.0) ./modules/dnn/src/onnx/onnx_graph_simplifier.cpp:842: error: (-210:Unsupported format or combination of formats) Unsupported data type: BOOL in function 'getMatFromTensor'
 
