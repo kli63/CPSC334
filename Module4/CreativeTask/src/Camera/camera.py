@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, Button, CENTER, Frame
+from tkinter import Tk, Label, Button, Frame
 from picamera2 import Picamera2
 import cv2
 import PIL.Image, PIL.ImageTk
@@ -26,11 +26,11 @@ class CameraApp:
         self.root.bind("<Escape>", lambda e: self.root.attributes("-fullscreen", False))
 
         # Create two main halves of the screen
-        left_half = Frame(root, width=root.winfo_screenwidth()//2)
+        left_half = Frame(root, width=root.winfo_screenwidth() // 2)
         left_half.pack(side="left", fill="both", expand=True)
         left_half.pack_propagate(False)  # Prevent the frame from shrinking
 
-        right_half = Frame(root, width=root.winfo_screenwidth()//2)
+        right_half = Frame(root, width=root.winfo_screenwidth() // 2)
         right_half.pack(side="left", fill="both", expand=True)
 
         # Create a frame for camera and buttons in the left half
@@ -91,9 +91,12 @@ class CameraApp:
     def save_image(self):
         # saving the captured image to the specified directory
         if self.image_captured:
+            # resize the captured image to 1024x1024
+            resized_image = cv2.resize(self.captured_image, (1024, 1024))
+
             timestamp = time.strftime("%Y%m%d_%H%M%S")  # generating a unique filename
             filename = os.path.join(self.save_dir, f"image_{timestamp}.jpg")
-            cv2.imwrite(filename, self.captured_image)  # saving the image
+            cv2.imwrite(filename, resized_image)  # saving the resized image
             print(f"image saved: {filename}")
             self.image_captured = False  # resetting the capture state
 
@@ -131,17 +134,17 @@ if __name__ == "__main__":
     root = Tk()
     root.title("Robotic Caricaturist d[o_0]b")
     
-    # Get screen dimensions
+    # get screen dimensions
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
     
-    # Set the initial window size to match screen size
+    # set the initial window size to match screen size
     root.geometry(f"{screen_width}x{screen_height}+0+0")
     
-    # Remove window decorations
+    # remove window decorations
     root.overrideredirect(True)
     
-    # Create the app
+    # create the app
     app = CameraApp(root, picam2)
     
     root.mainloop()
