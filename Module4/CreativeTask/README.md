@@ -14,4 +14,6 @@
 
 `git lfs install`
 
+`sudo apt install python3-cairosvg`
+
 for installing camera: https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/5MP-OV5647/

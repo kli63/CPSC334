@@ -107,3 +107,25 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 cv2.error: OpenCV(4.6.0) ./modules/dnn/src/onnx/onnx_graph_simplifier.cpp:842: error: (-210:Unsupported format or combination of formats) Unsupported data type: BOOL in function 'getMatFromTensor'
 
+c@1/ov5647@36 - Selected sensor format: 640x480-SGBRG10_1X10 - Selected unicam format: 640x480-pGAA
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Model loaded successfully
+Capturing image
+Starting image processing
+Applying background blur
+Error in process_image_thread: Cannot set tensor: Dimension mismatch. Got 256 but expected 257 for dimension 1 of input 183.
+Processing failed
+
+format: 640x480-pGAA
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Model loaded successfully
+Capturing image
+Starting image processing
+Applying background blur
+Error in process_image_thread: operands could not be broadcast together with shapes (480,480,63,1) (480,480,3) (480,480,3) 
+Processing failed
+
+rror in vector conversion: [Errno 2] No such file or directory: 'images/../../assets/images/image_20241115_021758.jpg.svg'
+./camera.sh: line 7: 135538 Killed                  python3 camera.py
+
+
