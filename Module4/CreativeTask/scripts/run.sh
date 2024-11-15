@@ -1,12 +1,23 @@
 #!/bin/bash
 
+# Define base paths
+BASE_DIR="/home/student334/CPSC334/Module4/CreativeTask"
+VENV_DIR="$BASE_DIR/env"
+BRACHIO_DIR="$BASE_DIR/src/BrachioGraphCaricature"
+ROBOT_DIR="$BASE_DIR/src/Robot"
+
+# Create virtual environment if it doesn't exist
+if [ ! -d "$VENV_DIR" ]; then
+    python3 -m venv "$VENV_DIR"
+fi
+
 # Start pigpiod if not running
 if ! pgrep -x "pigpiod" > /dev/null; then
     sudo pigpiod
 fi
 
 # Activate virtual environment
-source env/bin/activate
+source "$VENV_DIR/bin/activate"
 
 # Add system Python packages to PYTHONPATH
 export PYTHONPATH="/usr/lib/python3/dist-packages:$PYTHONPATH"
@@ -14,17 +25,13 @@ export PYTHONPATH="/usr/lib/python3/dist-packages:$PYTHONPATH"
 # Install TFLite Runtime if not already installed
 if ! python3 -c "import tflite_runtime" 2>/dev/null; then
     echo "Installing TFLite Runtime..."
-    # Get Python version
-    python_version=$(python3 -c 'import sys; print(f"{sys.version_info[0]}.{sys.version_info[1]}")')
-    
-    # Install TFLite Runtime from piwheels
     pip3 install --extra-index-url https://www.piwheels.org/simple tflite-runtime
 fi
 
-cd ../src/BrachioGraphCaricature
-pip install -r requirements.txt
+# Install BrachioGraph requirements
+cd "$BRACHIO_DIR"
+pip install -r requirements.txt --break-system-packages
 
-cd ../Robot
-
-# Run the robot script
+# Go to Robot directory and run
+cd "$ROBOT_DIR"
 python3 run.py
