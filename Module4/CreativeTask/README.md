@@ -11,7 +11,7 @@ The overall motivation for this project is that I really really really liked Bra
 
 
 # Usage
-This project was designed to be compatible with a Raspberry Pi, so some of these instructions are directly related to running it on boot for your Pi. This project is of course usable without a Pi, given that you run it on some Linux system (I was developing this on WSL), and you may disregard any instructions as you see fit.
+This project is designed to be implemented and ran solely on a Raspberry Pi. Exact instructions may vary depending on your device and its system settings / OS.
 
 
 1. Clone this repo into your Raspberry Pi. You may have to download Git LFS
