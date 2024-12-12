@@ -1,3 +1,6 @@
 [submodule "Module4/CreativeTask/src/BrachioGraphCaricature"]
 	path = Module4/CreativeTask/src/BrachioGraphCaricature
 	url = https://github.com/kli63/BrachioGraphCaricature.git
+[submodule "FinalProject/src/BrachioGraphCaricature"]
+	path = FinalProject/src/BrachioGraphCaricature
+	url = https://github.com/kli63/BrachioGraphCaricature.git
