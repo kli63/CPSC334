@@ -1,0 +1,221 @@
+Nov 15 05:57:55 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:57:55 334ces-M bash[165115]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:57:55 334ces-M bash[165115]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:57:56 334ces-M bash[165119]: error: externally-managed-environment
+Nov 15 05:57:56 334ces-M bash[165119]: This environment is externally managed
+Nov 15 05:57:56 334ces-M bash[165119]: To install Python packages system-wide, try apt install
+Nov 15 05:57:56 334ces-M bash[165119]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:57:56 334ces-M bash[165119]: install.
+Nov 15 05:57:56 334ces-M bash[165119]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:57:56 334ces-M bash[165119]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:57:56 334ces-M bash[165119]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:57:56 334ces-M bash[165119]: sure you have python3-full installed.
+Nov 15 05:57:56 334ces-M bash[165119]: For more information visit http://rptl.io/venv
+Nov 15 05:57:56 334ces-M bash[165119]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:57:56 334ces-M bash[165119]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:57:56 334ces-M bash[165115]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:57:57 334ces-M bash[165120]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:57:57 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:57:57 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:57:57 334ces-M systemd[1]: robot-drawer.service: Consumed 1.324s CPU time.
+Nov 15 05:58:02 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 1.
+Nov 15 05:58:02 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:02 334ces-M systemd[1]: robot-drawer.service: Consumed 1.324s CPU time.
+Nov 15 05:58:02 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:02 334ces-M bash[165246]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:02 334ces-M bash[165246]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:03 334ces-M bash[165249]: error: externally-managed-environment
+Nov 15 05:58:03 334ces-M bash[165249]: This environment is externally managed
+Nov 15 05:58:03 334ces-M bash[165249]: To install Python packages system-wide, try apt install
+Nov 15 05:58:03 334ces-M bash[165249]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:03 334ces-M bash[165249]: install.
+Nov 15 05:58:03 334ces-M bash[165249]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:03 334ces-M bash[165249]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:03 334ces-M bash[165249]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:03 334ces-M bash[165249]: sure you have python3-full installed.
+Nov 15 05:58:03 334ces-M bash[165249]: For more information visit http://rptl.io/venv
+Nov 15 05:58:03 334ces-M bash[165249]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:03 334ces-M bash[165249]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:03 334ces-M bash[165246]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:03 334ces-M bash[165250]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:03 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:03 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:03 334ces-M systemd[1]: robot-drawer.service: Consumed 1.301s CPU time.
+Nov 15 05:58:08 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 2.
+Nov 15 05:58:08 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:08 334ces-M systemd[1]: robot-drawer.service: Consumed 1.301s CPU time.
+Nov 15 05:58:08 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:08 334ces-M bash[165284]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:08 334ces-M bash[165284]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:09 334ces-M bash[165287]: error: externally-managed-environment
+Nov 15 05:58:09 334ces-M bash[165287]: This environment is externally managed
+Nov 15 05:58:09 334ces-M bash[165287]: To install Python packages system-wide, try apt install
+Nov 15 05:58:09 334ces-M bash[165287]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:09 334ces-M bash[165287]: install.
+Nov 15 05:58:09 334ces-M bash[165287]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:09 334ces-M bash[165287]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:09 334ces-M bash[165287]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:09 334ces-M bash[165287]: sure you have python3-full installed.
+Nov 15 05:58:09 334ces-M bash[165287]: For more information visit http://rptl.io/venv
+Nov 15 05:58:09 334ces-M bash[165287]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:09 334ces-M bash[165287]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:09 334ces-M bash[165284]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:09 334ces-M bash[165291]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:09 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:09 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:09 334ces-M systemd[1]: robot-drawer.service: Consumed 1.318s CPU time.
+Nov 15 05:58:15 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 3.
+Nov 15 05:58:15 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:15 334ces-M systemd[1]: robot-drawer.service: Consumed 1.318s CPU time.
+Nov 15 05:58:15 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:15 334ces-M bash[165321]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:15 334ces-M bash[165321]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:16 334ces-M bash[165324]: error: externally-managed-environment
+Nov 15 05:58:16 334ces-M bash[165324]: This environment is externally managed
+Nov 15 05:58:16 334ces-M bash[165324]: To install Python packages system-wide, try apt install
+Nov 15 05:58:16 334ces-M bash[165324]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:16 334ces-M bash[165324]: install.
+Nov 15 05:58:16 334ces-M bash[165324]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:16 334ces-M bash[165324]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:16 334ces-M bash[165324]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:16 334ces-M bash[165324]: sure you have python3-full installed.
+Nov 15 05:58:16 334ces-M bash[165324]: For more information visit http://rptl.io/venv
+Nov 15 05:58:16 334ces-M bash[165324]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:16 334ces-M bash[165324]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:16 334ces-M bash[165321]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:16 334ces-M bash[165340]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:16 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:16 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:16 334ces-M systemd[1]: robot-drawer.service: Consumed 1.342s CPU time.
+Nov 15 05:58:21 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 4.
+Nov 15 05:58:21 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:21 334ces-M systemd[1]: robot-drawer.service: Consumed 1.342s CPU time.
+Nov 15 05:58:21 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:21 334ces-M bash[165359]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:21 334ces-M bash[165359]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:22 334ces-M bash[165362]: error: externally-managed-environment
+Nov 15 05:58:22 334ces-M bash[165362]: This environment is externally managed
+Nov 15 05:58:22 334ces-M bash[165362]: To install Python packages system-wide, try apt install
+Nov 15 05:58:22 334ces-M bash[165362]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:22 334ces-M bash[165362]: install.
+Nov 15 05:58:22 334ces-M bash[165362]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:22 334ces-M bash[165362]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:22 334ces-M bash[165362]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:22 334ces-M bash[165362]: sure you have python3-full installed.
+Nov 15 05:58:22 334ces-M bash[165362]: For more information visit http://rptl.io/venv
+Nov 15 05:58:22 334ces-M bash[165362]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:22 334ces-M bash[165362]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:22 334ces-M bash[165359]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:22 334ces-M bash[165371]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:22 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:22 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:22 334ces-M systemd[1]: robot-drawer.service: Consumed 1.348s CPU time.
+Nov 15 05:58:28 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 5.
+Nov 15 05:58:28 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:28 334ces-M systemd[1]: robot-drawer.service: Consumed 1.348s CPU time.
+Nov 15 05:58:28 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:29 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:29 334ces-M bash[165389]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:29 334ces-M bash[165389]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:29 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:29 334ces-M bash[165393]: error: externally-managed-environment
+Nov 15 05:58:29 334ces-M bash[165393]: This environment is externally managed
+Nov 15 05:58:29 334ces-M bash[165393]: To install Python packages system-wide, try apt install
+Nov 15 05:58:29 334ces-M bash[165393]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:29 334ces-M bash[165393]: install.
+Nov 15 05:58:29 334ces-M bash[165393]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:29 334ces-M bash[165393]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:29 334ces-M bash[165393]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:29 334ces-M bash[165393]: sure you have python3-full installed.
+Nov 15 05:58:29 334ces-M bash[165393]: For more information visit http://rptl.io/venv
+Nov 15 05:58:29 334ces-M bash[165393]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:29 334ces-M bash[165393]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:29 334ces-M systemd[1]: robot-drawer.service: Consumed 1.347s CPU time.
+Nov 15 05:58:29 334ces-M bash[165389]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:29 334ces-M bash[165394]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:34 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 6.
+Nov 15 05:58:34 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:34 334ces-M systemd[1]: robot-drawer.service: Consumed 1.347s CPU time.
+Nov 15 05:58:34 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:34 334ces-M bash[165412]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:34 334ces-M bash[165412]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:35 334ces-M bash[165415]: error: externally-managed-environment
+Nov 15 05:58:35 334ces-M bash[165415]: This environment is externally managed
+Nov 15 05:58:35 334ces-M bash[165415]: To install Python packages system-wide, try apt install
+Nov 15 05:58:35 334ces-M bash[165415]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:35 334ces-M bash[165415]: install.
+Nov 15 05:58:35 334ces-M bash[165415]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:35 334ces-M bash[165415]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:35 334ces-M bash[165415]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:35 334ces-M bash[165415]: sure you have python3-full installed.
+Nov 15 05:58:35 334ces-M bash[165415]: For more information visit http://rptl.io/venv
+Nov 15 05:58:35 334ces-M bash[165415]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:35 334ces-M bash[165415]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:35 334ces-M bash[165412]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:35 334ces-M bash[165426]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:35 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:35 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:35 334ces-M systemd[1]: robot-drawer.service: Consumed 1.374s CPU time.
+Nov 15 05:58:41 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 7.
+Nov 15 05:58:41 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:41 334ces-M systemd[1]: robot-drawer.service: Consumed 1.374s CPU time.
+Nov 15 05:58:41 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:41 334ces-M bash[165445]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:41 334ces-M bash[165445]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:42 334ces-M bash[165448]: error: externally-managed-environment
+Nov 15 05:58:42 334ces-M bash[165448]: This environment is externally managed
+Nov 15 05:58:42 334ces-M bash[165448]: To install Python packages system-wide, try apt install
+Nov 15 05:58:42 334ces-M bash[165448]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:42 334ces-M bash[165448]: install.
+Nov 15 05:58:42 334ces-M bash[165448]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:42 334ces-M bash[165448]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:42 334ces-M bash[165448]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:42 334ces-M bash[165448]: sure you have python3-full installed.
+Nov 15 05:58:42 334ces-M bash[165448]: For more information visit http://rptl.io/venv
+Nov 15 05:58:42 334ces-M bash[165448]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:42 334ces-M bash[165448]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:42 334ces-M bash[165445]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:42 334ces-M bash[165454]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:42 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:42 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:42 334ces-M systemd[1]: robot-drawer.service: Consumed 1.315s CPU time.
+Nov 15 05:58:47 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 8.
+Nov 15 05:58:47 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:47 334ces-M systemd[1]: robot-drawer.service: Consumed 1.315s CPU time.
+Nov 15 05:58:47 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:47 334ces-M bash[165472]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:47 334ces-M bash[165472]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:48 334ces-M bash[165475]: error: externally-managed-environment
+Nov 15 05:58:48 334ces-M bash[165475]: This environment is externally managed
+Nov 15 05:58:48 334ces-M bash[165475]: To install Python packages system-wide, try apt install
+Nov 15 05:58:48 334ces-M bash[165475]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:48 334ces-M bash[165475]: install.
+Nov 15 05:58:48 334ces-M bash[165475]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:48 334ces-M bash[165475]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:48 334ces-M bash[165475]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:48 334ces-M bash[165475]: sure you have python3-full installed.
+Nov 15 05:58:48 334ces-M bash[165475]: For more information visit http://rptl.io/venv
+Nov 15 05:58:48 334ces-M bash[165475]: note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+Nov 15 05:58:48 334ces-M bash[165475]: hint: See PEP 668 for the detailed specification.
+Nov 15 05:58:48 334ces-M bash[165472]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 27: cd: ../Robot: No such file or directory
+Nov 15 05:58:48 334ces-M bash[165476]: python3: can't open file '/home/student334/CPSC334/Module4/CreativeTask/run.py': [Errno 2] No such file or directory
+Nov 15 05:58:48 334ces-M systemd[1]: [0;1;39m[0;1;31m[0;1;39mrobot-drawer.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+Nov 15 05:58:48 334ces-M systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mrobot-drawer.service: Failed with result 'exit-code'.[0m
+Nov 15 05:58:48 334ces-M systemd[1]: robot-drawer.service: Consumed 1.359s CPU time.
+Nov 15 05:58:54 334ces-M systemd[1]: robot-drawer.service: Scheduled restart job, restart counter is at 9.
+Nov 15 05:58:54 334ces-M systemd[1]: Stopped robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:54 334ces-M systemd[1]: robot-drawer.service: Consumed 1.359s CPU time.
+Nov 15 05:58:54 334ces-M systemd[1]: Started robot-drawer.service - Robot Drawing Service.
+Nov 15 05:58:54 334ces-M bash[165494]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 9: env/bin/activate: No such file or directory
+Nov 15 05:58:54 334ces-M bash[165494]: /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh: line 24: cd: ../src/BrachioGraphCaricature: No such file or directory
+Nov 15 05:58:55 334ces-M bash[165497]: error: externally-managed-environment
+Nov 15 05:58:55 334ces-M bash[165497]: This environment is externally managed
+Nov 15 05:58:55 334ces-M bash[165497]: To install Python packages system-wide, try apt install
+Nov 15 05:58:55 334ces-M bash[165497]: python3-xyz, where xyz is the package you are trying to
+Nov 15 05:58:55 334ces-M bash[165497]: install.
+Nov 15 05:58:55 334ces-M bash[165497]: If you wish to install a non-Debian-packaged Python package,
+Nov 15 05:58:55 334ces-M bash[165497]: create a virtual environment using python3 -m venv path/to/venv.
+Nov 15 05:58:55 334ces-M bash[165497]: Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+Nov 15 05:58:55 334ces-M bash[165497]: sure you have python3-full installed.
+Nov 15 05:58:55 334ces-M bash[165497]: For more information visit http://rptl.io/venv
+Nov 15 05:58:55

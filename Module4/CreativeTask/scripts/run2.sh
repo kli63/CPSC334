@@ -1,5 +1,7 @@
 #!/bin/bash
 
+Environment=DISPLAY=:0
+
 # Start pigpiod if not running
 if ! pgrep -x "pigpiod" > /dev/null; then
     sudo pigpiod

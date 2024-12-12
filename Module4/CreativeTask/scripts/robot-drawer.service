@@ -1,12 +1,13 @@
 [Unit]
 Description=Robot Drawing Service
-After=network.target pigpiod.service graphical.target
-Wants=pigpiod.service
+After=network.target graphical.target pigpiod.service
+Wants=network-online.target pigpiod.service
 
 [Service]
 Type=simple
 User=student334
-WorkingDirectory=/home/student334/CPSC334/Module4/CreativeTask
+WorkingDirectory=/home/student334/CPSC334/Module4/CreativeTask/scripts
+ExecStartPre=/bin/sleep 10
 ExecStart=/bin/bash /home/student334/CPSC334/Module4/CreativeTask/scripts/run.sh
 Environment=DISPLAY=:0
 Environment=PYTHONPATH=/usr/lib/python3/dist-packages
