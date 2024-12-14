@@ -31,7 +31,7 @@ class ImageComponentizer:
         self.CHIMNEY_HEIGHT = 200  # Taller chimney
 
     def draw_house(self, draw):
-        """Draw the house frame with windows."""
+        """Draw the house frame with windows and an empty signature box."""
         # Calculate positions
         house_left = (self.FINAL_SIZE - self.HOUSE_WIDTH) // 2
         house_right = house_left + self.HOUSE_WIDTH
@@ -138,6 +138,16 @@ class ImageComponentizer:
             outline='black',
             width=self.LINE_WIDTH
         )
+        
+        # **Add signature box to the top-left corner of the entire canvas**
+        # This will be a simple rectangle, left empty for now
+        signature_box_width = 500
+        signature_box_height = 200
+        draw.rectangle(
+            [(50, 50), (50 + signature_box_width, 50 + signature_box_height)],
+            outline='black',
+            width=self.LINE_WIDTH
+        )
 
     def process_image_for_window(self, image_path, window_position):
         """Process a single image for a specific window."""
@@ -148,7 +158,7 @@ class ImageComponentizer:
             canvas = Image.new('RGB', (self.FINAL_SIZE, self.FINAL_SIZE), 'WHITE')
             draw = ImageDraw.Draw(canvas)
             
-            # Draw the house first
+            # Draw the house first (includes signature box)
             self.draw_house(draw)
             
             # Get window position and size
