@@ -149,12 +149,7 @@ def vectorize(
 
 
 def resize_image(image, resolution, divider=1):
-    return image.resize(
-        (
-            int(resolution / divider),
-            int(resolution / divider * image.size[1] / image.size[0]),
-        )
-    )
+    return image
 
 
 # -------------- vectorisation options --------------

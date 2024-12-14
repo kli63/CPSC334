@@ -12,7 +12,7 @@ class ComponentVectorizer:
         self.OUTPUT_BASE_DIR = self.PROJECT_ROOT / "assets" / "data" / "components"
 
         # Define quadrants
-        self.QUADRANTS = ['q1', 'q2', 'q3', 'q4']
+        self.QUADRANTS = ['middle', 'top_left', 'top_right']
 
     def setup_directories(self):
         """Create output directory structure if it doesn't exist."""
@@ -52,7 +52,7 @@ class ComponentVectorizer:
                     # Generate vectorste
                     lines = vectorize(
                         str(image_file),
-                        resolution=2000,
+                        resolution=1024,
                         draw_contours=4, 
                         repeat_contours=1, 
                         draw_hatch=False, 
