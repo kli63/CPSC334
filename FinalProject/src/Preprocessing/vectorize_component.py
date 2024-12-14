@@ -49,7 +49,7 @@ class ComponentVectorizer:
                 print(f"Vectorizing {image_file.name}...")
                 
                 try:
-                    # Generate vectors
+                    # Generate vectorste
                     lines = vectorize(
                         str(image_file),
                         resolution=1024,
