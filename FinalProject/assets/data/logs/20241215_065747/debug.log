@@ -1,0 +1,14 @@
+2024-12-15 06:57:47,077 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_065747
+2024-12-15 06:57:47,077 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 06:57:47,077 [DEBUG] BrachioGraph: Tired: 4, Lazy: 3, Rebellious: 3, Cynical: 5, Depressed: 3, Lonely: 3
+2024-12-15 06:57:47,078 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_4_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/goodhand_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_9_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 06:57:47,078 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 06:57:47,080 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_4_middle.json
+2024-12-15 06:57:57,109 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 06:57:57,109 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 06:57:57,109 [DEBUG] BrachioGraph: Transitioned to SENTIENT
+2024-12-15 06:57:57,111 [DEBUG] BrachioGraph: Executing drawing behavior: Sentient
+2024-12-15 06:57:57,111 [DEBUG] BrachioGraph: Starting behavior: Sentient, duration: 10s, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/painter.json
+2024-12-15 06:58:07,128 [DEBUG] BrachioGraph: Finished behavior: Sentient
+2024-12-15 06:58:07,129 [DEBUG] BrachioGraph: Drawing behavior Sentient completed naturally.
+2024-12-15 06:58:07,129 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE

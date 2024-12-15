@@ -10,12 +10,13 @@ def create_log_directory(base_path):
     return log_dir, timestamp
 
 def select_component_files(assets_base):
+    componets_path = os.path.join(assets_base, "components")
     # assets_base could be "CPSC334/FinalProject/assets/data"
     # We'll randomly choose one file from middle/json, top_left/json, top_right/json
-    middle_path = os.path.join(assets_base, "middle/json")
-    top_left_path = os.path.join(assets_base, "top_left/json")
-    top_right_path = os.path.join(assets_base, "top_right/json")
-    signature_path = os.path.join(assets_base, "signature/json")
+    middle_path = os.path.join(componets_path, "middle/json")
+    top_left_path = os.path.join(componets_path, "top_left/json")
+    top_right_path = os.path.join(componets_path, "top_right/json")
+    signature_path = os.path.join(componets_path, "signature/json")
 
     # Random file from each
     def random_file_from_dir(dir_path):

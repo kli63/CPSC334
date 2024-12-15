@@ -14,7 +14,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 brachiograph_dir = os.path.join(os.path.dirname(current_dir), 'BrachioGraphCaricature')
 sys.path.insert(0, brachiograph_dir)
 
-from brachiograph import BrachioGraph
+# from brachiograph import BrachioGraph
 
 from file_selection import create_log_directory, select_component_files, select_behavior_file
 
@@ -76,6 +76,15 @@ class RobotController:
 
         # We'll generate thresholds when starting a new drawing
         self.thresholds = None
+        
+        self.base_data_path = os.path.abspath(os.path.join(current_dir, "../../assets/data"))
+        self.logs_path = os.path.join(self.base_data_path, "logs")
+        
+        self.chosen_files = {}  # to store chosen JSON files for components and signature
+        self.log_dir = None
+        
+        
+        
 
     def _print_initial_parameters(self):
         if self.thresholds:
@@ -104,25 +113,55 @@ class RobotController:
     def start_new_drawing(self):
         self._reset_state()
         self._generate_thresholds()
+
+        # Create a log directory with timestamp
+        self.log_dir, ts = create_log_directory(self.logs_path)
+        # Add a file handler to logger
+        log_file_path = os.path.join(self.log_dir, "debug.log")
+        fh = logging.FileHandler(log_file_path, mode='w')
+        fh.setLevel(logging.DEBUG)
+        formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(name)s: %(message)s')
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+
+        logger.debug(f"New drawing started at timestamp: {ts}")
+        logger.debug("Generated thresholds:")
+        logger.debug(f"Tired: {self.thresholds.tired}, Lazy: {self.thresholds.lazy}, Rebellious: {self.thresholds.rebellious}, Cynical: {self.thresholds.cynical}, Depressed: {self.thresholds.depressed}, Lonely: {self.thresholds.lonely}")
+
+        # Select component files
+        w1, w2, w3, sig = select_component_files(self.base_data_path)
+        self.chosen_files['WINDOW1'] = w1
+        self.chosen_files['WINDOW2'] = w2
+        self.chosen_files['WINDOW3'] = w3
+        self.chosen_files['SIGNATURE'] = sig
+
+        logger.debug(f"Chosen component files: W1={w1}, W2={w2}, W3={w3}, Signature={sig}")
+
         self.state = RobotState.HAPPY
         self.drawing_in_progress = True
-        logger.debug("Starting new drawing - State: HAPPY")
+        logger.debug("State: HAPPY, drawing in progress.")
         return (self.state, "Starting new drawing!", {"buttons_enabled": True})
+
 
     def _reset_state(self):
         logger.debug("Resetting entire state for new drawing")
         self.interaction_positive = 0
         self.interaction_negative = 0
         self.interaction_any = 0
-
         self._reset_behavior_counters()
-
         self.current_component_index = 0
         self.stop_drawing_flag = False
         self.behavior_active = False
         self.behavior_resolved = True
         self.special_interaction_allowed = False
         self.behavior_draw_stop_flag = False
+        self.chosen_files = {}
+
+        # Remove file handlers if any (for previous runs)
+        for h in logger.handlers[:]:
+            if isinstance(h, logging.FileHandler):
+                logger.removeHandler(h)
+                h.close()
 
     def _reset_behavior_counters(self):
         logger.debug("Resetting behavior-specific counters")
@@ -138,22 +177,42 @@ class RobotController:
         return None
 
     def draw_component(self, name, duration):
-        logger.debug(f"Starting to draw component: {name}, duration: {duration}s")
+        # name is from the enum, to get the file:
+        comp_enum = [c for c in self.components if c.value == name]
+        # We'll assume name matches exactly one enum. If not, we can find current_component.
+        # Let's just find the current component file from chosen_files:
+        if self.current_component_index < len(self.components):
+            comp_key = self.components[self.current_component_index].name  # WINDOW1, WINDOW2,...
+            file_to_draw = self.chosen_files.get(comp_key, None)
+        else:
+            file_to_draw = None
+
+        logger.debug(f"Starting to draw component: {name}, duration: {duration}s, file: {file_to_draw}")
+
+        # In a real scenario:
+        # self.bg.plot_file(file_to_draw)
+        # For simulation:
         for _ in tqdm(range(duration), desc=f"Drawing {name}", unit="sec"):
             if self.stop_drawing_flag:
                 logger.debug(f"Stop drawing flag set during {name}")
                 return False
             time.sleep(1)
+
         logger.debug(f"Finished drawing component: {name}")
         return True
     
     def draw_behavior(self, name, duration):
-        logger.debug(f"Starting behavior: {name}, duration: {duration}s")
+        # For behaviors, we must select the behavior file depending on current state
+        behavior_file = select_behavior_file(self.base_data_path, self.state.value)
+        logger.debug(f"Starting behavior: {name}, duration: {duration}s, file: {behavior_file}")
+
+        # Real scenario: self.bg.plot_file(behavior_file)
         for _ in tqdm(range(duration), desc=f"Behavior: {name}", unit="sec"):
             if self.stop_drawing_flag or self.behavior_draw_stop_flag:
                 logger.debug(f"Stop flag set during behavior: {name}")
                 return False
             time.sleep(1)
+
         logger.debug(f"Finished behavior: {name}")
         return True
 

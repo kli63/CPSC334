@@ -230,7 +230,10 @@ class BrachioGraphGUI:
                     # Special states that also have drawing behaviors
                     special_name = "Sentience" if st == RobotState.SENTIENT else "Enlightenment"
                     self.root.after(0, lambda: self.add_message(f"Drawing {special_name}", is_user=False))
-                    self.controller.draw_component(special_name, self.controller.component_draw_time)
+                    
+                    # Use the execute_drawing_behavior method to ensure the correct file and draw_behavior method are used
+                    result = self.controller.execute_drawing_behavior()
+                    
                     # After finishing these special drawings, finish the drawing.
                     self.controller.finish_drawing()
                     self.root.after(0, lambda: self.update_gui_state(RobotState.IDLE, "Transcendence complete!", {"buttons_enabled": True}))
