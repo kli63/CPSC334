@@ -32,7 +32,7 @@ def get_random_behavior_entry_message(behavior_type: str) -> str:
         "REBELLIOUS": ["Muehehehe..."],
         "CYNICAL": ["Yeah right..."],
         "DEPRESSED": ["Worthless..."],
-        "LONELY": ["All alone..."],
+        "LONELY": ["Hello..."],
         "SENTIENT": ["I am..."],
         "ENLIGHTENED": ["I see..."]
     }

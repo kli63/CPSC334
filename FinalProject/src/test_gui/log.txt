@@ -1163,3 +1163,2063 @@
 2024-12-15 14:08:56,261 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
 2024-12-15 14:08:56,293 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
 2024-12-15 14:08:56,293 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 14:39:43,231 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:39:43,231 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph:   Lazy: 5
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph:   Lonely: 2
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_143943
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph: Tired: 2, Lazy: 5, Rebellious: 5, Cynical: 5, Depressed: 2, Lonely: 2
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_1_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_3_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/dogs_fig_4_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:39:43,232 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:39:43,248 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_1_middle.json
+2024-12-15 14:39:53,305 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 14:39:53,305 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 14:39:53,305 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:39:53,305 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 14:40:19,142 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph:   Tired: 4
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph:   Lazy: 4
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph:   Rebellious: 4
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph:   Cynical: 4
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph:   Depressed: 5
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_144019
+2024-12-15 14:40:19,143 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:40:19,144 [DEBUG] BrachioGraph: Tired: 4, Lazy: 4, Rebellious: 4, Cynical: 4, Depressed: 5, Lonely: 1
+2024-12-15 14:40:19,144 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_4_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_11_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:40:19,144 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:40:19,157 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json
+2024-12-15 14:40:49,475 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 14:40:49,476 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 14:40:49,476 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:40:49,476 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 14:40:49,492 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 14:40:49,492 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 14:41:19,885 [DEBUG] BrachioGraph: Finished behavior: Rebellious
+2024-12-15 14:41:19,885 [DEBUG] BrachioGraph: Drawing behavior Rebellious completed naturally.
+2024-12-15 14:41:19,885 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 14:41:52,527 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:41:52,527 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph:   Tired: 4
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph:   Lazy: 3
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph:   Rebellious: 4
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph:   Cynical: 3
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph:   Depressed: 4
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph:   Lonely: 3
+2024-12-15 14:41:52,528 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:41:52,529 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_144152
+2024-12-15 14:41:52,529 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:41:52,529 [DEBUG] BrachioGraph: Tired: 4, Lazy: 3, Rebellious: 4, Cynical: 3, Depressed: 4, Lonely: 3
+2024-12-15 14:41:52,530 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_14_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_2_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/dogs_fig_0_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:41:52,530 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:41:52,567 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_14_middle.json
+2024-12-15 14:41:54,393 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 14:41:54,393 [DEBUG] BrachioGraph: Global counters: P=1,N=0,A=0 | Behavior counters: PB=1,NB=0,AB=0
+2024-12-15 14:42:35,753 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:42:35,753 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph:   Rebellious: 4
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph:   Depressed: 4
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph:   Lonely: 2
+2024-12-15 14:42:35,754 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:42:35,755 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_144235
+2024-12-15 14:42:35,755 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:42:35,756 [DEBUG] BrachioGraph: Tired: 2, Lazy: 2, Rebellious: 4, Cynical: 2, Depressed: 4, Lonely: 2
+2024-12-15 14:42:35,756 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_9_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/dogs_fig_7_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:42:35,756 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:42:35,777 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json
+2024-12-15 14:52:36,765 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:52:36,765 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:52:36,765 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:52:36,765 [DEBUG] BrachioGraph:   Tired: 5
+2024-12-15 14:52:36,765 [DEBUG] BrachioGraph:   Lazy: 11
+2024-12-15 14:52:36,765 [DEBUG] BrachioGraph:   Rebellious: 9
+2024-12-15 14:52:36,765 [DEBUG] BrachioGraph:   Cynical: 14
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph:   Depressed: 6
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph:   Lonely: 9
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_145236
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph: Tired: 5, Lazy: 11, Rebellious: 9, Cynical: 14, Depressed: 6, Lonely: 9
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_3_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_15_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_14_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:52:36,766 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:52:36,782 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_3_middle.json
+2024-12-15 14:52:45,664 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 14:52:45,664 [DEBUG] BrachioGraph: Global: P=1,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=0,DN=0,DMissed=0
+2024-12-15 14:53:08,315 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 14:53:08,315 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 14:53:08,315 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:53:08,315 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 14:53:08,332 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 14:53:08,332 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 14:53:24,066 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:24,067 [DEBUG] BrachioGraph: Global: P=1,N=1,A=0 | Behavior: PB=0,NB=1,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:24,616 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:24,617 [DEBUG] BrachioGraph: Global: P=1,N=2,A=0 | Behavior: PB=0,NB=2,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:25,768 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:25,769 [DEBUG] BrachioGraph: Global: P=1,N=3,A=0 | Behavior: PB=0,NB=3,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:27,007 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:27,008 [DEBUG] BrachioGraph: Global: P=1,N=4,A=0 | Behavior: PB=0,NB=4,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:27,760 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:27,761 [DEBUG] BrachioGraph: Global: P=1,N=5,A=0 | Behavior: PB=0,NB=5,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:28,013 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:28,013 [DEBUG] BrachioGraph: Global: P=1,N=6,A=0 | Behavior: PB=0,NB=6,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:28,565 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:28,565 [DEBUG] BrachioGraph: Global: P=1,N=7,A=0 | Behavior: PB=0,NB=7,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:28,944 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:28,944 [DEBUG] BrachioGraph: Global: P=1,N=8,A=0 | Behavior: PB=0,NB=8,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:29,506 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:53:29,507 [DEBUG] BrachioGraph: Global: P=1,N=9,A=0 | Behavior: PB=0,NB=9,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=2,DMissed=1
+2024-12-15 14:53:29,507 [DEBUG] BrachioGraph: Behavior REBELLIOUS resolved by user.
+2024-12-15 14:53:29,507 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:53:29,507 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 14:53:29,813 [DEBUG] BrachioGraph: Stop flag set during behavior: Rebellious
+2024-12-15 14:53:29,814 [DEBUG] BrachioGraph: Drawing behavior Rebellious stopped early.
+2024-12-15 14:53:29,814 [DEBUG] BrachioGraph: Completed component, now at index: 1
+2024-12-15 14:53:29,814 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 14:53:30,862 [DEBUG] BrachioGraph: Drawing component: Window 2, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_15_top_left.json
+2024-12-15 14:53:40,236 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 14:53:40,237 [DEBUG] BrachioGraph: Global: P=2,N=9,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=1,DN=2,DMissed=2
+2024-12-15 14:54:01,448 [DEBUG] BrachioGraph: Finished drawing component: Window 2
+2024-12-15 14:54:01,449 [DEBUG] BrachioGraph: Moving to next phase after component index: 1
+2024-12-15 14:54:01,449 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:54:01,449 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 14:54:01,502 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 14:54:01,503 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 14:54:04,855 [DEBUG] BrachioGraph: User interaction: Positive in state REBELLIOUS
+2024-12-15 14:54:04,855 [DEBUG] BrachioGraph: Global: P=3,N=9,A=0 | Behavior: PB=1,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:09,615 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:09,615 [DEBUG] BrachioGraph: Global: P=3,N=10,A=0 | Behavior: PB=1,NB=1,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:09,814 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:09,814 [DEBUG] BrachioGraph: Global: P=3,N=11,A=0 | Behavior: PB=1,NB=2,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:09,997 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:09,997 [DEBUG] BrachioGraph: Global: P=3,N=12,A=0 | Behavior: PB=1,NB=3,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:10,159 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:10,159 [DEBUG] BrachioGraph: Global: P=3,N=13,A=0 | Behavior: PB=1,NB=4,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:10,356 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:10,357 [DEBUG] BrachioGraph: Global: P=3,N=14,A=0 | Behavior: PB=1,NB=5,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:10,506 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:10,506 [DEBUG] BrachioGraph: Global: P=3,N=15,A=0 | Behavior: PB=1,NB=6,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:10,662 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:10,663 [DEBUG] BrachioGraph: Global: P=3,N=16,A=0 | Behavior: PB=1,NB=7,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:10,843 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:10,843 [DEBUG] BrachioGraph: Global: P=3,N=17,A=0 | Behavior: PB=1,NB=8,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:10,998 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:54:10,998 [DEBUG] BrachioGraph: Global: P=3,N=18,A=0 | Behavior: PB=1,NB=9,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:10,998 [DEBUG] BrachioGraph: Behavior REBELLIOUS resolved by user.
+2024-12-15 14:54:10,998 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:54:10,999 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 14:54:11,173 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 14:54:11,173 [DEBUG] BrachioGraph: Global: P=3,N=19,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=1 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:11,185 [DEBUG] BrachioGraph: Stop flag set during behavior: Rebellious
+2024-12-15 14:54:11,185 [DEBUG] BrachioGraph: Drawing behavior Rebellious stopped early.
+2024-12-15 14:54:11,185 [DEBUG] BrachioGraph: Completed component, now at index: 2
+2024-12-15 14:54:11,185 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 14:54:11,336 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 14:54:11,336 [DEBUG] BrachioGraph: Global: P=3,N=20,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=2 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:54:12,368 [DEBUG] BrachioGraph: Drawing component: Window 3, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_14_top_right.json
+2024-12-15 14:54:15,839 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 14:54:15,839 [DEBUG] BrachioGraph: Global: P=4,N=20,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=3,U-=2 | Dialogue: DP=2,DN=2,DMissed=2
+2024-12-15 14:58:02,286 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:58:02,286 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:58:02,286 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 14:58:02,286 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:58:02,286 [DEBUG] BrachioGraph:   Tired: 10
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph:   Lazy: 10
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph:   Cynical: 9
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph:   Depressed: 14
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph:   Lonely: 11
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_145802
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph: Tired: 10, Lazy: 10, Rebellious: 5, Cynical: 9, Depressed: 14, Lonely: 11
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_0_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_0_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_16_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:58:02,287 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:58:02,302 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_0_middle.json
+2024-12-15 14:58:03,874 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 14:58:03,874 [DEBUG] BrachioGraph: Global: P=0,N=1,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=1 | Dialogue: DP=0,DN=0,DMissed=0
+2024-12-15 14:58:06,900 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 14:58:06,900 [DEBUG] BrachioGraph: Global: P=0,N=2,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=2 | Dialogue: DP=0,DN=0,DMissed=0
+2024-12-15 14:58:07,868 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 14:58:07,868 [DEBUG] BrachioGraph: Global: P=0,N=3,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=0
+2024-12-15 14:58:16,942 [DEBUG] BrachioGraph: Global: P=0,N=3,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 14:58:27,417 [DEBUG] BrachioGraph: Global: P=0,N=3,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=2
+2024-12-15 14:58:32,714 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 14:58:32,714 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 14:58:32,714 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:58:32,714 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 14:58:32,739 [DEBUG] BrachioGraph: Executing drawing behavior: Cynical
+2024-12-15 14:58:32,739 [DEBUG] BrachioGraph: Starting behavior: Cynical, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/scribbles/json/scribble4.json
+2024-12-15 14:58:37,902 [DEBUG] BrachioGraph: Global: P=0,N=3,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=3
+2024-12-15 14:58:45,998 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 14:58:45,998 [DEBUG] BrachioGraph: Global: P=0,N=4,A=0 | Behavior: PB=0,NB=1,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=3
+2024-12-15 14:58:48,211 [DEBUG] BrachioGraph: Global: P=0,N=4,A=0 | Behavior: PB=0,NB=1,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=4
+2024-12-15 14:58:53,267 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 14:58:53,268 [DEBUG] BrachioGraph: Global: P=0,N=5,A=0 | Behavior: PB=0,NB=2,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=4
+2024-12-15 14:58:54,034 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 14:58:54,034 [DEBUG] BrachioGraph: Global: P=0,N=6,A=0 | Behavior: PB=0,NB=3,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=0,DN=0,DMissed=4
+2024-12-15 14:58:55,934 [DEBUG] BrachioGraph: Global: P=0,N=6,A=0 | Behavior: PB=0,NB=3,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=3 | Dialogue: DP=1,DN=0,DMissed=4
+2024-12-15 14:59:03,518 [DEBUG] BrachioGraph: Finished behavior: Cynical
+2024-12-15 14:59:03,518 [DEBUG] BrachioGraph: Drawing behavior Cynical completed naturally.
+2024-12-15 14:59:03,518 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 14:59:06,598 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:59:06,598 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:59:06,598 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 14:59:06,598 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph:   Tired: 9
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph:   Lazy: 9
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph:   Cynical: 12
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph:   Depressed: 5
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph:   Lonely: 12
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_145906
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph: Tired: 9, Lazy: 9, Rebellious: 5, Cynical: 12, Depressed: 5, Lonely: 12
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_2_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_1_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_3_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:59:06,599 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:59:06,612 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_2_middle.json
+2024-12-15 14:59:08,777 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 14:59:08,777 [DEBUG] BrachioGraph: Global: P=0,N=1,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=1 | Dialogue: DP=0,DN=0,DMissed=0
+2024-12-15 14:59:20,867 [DEBUG] BrachioGraph: Global: P=0,N=1,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=1 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 14:59:22,063 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 14:59:22,063 [DEBUG] BrachioGraph: Global: P=0,N=2,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=2 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 14:59:28,718 [DEBUG] BrachioGraph: Global: P=0,N=2,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=2 | Dialogue: DP=1,DN=0,DMissed=1
+2024-12-15 14:59:37,492 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 14:59:37,492 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 14:59:37,492 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:59:37,493 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 14:59:37,544 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 14:59:37,544 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 14:59:44,561 [DEBUG] BrachioGraph: User interaction: Negative in state REBELLIOUS
+2024-12-15 14:59:44,561 [DEBUG] BrachioGraph: Global: P=0,N=3,A=0 | Behavior: PB=0,NB=1,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=2 | Dialogue: DP=1,DN=0,DMissed=1
+2024-12-15 15:00:08,395 [DEBUG] BrachioGraph: Finished behavior: Rebellious
+2024-12-15 15:00:08,395 [DEBUG] BrachioGraph: Drawing behavior Rebellious completed naturally.
+2024-12-15 15:00:08,395 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 15:07:25,829 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:07:25,829 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:07:25,829 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:07:25,829 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:07:25,829 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:07:25,830 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph:   Tired: 6
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph:   Lazy: 14
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph:   Rebellious: 8
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph:   Cynical: 14
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph:   Depressed: 12
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph:   Lonely: 10
+2024-12-15 15:07:25,831 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:07:25,832 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_150725
+2024-12-15 15:07:25,832 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:07:25,833 [DEBUG] BrachioGraph: Tired: 6, Lazy: 14, Rebellious: 8, Cynical: 14, Depressed: 12, Lonely: 10
+2024-12-15 15:07:25,833 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_7_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_5_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_15_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:07:25,833 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:07:25,851 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_7_middle.json
+2024-12-15 15:07:29,108 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:07:29,108 [DEBUG] BrachioGraph: Global: P=1,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=0,DN=0,DMissed=0
+2024-12-15 15:07:36,017 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:07:36,018 [DEBUG] BrachioGraph: Global: P=2,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=0,DN=0,DMissed=0
+2024-12-15 15:07:39,993 [DEBUG] BrachioGraph: Global: P=2,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 15:07:50,156 [DEBUG] BrachioGraph: Global: P=2,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=0,DN=0,DMissed=2
+2024-12-15 15:07:56,191 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 15:07:56,192 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 15:07:56,192 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:07:56,192 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 15:07:56,216 [DEBUG] BrachioGraph: Executing drawing behavior: Cynical
+2024-12-15 15:07:56,216 [DEBUG] BrachioGraph: Starting behavior: Cynical, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/scribbles/json/scribble1.json
+2024-12-15 15:08:00,210 [DEBUG] BrachioGraph: Global: P=2,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=0,DN=0,DMissed=3
+2024-12-15 15:08:20,201 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:08:20,201 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:08:20,201 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:08:20,201 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:08:20,202 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:08:20,203 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:08:20,203 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:08:20,203 [DEBUG] BrachioGraph:   Tired: 15
+2024-12-15 15:08:20,203 [DEBUG] BrachioGraph:   Lazy: 11
+2024-12-15 15:08:20,203 [DEBUG] BrachioGraph:   Rebellious: 12
+2024-12-15 15:08:20,203 [DEBUG] BrachioGraph:   Cynical: 13
+2024-12-15 15:08:20,203 [DEBUG] BrachioGraph:   Depressed: 7
+2024-12-15 15:08:20,204 [DEBUG] BrachioGraph:   Lonely: 6
+2024-12-15 15:08:20,204 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:08:20,204 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_150820
+2024-12-15 15:08:20,204 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:08:20,205 [DEBUG] BrachioGraph: Tired: 15, Lazy: 11, Rebellious: 12, Cynical: 13, Depressed: 7, Lonely: 6
+2024-12-15 15:08:20,205 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_8_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_0_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_13_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:08:20,205 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:08:20,225 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_8_middle.json
+2024-12-15 15:08:34,552 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=0
+2024-12-15 15:08:39,816 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:39,817 [DEBUG] BrachioGraph: Global: P=1,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=0,DMissed=0
+2024-12-15 15:08:44,122 [DEBUG] BrachioGraph: Global: P=1,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:45,734 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:45,734 [DEBUG] BrachioGraph: Global: P=2,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:46,168 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:46,169 [DEBUG] BrachioGraph: Global: P=3,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=3,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:46,376 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:46,376 [DEBUG] BrachioGraph: Global: P=4,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=4,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:46,565 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:46,565 [DEBUG] BrachioGraph: Global: P=5,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=5,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:46,738 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:46,738 [DEBUG] BrachioGraph: Global: P=6,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=6,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:46,936 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:46,936 [DEBUG] BrachioGraph: Global: P=7,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=7,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:47,085 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:47,085 [DEBUG] BrachioGraph: Global: P=8,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=8,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:47,283 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:47,283 [DEBUG] BrachioGraph: Global: P=9,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=9,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:47,432 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:47,432 [DEBUG] BrachioGraph: Global: P=10,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=10,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:47,588 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:47,588 [DEBUG] BrachioGraph: Global: P=11,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=11,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:48,767 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:08:48,767 [DEBUG] BrachioGraph: Global: P=12,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=12,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:08:50,729 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 15:08:50,729 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 15:08:50,729 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:08:50,729 [DEBUG] BrachioGraph: Transitioned to behavior: LAZY
+2024-12-15 15:08:55,210 [DEBUG] BrachioGraph: Global: P=12,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=12,U-=0 | Dialogue: DP=2,DN=0,DMissed=1
+2024-12-15 15:08:56,224 [DEBUG] BrachioGraph: Behavior LAZY timed out
+2024-12-15 15:08:56,224 [DEBUG] BrachioGraph: Handling timeout for behavior: LAZY
+2024-12-15 15:08:56,225 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:08:56,225 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:08:56,225 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:08:56,225 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:08:56,225 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:08:56,225 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:08:56,226 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:08:56,226 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:08:56,226 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:08:56,226 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:08:56,226 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:08:56,226 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:08:56,226 [DEBUG] BrachioGraph: Lazy timeout, skipping to signature.
+2024-12-15 15:08:57,072 [DEBUG] BrachioGraph: Completed component, now at index: 3
+2024-12-15 15:08:57,072 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:08:57,072 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 15:08:58,173 [DEBUG] BrachioGraph: Drawing component: Signature, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:09:02,977 [DEBUG] BrachioGraph: Global: P=12,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=0
+2024-12-15 15:09:15,649 [DEBUG] BrachioGraph: Global: P=12,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=1
+2024-12-15 15:09:25,994 [DEBUG] BrachioGraph: Global: P=12,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:09:28,738 [DEBUG] BrachioGraph: Finished drawing component: Signature
+2024-12-15 15:09:28,739 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:14:43,792 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:14:43,829 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   Tired: 14
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   Lazy: 6
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   Rebellious: 9
+2024-12-15 15:14:45,381 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph:   Depressed: 14
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph:   Lonely: 12
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_151445
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph: Tired: 14, Lazy: 6, Rebellious: 9, Cynical: 5, Depressed: 14, Lonely: 12
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_7_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_13_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_2_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:14:45,382 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:14:45,395 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_7_middle.json
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:14:59,884 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:15:10,456 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=2
+2024-12-15 15:15:10,456 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:15:10,456 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:15:10,456 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:15:10,456 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:15:10,456 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:15:10,457 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:15:10,457 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:15:10,457 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:15:10,457 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:15:10,457 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:15:16,549 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 15:15:16,549 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 15:15:16,550 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:15:16,550 [DEBUG] BrachioGraph: Transitioned to behavior: TIRED
+2024-12-15 15:15:20,901 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=3
+2024-12-15 15:15:20,901 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:15:20,902 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:15:21,956 [DEBUG] BrachioGraph: Behavior TIRED timed out
+2024-12-15 15:15:21,957 [DEBUG] BrachioGraph: Handling timeout for behavior: TIRED
+2024-12-15 15:15:21,957 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:15:21,957 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:15:21,957 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:15:21,958 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:15:21,959 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 15:17:15,778 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:17:15,778 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:17:15,778 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:17:15,778 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:17:15,779 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:17:15,779 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:17:15,779 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:17:15,779 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:17:15,779 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:17:15,779 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:17:15,815 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:17:18,622 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:17:18,622 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:17:18,622 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:17:18,622 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:17:18,623 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Tired: 6
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Lazy: 11
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Rebellious: 9
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Cynical: 14
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Depressed: 11
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Lonely: 5
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph: ____ CURRETN LIMITS AND RATES ____
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Lonely missed limit: 1
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Lonely rate: 0.07165846275755341
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Cynical positive limit: 4
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Cynical rate: 0.07759251533781601
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Depressed negative limit: 4
+2024-12-15 15:17:18,624 [DEBUG] BrachioGraph:   Depressed rate: 0.025132537173727952
+2024-12-15 15:17:18,625 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_151718
+2024-12-15 15:17:18,625 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:17:18,625 [DEBUG] BrachioGraph: Tired: 6, Lazy: 11, Rebellious: 9, Cynical: 14, Depressed: 11, Lonely: 5
+2024-12-15 15:17:18,625 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_1_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_13_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/dogs_fig_0_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:17:18,625 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:17:18,642 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_1_middle.json
+2024-12-15 15:17:33,592 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   TIRED: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   LAZY: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   REBELLIOUS: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   CYNICAL: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   DEPRESSED: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   LONELY: 6.67%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   TIRED: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   LAZY: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   REBELLIOUS: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   CYNICAL: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   DEPRESSED: 17.87%
+2024-12-15 15:17:33,593 [DEBUG] BrachioGraph:   LONELY: 6.67%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=2
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   TIRED: 15.55%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   LAZY: 15.55%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   REBELLIOUS: 15.55%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   CYNICAL: 15.55%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   DEPRESSED: 15.55%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   LONELY: 18.27%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   TIRED: 15.55%
+2024-12-15 15:17:43,876 [DEBUG] BrachioGraph:   LAZY: 15.55%
+2024-12-15 15:17:43,877 [DEBUG] BrachioGraph:   REBELLIOUS: 15.55%
+2024-12-15 15:17:43,877 [DEBUG] BrachioGraph:   CYNICAL: 15.55%
+2024-12-15 15:17:43,877 [DEBUG] BrachioGraph:   DEPRESSED: 15.55%
+2024-12-15 15:17:43,877 [DEBUG] BrachioGraph:   LONELY: 18.27%
+2024-12-15 15:17:49,063 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 15:17:49,065 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 15:17:49,065 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:17:49,066 [DEBUG] BrachioGraph: Transitioned to behavior: LAZY
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:18:56,924 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:18:56,959 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:18:56,960 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:18:56,960 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:19:13,189 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:19:13,189 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Tired: 7
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Lazy: 14
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Rebellious: 6
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Cynical: 10
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Depressed: 11
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph:   Lonely: 9
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:19:13,190 [DEBUG] BrachioGraph: ____ CURRENT LIMITS AND RATES ____
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph:   Lonely missed limit: 1
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph:   Lonely rate: 0.5438696984083481
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph:   Cynical positive limit: 4
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph:   Cynical rate: 0.4783795094362534
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph:   Depressed negative limit: 3
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph:   Depressed rate: 0.3612249699574097
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_151913
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph: Tired: 7, Lazy: 14, Rebellious: 6, Cynical: 10, Depressed: 11, Lonely: 9
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_8_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_6_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/goodhand_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:19:13,191 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:19:13,206 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_8_middle.json
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:19:48,994 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:19:49,031 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:19:49,032 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:19:50,506 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:19:50,506 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:19:50,506 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:19:50,506 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:19:50,506 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:19:50,506 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   Tired: 11
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   Lazy: 14
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   Rebellious: 12
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 15:19:50,507 [DEBUG] BrachioGraph:   Depressed: 8
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph:   Lonely: 7
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph: ____ CURRENT LIMITS AND RATES ____
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph:   Lonely missed limit: 0
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph:   Lonely rate: 0.5078727590730674
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph:   Cynical positive limit: 5
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph:   Cynical rate: 0.3664701801259284
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph:   Depressed negative limit: 3
+2024-12-15 15:19:50,508 [DEBUG] BrachioGraph:   Depressed rate: 0.29699567398030813
+2024-12-15 15:19:50,509 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_151950
+2024-12-15 15:19:50,509 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:19:50,509 [DEBUG] BrachioGraph: Tired: 11, Lazy: 14, Rebellious: 12, Cynical: 5, Depressed: 8, Lonely: 7
+2024-12-15 15:19:50,509 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_6_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_6_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_4_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:19:50,509 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:19:50,529 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_6_middle.json
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   TIRED: 9.60%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   LAZY: 9.60%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   REBELLIOUS: 9.60%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   CYNICAL: 9.60%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   DEPRESSED: 9.60%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   LONELY: 48.00%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:05,235 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:05,236 [DEBUG] BrachioGraph:   TIRED: 9.60%
+2024-12-15 15:20:05,236 [DEBUG] BrachioGraph:   LAZY: 9.60%
+2024-12-15 15:20:05,236 [DEBUG] BrachioGraph:   REBELLIOUS: 9.60%
+2024-12-15 15:20:05,236 [DEBUG] BrachioGraph:   CYNICAL: 9.60%
+2024-12-15 15:20:05,236 [DEBUG] BrachioGraph:   DEPRESSED: 9.60%
+2024-12-15 15:20:05,236 [DEBUG] BrachioGraph:   LONELY: 48.00%
+2024-12-15 15:20:15,286 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=2
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   TIRED: 6.40%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   LAZY: 6.40%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   REBELLIOUS: 6.40%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   CYNICAL: 6.40%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   DEPRESSED: 6.40%
+2024-12-15 15:20:15,287 [DEBUG] BrachioGraph:   LONELY: 64.00%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   TIRED: 6.40%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   LAZY: 6.40%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   REBELLIOUS: 6.40%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   CYNICAL: 6.40%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   DEPRESSED: 6.40%
+2024-12-15 15:20:15,288 [DEBUG] BrachioGraph:   LONELY: 64.00%
+2024-12-15 15:20:21,998 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 15:20:21,998 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 15:20:21,998 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:20:21,998 [DEBUG] BrachioGraph: Transitioned to behavior: LONELY
+2024-12-15 15:20:22,017 [DEBUG] BrachioGraph: Executing drawing behavior: Lonely
+2024-12-15 15:20:22,017 [DEBUG] BrachioGraph: Starting behavior: Lonely, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/sad.json
+2024-12-15 15:20:25,318 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=3
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   TIRED: 4.80%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   LAZY: 4.80%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   REBELLIOUS: 4.80%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   CYNICAL: 4.80%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   DEPRESSED: 4.80%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   LONELY: 72.00%
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:25,319 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   TIRED: 4.80%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   LAZY: 4.80%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   REBELLIOUS: 4.80%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   CYNICAL: 4.80%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   DEPRESSED: 4.80%
+2024-12-15 15:20:25,320 [DEBUG] BrachioGraph:   LONELY: 72.00%
+2024-12-15 15:20:35,444 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=4
+2024-12-15 15:20:35,444 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   TIRED: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   LAZY: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   REBELLIOUS: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   CYNICAL: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   DEPRESSED: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   LONELY: 76.80%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   TIRED: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   LAZY: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   REBELLIOUS: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   CYNICAL: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   DEPRESSED: 3.84%
+2024-12-15 15:20:35,445 [DEBUG] BrachioGraph:   LONELY: 76.80%
+2024-12-15 15:20:45,634 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=5
+2024-12-15 15:20:45,634 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   TIRED: 3.20%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   LAZY: 3.20%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   REBELLIOUS: 3.20%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   CYNICAL: 3.20%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   DEPRESSED: 3.20%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   LONELY: 80.00%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:20:45,635 [DEBUG] BrachioGraph:   TIRED: 3.20%
+2024-12-15 15:20:45,636 [DEBUG] BrachioGraph:   LAZY: 3.20%
+2024-12-15 15:20:45,636 [DEBUG] BrachioGraph:   REBELLIOUS: 3.20%
+2024-12-15 15:20:45,636 [DEBUG] BrachioGraph:   CYNICAL: 3.20%
+2024-12-15 15:20:45,636 [DEBUG] BrachioGraph:   DEPRESSED: 3.20%
+2024-12-15 15:20:45,636 [DEBUG] BrachioGraph:   LONELY: 80.00%
+2024-12-15 15:20:53,938 [DEBUG] BrachioGraph: Finished behavior: Lonely
+2024-12-15 15:20:53,938 [DEBUG] BrachioGraph: Drawing behavior Lonely completed naturally.
+2024-12-15 15:20:53,939 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 15:26:44,910 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   Sentient: 100.00%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   Others total: -2.00%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:26:44,911 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   Sentient: 100.00%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   Others total: -2.00%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:26:44,946 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:26:46,334 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Sentient: 100.00%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Others total: -2.00%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Tired: 6
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Lazy: 12
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Cynical: 15
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Depressed: 6
+2024-12-15 15:26:46,335 [DEBUG] BrachioGraph:   Lonely: 14
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph: ____ CURRENT LIMITS AND RATES ____
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph:   Lonely missed limit: 1
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph:   Lonely rate: 0.32149090293078286
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph:   Cynical positive limit: 6
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph:   Cynical rate: 0.2991147893223164
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph:   Depressed negative limit: 6
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph:   Depressed rate: 0.45301139613993235
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_152646
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:26:46,336 [DEBUG] BrachioGraph: Tired: 6, Lazy: 12, Rebellious: 5, Cynical: 15, Depressed: 6, Lonely: 14
+2024-12-15 15:26:46,337 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/badhand_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_1_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_15_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:26:46,337 [DEBUG] BrachioGraph: Started drawing: Transitioned to SENTIENT immediately.
+2024-12-15 15:26:46,350 [DEBUG] BrachioGraph: Executing drawing behavior: Sentient
+2024-12-15 15:26:46,350 [DEBUG] BrachioGraph: Starting behavior: Sentient, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/painter.json
+2024-12-15 15:27:16,690 [DEBUG] BrachioGraph: Finished behavior: Sentient
+2024-12-15 15:27:16,690 [DEBUG] BrachioGraph: Drawing behavior Sentient completed naturally.
+2024-12-15 15:27:16,690 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   Sentient: 100.00%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   Others total: -2.00%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:27:49,147 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   Sentient: 100.00%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   Others total: -2.00%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:27:49,180 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:31:37,815 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:31:37,852 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:31:39,037 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:31:39,037 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:31:39,038 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:31:39,039 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_153139
+2024-12-15 15:31:39,039 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:31:39,039 [DEBUG] BrachioGraph: Tired: 6, Lazy: 6, Rebellious: 6, Cynical: 7, Depressed: 5, Lonely: 10
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_7_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_4_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_7_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph:   Tired: 6
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph:   Lazy: 6
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph:   Rebellious: 6
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph:   Cynical: 7
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph:   Depressed: 5
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph:   Lonely: 10
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph: _____ LIMITS, RATES, AND CHANCES _____
+2024-12-15 15:31:39,040 [DEBUG] BrachioGraph:   Sentient start chance: 2.00%
+2024-12-15 15:31:39,041 [DEBUG] BrachioGraph:   Enlightened start chance: 2.00%
+2024-12-15 15:31:39,041 [DEBUG] BrachioGraph:   Lonely missed limit: 0, rate: 0.37112226801812426
+2024-12-15 15:31:39,041 [DEBUG] BrachioGraph:   Cynical positive limit: 5, rate: 0.4490415057592976
+2024-12-15 15:31:39,041 [DEBUG] BrachioGraph:   Depressed negative limit: 3, rate: 0.3699194554220621
+2024-12-15 15:31:39,041 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:31:39,059 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_7_middle.json
+2024-12-15 15:31:53,877 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=1
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   TIRED: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   LAZY: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   REBELLIOUS: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   CYNICAL: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   DEPRESSED: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   LONELY: 41.86%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   TIRED: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   LAZY: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   REBELLIOUS: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   CYNICAL: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   DEPRESSED: 10.83%
+2024-12-15 15:31:53,878 [DEBUG] BrachioGraph:   LONELY: 41.86%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=2
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   TIRED: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   LAZY: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   REBELLIOUS: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   CYNICAL: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   DEPRESSED: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   LONELY: 61.38%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   TIRED: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   LAZY: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   REBELLIOUS: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   CYNICAL: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   DEPRESSED: 6.92%
+2024-12-15 15:32:03,895 [DEBUG] BrachioGraph:   LONELY: 61.38%
+2024-12-15 15:32:09,112 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 15:32:09,112 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 15:32:09,112 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:32:09,112 [DEBUG] BrachioGraph: Transitioned to behavior: LONELY
+2024-12-15 15:32:09,130 [DEBUG] BrachioGraph: Executing drawing behavior: Lonely
+2024-12-15 15:32:09,131 [DEBUG] BrachioGraph: Starting behavior: Lonely, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/sad.json
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=0,DN=0,DMissed=3
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   TIRED: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   LAZY: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   REBELLIOUS: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   CYNICAL: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   DEPRESSED: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   LONELY: 70.56%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   TIRED: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   LAZY: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   REBELLIOUS: 5.09%
+2024-12-15 15:32:13,907 [DEBUG] BrachioGraph:   CYNICAL: 5.09%
+2024-12-15 15:32:13,908 [DEBUG] BrachioGraph:   DEPRESSED: 5.09%
+2024-12-15 15:32:13,908 [DEBUG] BrachioGraph:   LONELY: 70.56%
+2024-12-15 15:32:21,348 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:21,348 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:21,348 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:21,348 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:21,349 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:21,349 [DEBUG] BrachioGraph:   TIRED: 5.09%
+2024-12-15 15:32:21,349 [DEBUG] BrachioGraph:   LAZY: 5.09%
+2024-12-15 15:32:21,349 [DEBUG] BrachioGraph:   REBELLIOUS: 5.09%
+2024-12-15 15:32:21,349 [DEBUG] BrachioGraph:   CYNICAL: 5.09%
+2024-12-15 15:32:21,349 [DEBUG] BrachioGraph:   DEPRESSED: 5.09%
+2024-12-15 15:32:21,349 [DEBUG] BrachioGraph:   LONELY: 70.56%
+2024-12-15 15:32:22,958 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph: Global: P=1,N=0,A=1 | Behavior: PB=1,NB=0,AB=1 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   TIRED: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   LAZY: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   REBELLIOUS: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   CYNICAL: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   DEPRESSED: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   LONELY: 75.89%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   TIRED: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   LAZY: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   REBELLIOUS: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   CYNICAL: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   DEPRESSED: 4.02%
+2024-12-15 15:32:22,959 [DEBUG] BrachioGraph:   LONELY: 75.89%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph: Global: P=2,N=0,A=2 | Behavior: PB=2,NB=0,AB=2 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   TIRED: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   LAZY: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   REBELLIOUS: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   CYNICAL: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   DEPRESSED: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   LONELY: 79.37%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   TIRED: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   LAZY: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   REBELLIOUS: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   CYNICAL: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   DEPRESSED: 3.33%
+2024-12-15 15:32:23,575 [DEBUG] BrachioGraph:   LONELY: 79.37%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph: Global: P=3,N=0,A=3 | Behavior: PB=3,NB=0,AB=3 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   TIRED: 2.83%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   LAZY: 2.83%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   REBELLIOUS: 2.83%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   CYNICAL: 2.83%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   DEPRESSED: 2.83%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   LONELY: 81.83%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:24,053 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:24,054 [DEBUG] BrachioGraph:   TIRED: 2.83%
+2024-12-15 15:32:24,054 [DEBUG] BrachioGraph:   LAZY: 2.83%
+2024-12-15 15:32:24,054 [DEBUG] BrachioGraph:   REBELLIOUS: 2.83%
+2024-12-15 15:32:24,054 [DEBUG] BrachioGraph:   CYNICAL: 2.83%
+2024-12-15 15:32:24,054 [DEBUG] BrachioGraph:   DEPRESSED: 2.83%
+2024-12-15 15:32:24,054 [DEBUG] BrachioGraph:   LONELY: 81.83%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph: Global: P=4,N=0,A=4 | Behavior: PB=4,NB=0,AB=4 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   TIRED: 2.47%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   LAZY: 2.47%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   REBELLIOUS: 2.47%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   CYNICAL: 2.47%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   DEPRESSED: 2.47%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   LONELY: 83.65%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:24,861 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:24,862 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:24,862 [DEBUG] BrachioGraph:   TIRED: 2.47%
+2024-12-15 15:32:24,862 [DEBUG] BrachioGraph:   LAZY: 2.47%
+2024-12-15 15:32:24,862 [DEBUG] BrachioGraph:   REBELLIOUS: 2.47%
+2024-12-15 15:32:24,862 [DEBUG] BrachioGraph:   CYNICAL: 2.47%
+2024-12-15 15:32:24,862 [DEBUG] BrachioGraph:   DEPRESSED: 2.47%
+2024-12-15 15:32:24,862 [DEBUG] BrachioGraph:   LONELY: 83.65%
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph: Global: P=5,N=0,A=5 | Behavior: PB=5,NB=0,AB=5 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph:   TIRED: 2.19%
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph:   LAZY: 2.19%
+2024-12-15 15:32:25,390 [DEBUG] BrachioGraph:   REBELLIOUS: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   CYNICAL: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   DEPRESSED: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   LONELY: 85.06%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   TIRED: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   LAZY: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   REBELLIOUS: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   CYNICAL: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   DEPRESSED: 2.19%
+2024-12-15 15:32:25,391 [DEBUG] BrachioGraph:   LONELY: 85.06%
+2024-12-15 15:32:25,774 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph: Global: P=6,N=0,A=6 | Behavior: PB=6,NB=0,AB=6 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   TIRED: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   LAZY: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   REBELLIOUS: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   CYNICAL: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   DEPRESSED: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   LONELY: 86.18%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   TIRED: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   LAZY: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   REBELLIOUS: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   CYNICAL: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   DEPRESSED: 1.96%
+2024-12-15 15:32:25,775 [DEBUG] BrachioGraph:   LONELY: 86.18%
+2024-12-15 15:32:26,225 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:26,225 [DEBUG] BrachioGraph: Global: P=7,N=0,A=7 | Behavior: PB=7,NB=0,AB=7 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:26,225 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,225 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   TIRED: 1.78%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   LAZY: 1.78%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   REBELLIOUS: 1.78%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   CYNICAL: 1.78%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   DEPRESSED: 1.78%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   LONELY: 87.09%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,226 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,227 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,227 [DEBUG] BrachioGraph:   TIRED: 1.78%
+2024-12-15 15:32:26,227 [DEBUG] BrachioGraph:   LAZY: 1.78%
+2024-12-15 15:32:26,227 [DEBUG] BrachioGraph:   REBELLIOUS: 1.78%
+2024-12-15 15:32:26,227 [DEBUG] BrachioGraph:   CYNICAL: 1.78%
+2024-12-15 15:32:26,227 [DEBUG] BrachioGraph:   DEPRESSED: 1.78%
+2024-12-15 15:32:26,227 [DEBUG] BrachioGraph:   LONELY: 87.09%
+2024-12-15 15:32:26,494 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph: Global: P=8,N=0,A=8 | Behavior: PB=8,NB=0,AB=8 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   TIRED: 1.63%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   LAZY: 1.63%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   REBELLIOUS: 1.63%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   CYNICAL: 1.63%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   DEPRESSED: 1.63%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph:   LONELY: 87.85%
+2024-12-15 15:32:26,495 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   TIRED: 1.63%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   LAZY: 1.63%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   REBELLIOUS: 1.63%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   CYNICAL: 1.63%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   DEPRESSED: 1.63%
+2024-12-15 15:32:26,496 [DEBUG] BrachioGraph:   LONELY: 87.85%
+2024-12-15 15:32:26,660 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:26,660 [DEBUG] BrachioGraph: Global: P=9,N=0,A=9 | Behavior: PB=9,NB=0,AB=9 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   TIRED: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   LAZY: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   REBELLIOUS: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   CYNICAL: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   DEPRESSED: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   LONELY: 88.48%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   TIRED: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   LAZY: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   REBELLIOUS: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   CYNICAL: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   DEPRESSED: 1.50%
+2024-12-15 15:32:26,661 [DEBUG] BrachioGraph:   LONELY: 88.48%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph: Global: P=10,N=0,A=10 | Behavior: PB=10,NB=0,AB=10 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=3
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   TIRED: 1.39%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   LAZY: 1.39%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   REBELLIOUS: 1.39%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   CYNICAL: 1.39%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   DEPRESSED: 1.39%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   LONELY: 89.03%
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,821 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   TIRED: 1.39%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   LAZY: 1.39%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   REBELLIOUS: 1.39%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   CYNICAL: 1.39%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   DEPRESSED: 1.39%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   LONELY: 89.03%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph: Behavior LONELY resolved by user.
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:32:26,822 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:32:26,823 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph: Global: P=11,N=0,A=10 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=1,DN=0,DMissed=0
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   TIRED: 13.85%
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   LAZY: 13.85%
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   REBELLIOUS: 13.85%
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   CYNICAL: 13.85%
+2024-12-15 15:32:26,976 [DEBUG] BrachioGraph:   DEPRESSED: 13.85%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   LONELY: 26.77%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   TIRED: 13.85%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   LAZY: 13.85%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   REBELLIOUS: 13.85%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   CYNICAL: 13.85%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   DEPRESSED: 13.85%
+2024-12-15 15:32:26,977 [DEBUG] BrachioGraph:   LONELY: 26.77%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph: Global: P=12,N=0,A=10 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=1,DN=0,DMissed=0
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   TIRED: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   LAZY: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   REBELLIOUS: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   CYNICAL: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   DEPRESSED: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   LONELY: 46.07%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   TIRED: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   LAZY: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   REBELLIOUS: 9.99%
+2024-12-15 15:32:27,119 [DEBUG] BrachioGraph:   CYNICAL: 9.99%
+2024-12-15 15:32:27,120 [DEBUG] BrachioGraph:   DEPRESSED: 9.99%
+2024-12-15 15:32:27,120 [DEBUG] BrachioGraph:   LONELY: 46.07%
+2024-12-15 15:32:27,158 [DEBUG] BrachioGraph: Stop flag set during behavior: Lonely
+2024-12-15 15:32:27,158 [DEBUG] BrachioGraph: Drawing behavior Lonely stopped early.
+2024-12-15 15:32:27,158 [DEBUG] BrachioGraph: Completed component, now at index: 1
+2024-12-15 15:32:27,158 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:32:27,158 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 15:32:28,193 [DEBUG] BrachioGraph: Drawing component: Window 2, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_4_top_left.json
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph: Global: P=12,N=0,A=10 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=1
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   TIRED: 6.57%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   LAZY: 6.57%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   REBELLIOUS: 6.57%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   CYNICAL: 6.57%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   DEPRESSED: 6.57%
+2024-12-15 15:32:33,934 [DEBUG] BrachioGraph:   LONELY: 63.15%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   TIRED: 6.57%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   LAZY: 6.57%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   REBELLIOUS: 6.57%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   CYNICAL: 6.57%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   DEPRESSED: 6.57%
+2024-12-15 15:32:33,935 [DEBUG] BrachioGraph:   LONELY: 63.15%
+2024-12-15 15:32:43,958 [DEBUG] BrachioGraph: Global: P=12,N=0,A=10 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=2
+2024-12-15 15:32:43,958 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:43,958 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   TIRED: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   LAZY: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   REBELLIOUS: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   CYNICAL: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   DEPRESSED: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   LONELY: 71.53%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   TIRED: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   LAZY: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   REBELLIOUS: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   CYNICAL: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   DEPRESSED: 4.89%
+2024-12-15 15:32:43,959 [DEBUG] BrachioGraph:   LONELY: 71.53%
+2024-12-15 15:32:51,191 [DEBUG] BrachioGraph: Global: P=12,N=0,A=10 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=0,DMissed=2
+2024-12-15 15:32:51,191 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:32:51,191 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   TIRED: 4.89%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   LAZY: 4.89%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   REBELLIOUS: 4.89%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   CYNICAL: 4.89%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   DEPRESSED: 4.89%
+2024-12-15 15:32:51,192 [DEBUG] BrachioGraph:   LONELY: 71.53%
+2024-12-15 15:32:58,241 [DEBUG] BrachioGraph: Finished drawing component: Window 2
+2024-12-15 15:32:58,242 [DEBUG] BrachioGraph: Moving to next phase after component index: 1
+2024-12-15 15:32:58,242 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:32:58,242 [DEBUG] BrachioGraph: Transitioned to behavior: LONELY
+2024-12-15 15:32:58,288 [DEBUG] BrachioGraph: Executing drawing behavior: Lonely
+2024-12-15 15:32:58,288 [DEBUG] BrachioGraph: Starting behavior: Lonely, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/sad.json
+2024-12-15 15:33:01,194 [DEBUG] BrachioGraph: Global: P=12,N=0,A=10 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:01,195 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:01,195 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:01,195 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:01,195 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:01,195 [DEBUG] BrachioGraph:   TIRED: 4.89%
+2024-12-15 15:33:01,195 [DEBUG] BrachioGraph:   LAZY: 4.89%
+2024-12-15 15:33:01,196 [DEBUG] BrachioGraph:   REBELLIOUS: 4.89%
+2024-12-15 15:33:01,196 [DEBUG] BrachioGraph:   CYNICAL: 4.89%
+2024-12-15 15:33:01,196 [DEBUG] BrachioGraph:   DEPRESSED: 4.89%
+2024-12-15 15:33:01,196 [DEBUG] BrachioGraph:   LONELY: 71.53%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph: Global: P=13,N=0,A=11 | Behavior: PB=1,NB=0,AB=1 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   TIRED: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   LAZY: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   REBELLIOUS: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   CYNICAL: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   DEPRESSED: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   LONELY: 76.50%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   TIRED: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   LAZY: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   REBELLIOUS: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   CYNICAL: 3.90%
+2024-12-15 15:33:03,598 [DEBUG] BrachioGraph:   DEPRESSED: 3.90%
+2024-12-15 15:33:03,599 [DEBUG] BrachioGraph:   LONELY: 76.50%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph: Global: P=14,N=0,A=12 | Behavior: PB=2,NB=0,AB=2 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   TIRED: 3.24%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   LAZY: 3.24%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   REBELLIOUS: 3.24%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   CYNICAL: 3.24%
+2024-12-15 15:33:03,792 [DEBUG] BrachioGraph:   DEPRESSED: 3.24%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   LONELY: 79.79%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   TIRED: 3.24%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   LAZY: 3.24%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   REBELLIOUS: 3.24%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   CYNICAL: 3.24%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   DEPRESSED: 3.24%
+2024-12-15 15:33:03,793 [DEBUG] BrachioGraph:   LONELY: 79.79%
+2024-12-15 15:33:03,973 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph: Global: P=15,N=0,A=13 | Behavior: PB=3,NB=0,AB=3 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   TIRED: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   LAZY: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   REBELLIOUS: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   CYNICAL: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   DEPRESSED: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   LONELY: 82.13%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   TIRED: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   LAZY: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   REBELLIOUS: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   CYNICAL: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   DEPRESSED: 2.77%
+2024-12-15 15:33:03,974 [DEBUG] BrachioGraph:   LONELY: 82.13%
+2024-12-15 15:33:04,134 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:04,134 [DEBUG] BrachioGraph: Global: P=16,N=0,A=14 | Behavior: PB=4,NB=0,AB=4 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   TIRED: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   LAZY: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   REBELLIOUS: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   CYNICAL: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   DEPRESSED: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   LONELY: 83.88%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   TIRED: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   LAZY: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   REBELLIOUS: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   CYNICAL: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   DEPRESSED: 2.42%
+2024-12-15 15:33:04,135 [DEBUG] BrachioGraph:   LONELY: 83.88%
+2024-12-15 15:33:04,611 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph: Global: P=17,N=0,A=15 | Behavior: PB=5,NB=0,AB=5 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   TIRED: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   LAZY: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   REBELLIOUS: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   CYNICAL: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   DEPRESSED: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   LONELY: 85.24%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   TIRED: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   LAZY: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   REBELLIOUS: 2.15%
+2024-12-15 15:33:04,612 [DEBUG] BrachioGraph:   CYNICAL: 2.15%
+2024-12-15 15:33:04,613 [DEBUG] BrachioGraph:   DEPRESSED: 2.15%
+2024-12-15 15:33:04,613 [DEBUG] BrachioGraph:   LONELY: 85.24%
+2024-12-15 15:33:04,764 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph: Global: P=18,N=0,A=16 | Behavior: PB=6,NB=0,AB=6 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   TIRED: 1.93%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   LAZY: 1.93%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   REBELLIOUS: 1.93%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   CYNICAL: 1.93%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   DEPRESSED: 1.93%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   LONELY: 86.33%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,765 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,766 [DEBUG] BrachioGraph:   TIRED: 1.93%
+2024-12-15 15:33:04,766 [DEBUG] BrachioGraph:   LAZY: 1.93%
+2024-12-15 15:33:04,766 [DEBUG] BrachioGraph:   REBELLIOUS: 1.93%
+2024-12-15 15:33:04,766 [DEBUG] BrachioGraph:   CYNICAL: 1.93%
+2024-12-15 15:33:04,766 [DEBUG] BrachioGraph:   DEPRESSED: 1.93%
+2024-12-15 15:33:04,766 [DEBUG] BrachioGraph:   LONELY: 86.33%
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph: Global: P=19,N=0,A=17 | Behavior: PB=7,NB=0,AB=7 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph:   TIRED: 1.76%
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph:   LAZY: 1.76%
+2024-12-15 15:33:04,905 [DEBUG] BrachioGraph:   REBELLIOUS: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   CYNICAL: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   DEPRESSED: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   LONELY: 87.21%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   TIRED: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   LAZY: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   REBELLIOUS: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   CYNICAL: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   DEPRESSED: 1.76%
+2024-12-15 15:33:04,906 [DEBUG] BrachioGraph:   LONELY: 87.21%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph: Global: P=20,N=0,A=18 | Behavior: PB=8,NB=0,AB=8 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   TIRED: 1.61%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   LAZY: 1.61%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   REBELLIOUS: 1.61%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   CYNICAL: 1.61%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   DEPRESSED: 1.61%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   LONELY: 87.95%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,036 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,037 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,037 [DEBUG] BrachioGraph:   TIRED: 1.61%
+2024-12-15 15:33:05,037 [DEBUG] BrachioGraph:   LAZY: 1.61%
+2024-12-15 15:33:05,037 [DEBUG] BrachioGraph:   REBELLIOUS: 1.61%
+2024-12-15 15:33:05,037 [DEBUG] BrachioGraph:   CYNICAL: 1.61%
+2024-12-15 15:33:05,037 [DEBUG] BrachioGraph:   DEPRESSED: 1.61%
+2024-12-15 15:33:05,037 [DEBUG] BrachioGraph:   LONELY: 87.95%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph: Global: P=21,N=0,A=19 | Behavior: PB=9,NB=0,AB=9 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   TIRED: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   LAZY: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   REBELLIOUS: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   CYNICAL: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   DEPRESSED: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   LONELY: 88.57%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   TIRED: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   LAZY: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   REBELLIOUS: 1.49%
+2024-12-15 15:33:05,194 [DEBUG] BrachioGraph:   CYNICAL: 1.49%
+2024-12-15 15:33:05,195 [DEBUG] BrachioGraph:   DEPRESSED: 1.49%
+2024-12-15 15:33:05,195 [DEBUG] BrachioGraph:   LONELY: 88.57%
+2024-12-15 15:33:05,328 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 15:33:05,328 [DEBUG] BrachioGraph: Global: P=22,N=0,A=20 | Behavior: PB=10,NB=0,AB=10 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=3,DN=0,DMissed=2
+2024-12-15 15:33:05,328 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,328 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   TIRED: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   LAZY: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   REBELLIOUS: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   CYNICAL: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   DEPRESSED: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   LONELY: 89.10%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   TIRED: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   LAZY: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   REBELLIOUS: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   CYNICAL: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   DEPRESSED: 1.38%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   LONELY: 89.10%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph: Behavior LONELY resolved by user.
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,329 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:33:05,330 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:33:05,330 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:33:05,330 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:33:05,330 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:33:05,330 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:33:05,330 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph: Global: P=23,N=0,A=20 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=1,U-=0 | Dialogue: DP=3,DN=0,DMissed=0
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   TIRED: 13.85%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   LAZY: 13.85%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   REBELLIOUS: 13.85%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   CYNICAL: 13.85%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   DEPRESSED: 13.85%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph:   LONELY: 26.77%
+2024-12-15 15:33:05,532 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   TIRED: 13.85%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   LAZY: 13.85%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   REBELLIOUS: 13.85%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   CYNICAL: 13.85%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   DEPRESSED: 13.85%
+2024-12-15 15:33:05,533 [DEBUG] BrachioGraph:   LONELY: 26.77%
+2024-12-15 15:33:05,690 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 15:33:05,690 [DEBUG] BrachioGraph: Global: P=24,N=0,A=20 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=2,U-=0 | Dialogue: DP=3,DN=0,DMissed=0
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   TIRED: 9.99%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   LAZY: 9.99%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   REBELLIOUS: 9.99%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   CYNICAL: 9.99%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   DEPRESSED: 9.99%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   LONELY: 46.07%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   TIRED: 9.99%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   LAZY: 9.99%
+2024-12-15 15:33:05,691 [DEBUG] BrachioGraph:   REBELLIOUS: 9.99%
+2024-12-15 15:33:05,692 [DEBUG] BrachioGraph:   CYNICAL: 9.99%
+2024-12-15 15:33:05,692 [DEBUG] BrachioGraph:   DEPRESSED: 9.99%
+2024-12-15 15:33:05,692 [DEBUG] BrachioGraph:   LONELY: 46.07%
+2024-12-15 15:33:06,300 [DEBUG] BrachioGraph: Stop flag set during behavior: Lonely
+2024-12-15 15:33:06,301 [DEBUG] BrachioGraph: Drawing behavior Lonely stopped early.
+2024-12-15 15:33:06,301 [DEBUG] BrachioGraph: Completed component, now at index: 2
+2024-12-15 15:33:06,301 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:33:06,301 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 15:33:07,359 [DEBUG] BrachioGraph: Drawing component: Window 3, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_7_top_right.json
+2024-12-15 15:33:11,371 [DEBUG] BrachioGraph: Global: P=24,N=0,A=20 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=4,DN=0,DMissed=0
+2024-12-15 15:33:11,371 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:11,371 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:11,371 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:11,371 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:11,371 [DEBUG] BrachioGraph:   TIRED: 9.99%
+2024-12-15 15:33:11,372 [DEBUG] BrachioGraph:   LAZY: 9.99%
+2024-12-15 15:33:11,372 [DEBUG] BrachioGraph:   REBELLIOUS: 9.99%
+2024-12-15 15:33:11,372 [DEBUG] BrachioGraph:   CYNICAL: 9.99%
+2024-12-15 15:33:11,372 [DEBUG] BrachioGraph:   DEPRESSED: 9.99%
+2024-12-15 15:33:11,372 [DEBUG] BrachioGraph:   LONELY: 46.07%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph: Global: P=24,N=0,A=20 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=5,DN=0,DMissed=0
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   TIRED: 9.99%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   LAZY: 9.99%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   REBELLIOUS: 9.99%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   CYNICAL: 9.99%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   DEPRESSED: 9.99%
+2024-12-15 15:33:21,085 [DEBUG] BrachioGraph:   LONELY: 46.07%
+2024-12-15 15:33:31,489 [DEBUG] BrachioGraph: Global: P=24,N=0,A=20 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=3,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=6,DN=0,DMissed=0
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph:   TIRED: 9.99%
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph:   LAZY: 9.99%
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph:   REBELLIOUS: 9.99%
+2024-12-15 15:33:31,490 [DEBUG] BrachioGraph:   CYNICAL: 9.99%
+2024-12-15 15:33:31,491 [DEBUG] BrachioGraph:   DEPRESSED: 9.99%
+2024-12-15 15:33:31,491 [DEBUG] BrachioGraph:   LONELY: 46.07%
+2024-12-15 15:33:37,408 [DEBUG] BrachioGraph: Finished drawing component: Window 3
+2024-12-15 15:33:37,408 [DEBUG] BrachioGraph: Moving to next phase after component index: 2
+2024-12-15 15:33:37,409 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:33:37,409 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 15:33:37,472 [DEBUG] BrachioGraph: Executing drawing behavior: Cynical
+2024-12-15 15:33:37,473 [DEBUG] BrachioGraph: Starting behavior: Cynical, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/scribbles/json/scribble3.json
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:34:33,695 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:34:33,727 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:34:35,290 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:34:35,290 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_153435
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph: Tired: 6, Lazy: 6, Rebellious: 8, Cynical: 6, Depressed: 14, Lonely: 9
+2024-12-15 15:34:35,291 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_1_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_14_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_10_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Tired: 6
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Lazy: 6
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Rebellious: 8
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Cynical: 6
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Depressed: 14
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Lonely: 9
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph: _____ LIMITS, RATES, AND CHANCES _____
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Sentient start chance: 2.00%
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Enlightened start chance: 2.00%
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Lonely missed limit: 2, rate: 0.27824439433184
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Cynical positive limit: 1, rate: 0.2982563237920921
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph:   Depressed negative limit: 5, rate: 0.2720669041474742
+2024-12-15 15:34:35,292 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:34:35,304 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_1_middle.json
+2024-12-15 15:34:47,368 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=0
+2024-12-15 15:34:47,368 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:34:47,368 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:34:47,368 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph:   TIRED: 14.65%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph:   LAZY: 14.65%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph:   REBELLIOUS: 14.65%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph:   CYNICAL: 37.40%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph:   DEPRESSED: 14.65%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:34:47,369 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:34:47,370 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:34:47,370 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:34:47,370 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:34:47,370 [DEBUG] BrachioGraph:   TIRED: 14.65%
+2024-12-15 15:34:47,370 [DEBUG] BrachioGraph:   LAZY: 14.65%
+2024-12-15 15:34:47,370 [DEBUG] BrachioGraph:   REBELLIOUS: 14.65%
+2024-12-15 15:34:47,370 [DEBUG] BrachioGraph:   CYNICAL: 37.40%
+2024-12-15 15:34:47,371 [DEBUG] BrachioGraph:   DEPRESSED: 14.65%
+2024-12-15 15:34:47,371 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:34:56,889 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=0,DMissed=0
+2024-12-15 15:34:56,889 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   TIRED: 9.10%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   LAZY: 9.10%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   REBELLIOUS: 9.10%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   CYNICAL: 59.61%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   DEPRESSED: 9.10%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:34:56,890 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   TIRED: 9.10%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   LAZY: 9.10%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   REBELLIOUS: 9.10%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   CYNICAL: 59.61%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   DEPRESSED: 9.10%
+2024-12-15 15:34:56,891 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:05,357 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 15:35:05,357 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 15:35:05,357 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:35:05,357 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 15:35:05,373 [DEBUG] BrachioGraph: Executing drawing behavior: Cynical
+2024-12-15 15:35:05,374 [DEBUG] BrachioGraph: Starting behavior: Cynical, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/scribbles/json/scribble3.json
+2024-12-15 15:35:09,385 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=1 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=1,DMissed=0
+2024-12-15 15:35:09,385 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   TIRED: 6.60%
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   LAZY: 6.60%
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   REBELLIOUS: 6.60%
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   CYNICAL: 69.61%
+2024-12-15 15:35:09,386 [DEBUG] BrachioGraph:   DEPRESSED: 6.60%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   TIRED: 6.60%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   LAZY: 6.60%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   REBELLIOUS: 6.60%
+2024-12-15 15:35:09,387 [DEBUG] BrachioGraph:   CYNICAL: 69.61%
+2024-12-15 15:35:09,388 [DEBUG] BrachioGraph:   DEPRESSED: 6.60%
+2024-12-15 15:35:09,388 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:16,941 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=2,P-=2 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:16,941 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:16,941 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:16,941 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   TIRED: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   LAZY: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   REBELLIOUS: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   CYNICAL: 75.30%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   DEPRESSED: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   TIRED: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   LAZY: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   REBELLIOUS: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   CYNICAL: 75.30%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   DEPRESSED: 5.17%
+2024-12-15 15:35:16,942 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:20,065 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph: Global: P=0,N=1,A=0 | Behavior: PB=0,NB=1,AB=0 | Prompted: P+=2,P-=2 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph:   TIRED: 4.26%
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph:   LAZY: 4.26%
+2024-12-15 15:35:20,066 [DEBUG] BrachioGraph:   REBELLIOUS: 4.26%
+2024-12-15 15:35:20,067 [DEBUG] BrachioGraph:   CYNICAL: 78.97%
+2024-12-15 15:35:20,067 [DEBUG] BrachioGraph:   DEPRESSED: 4.26%
+2024-12-15 15:35:20,067 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:20,067 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:20,067 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:20,067 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:20,068 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:20,068 [DEBUG] BrachioGraph:   TIRED: 4.26%
+2024-12-15 15:35:20,068 [DEBUG] BrachioGraph:   LAZY: 4.26%
+2024-12-15 15:35:20,068 [DEBUG] BrachioGraph:   REBELLIOUS: 4.26%
+2024-12-15 15:35:20,068 [DEBUG] BrachioGraph:   CYNICAL: 78.97%
+2024-12-15 15:35:20,068 [DEBUG] BrachioGraph:   DEPRESSED: 4.26%
+2024-12-15 15:35:20,068 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:20,862 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 15:35:20,862 [DEBUG] BrachioGraph: Global: P=0,N=2,A=0 | Behavior: PB=0,NB=2,AB=0 | Prompted: P+=2,P-=2 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:20,862 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:20,862 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:20,862 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:20,862 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:20,862 [DEBUG] BrachioGraph:   TIRED: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   LAZY: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   REBELLIOUS: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   CYNICAL: 81.54%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   DEPRESSED: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   TIRED: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   LAZY: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   REBELLIOUS: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   CYNICAL: 81.54%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   DEPRESSED: 3.62%
+2024-12-15 15:35:20,863 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:21,368 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph: Global: P=0,N=3,A=0 | Behavior: PB=0,NB=3,AB=0 | Prompted: P+=2,P-=2 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   TIRED: 3.14%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   LAZY: 3.14%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   REBELLIOUS: 3.14%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   CYNICAL: 83.43%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   DEPRESSED: 3.14%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:21,369 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:21,370 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:21,370 [DEBUG] BrachioGraph:   TIRED: 3.14%
+2024-12-15 15:35:21,370 [DEBUG] BrachioGraph:   LAZY: 3.14%
+2024-12-15 15:35:21,370 [DEBUG] BrachioGraph:   REBELLIOUS: 3.14%
+2024-12-15 15:35:21,370 [DEBUG] BrachioGraph:   CYNICAL: 83.43%
+2024-12-15 15:35:21,370 [DEBUG] BrachioGraph:   DEPRESSED: 3.14%
+2024-12-15 15:35:21,370 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph: Global: P=0,N=4,A=0 | Behavior: PB=0,NB=4,AB=0 | Prompted: P+=2,P-=2 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   TIRED: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   LAZY: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   REBELLIOUS: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   CYNICAL: 84.89%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   DEPRESSED: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   TIRED: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   LAZY: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   REBELLIOUS: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   CYNICAL: 84.89%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   DEPRESSED: 2.78%
+2024-12-15 15:35:21,613 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph: Global: P=0,N=5,A=0 | Behavior: PB=0,NB=5,AB=0 | Prompted: P+=2,P-=2 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   TIRED: 2.49%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   LAZY: 2.49%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   REBELLIOUS: 2.49%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   CYNICAL: 86.04%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   DEPRESSED: 2.49%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   TIRED: 2.49%
+2024-12-15 15:35:21,804 [DEBUG] BrachioGraph:   LAZY: 2.49%
+2024-12-15 15:35:21,805 [DEBUG] BrachioGraph:   REBELLIOUS: 2.49%
+2024-12-15 15:35:21,805 [DEBUG] BrachioGraph:   CYNICAL: 86.04%
+2024-12-15 15:35:21,805 [DEBUG] BrachioGraph:   DEPRESSED: 2.49%
+2024-12-15 15:35:21,805 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:22,009 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph: Global: P=0,N=6,A=0 | Behavior: PB=0,NB=6,AB=0 | Prompted: P+=2,P-=2 | Unprompted: U+=0,U-=0 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   TIRED: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   LAZY: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   REBELLIOUS: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   CYNICAL: 86.98%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   DEPRESSED: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   TIRED: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   LAZY: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   REBELLIOUS: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   CYNICAL: 86.98%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   DEPRESSED: 2.26%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph: Behavior CYNICAL resolved by user.
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:35:22,010 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:22,011 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph: Global: P=0,N=7,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=0,P-=0 | Unprompted: U+=0,U-=1 | Dialogue: DP=2,DN=2,DMissed=0
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:35:22,220 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:35:22,402 [DEBUG] BrachioGraph: Stop flag set during behavior: Cynical
+2024-12-15 15:35:22,402 [DEBUG] BrachioGraph: Drawing behavior Cynical stopped early.
+2024-12-15 15:35:22,402 [DEBUG] BrachioGraph: Completed component, now at index: 1
+2024-12-15 15:35:22,402 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:35:22,402 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 15:35:23,427 [DEBUG] BrachioGraph: Drawing component: Window 2, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_14_top_left.json
+2024-12-15 15:38:28,056 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:38:28,056 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:38:28,056 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:38:28,056 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:38:28,056 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:38:28,056 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:38:28,056 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:38:28,057 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:38:28,057 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:38:28,057 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:38:28,091 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph: Resetting component-level counters (prompted/unprompted)
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   TIRED: 19.20%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   LAZY: 19.20%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   REBELLIOUS: 19.20%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   CYNICAL: 19.20%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   DEPRESSED: 19.20%
+2024-12-15 15:38:29,318 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:38:29,319 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_153829
+2024-12-15 15:38:29,319 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 15:38:29,319 [DEBUG] BrachioGraph: Tired: 10, Lazy: 5, Rebellious: 8, Cynical: 6, Depressed: 6, Lonely: 7
+2024-12-15 15:38:29,319 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_9_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_11_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_4_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 15:38:29,319 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 15:38:29,319 [DEBUG] BrachioGraph:   Tired: 10
+2024-12-15 15:38:29,319 [DEBUG] BrachioGraph:   Lazy: 5
+2024-12-15 15:38:29,320 [DEBUG] BrachioGraph:   Rebellious: 8
+2024-12-15 15:38:29,320 [DEBUG] BrachioGraph:   Cynical: 6
+2024-12-15 15:38:29,320 [DEBUG] BrachioGraph:   Depressed: 6
+2024-12-15 15:38:29,320 [DEBUG] BrachioGraph:   Lonely: 7
+2024-12-15 15:38:29,320 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 15:38:29,320 [DEBUG] BrachioGraph: _____ LIMITS, RATES, AND CHANCES _____
+2024-12-15 15:38:29,321 [DEBUG] BrachioGraph:   Sentient start chance: 2.00%
+2024-12-15 15:38:29,321 [DEBUG] BrachioGraph:   Enlightened start chance: 2.00%
+2024-12-15 15:38:29,321 [DEBUG] BrachioGraph:   Lonely missed limit: 2, rate: 0.4145317069371741
+2024-12-15 15:38:29,321 [DEBUG] BrachioGraph:   Cynical positive limit: 1, rate: 0.290594760559187
+2024-12-15 15:38:29,321 [DEBUG] BrachioGraph:   Depressed negative limit: 3, rate: 0.32128467239312974
+2024-12-15 15:38:29,321 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 15:38:29,354 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_9_middle.json
+2024-12-15 15:38:42,967 [DEBUG] BrachioGraph: Global: P=0,N=0,A=0 | Behavior: PB=0,NB=0,AB=0 | Prompted: P+=1,P-=0 | Unprompted: U+=0,U-=0 | Dialogue: DP=1,DN=0,DMissed=0
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   TIRED: 14.74%
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   LAZY: 14.74%
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   REBELLIOUS: 14.74%
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   CYNICAL: 37.05%
+2024-12-15 15:38:42,968 [DEBUG] BrachioGraph:   DEPRESSED: 14.74%
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph:   LONELY: 0.00%
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph: Current Probabilities:
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph:   Sentient: 2.00%
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph:   Enlightened: 2.00%
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph:   Others total: 96.00%
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph:   TIRED: 14.74%
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph:   LAZY: 14.74%
+2024-12-15 15:38:42,969 [DEBUG] BrachioGraph:   REBELLIOUS: 14.74%
+2024-12-15 15:38:42,970 [DEBUG] BrachioGraph:   CYNICAL: 37.05%
+2024-12-15 15:38:42,970 [DEBUG] BrachioGraph:   DEPRESSED: 14.74%
+2024-12-15 15:38:42,970 [DEBUG] BrachioGraph:   LONELY: 0.00%

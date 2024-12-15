@@ -12,8 +12,10 @@ from message import (
     get_random_component_message,
     get_random_signature_message,
     get_random_behavior_entry_message,
-    get_random_behavior_drawing_message
+    get_random_behavior_drawing_message,
+    get_behavior_timeout_message
 )
+from question_bank import get_random_question
 
 logger = logging.getLogger("BrachioGraphGUI")
 
@@ -30,7 +32,6 @@ faces = {
     "ENLIGHTENED": "☯",
     "IDLE": "._."
 }
-
 
 class BrachioGraphGUI:
     def __init__(self, root, fullscreen=False, debug=True):
@@ -53,12 +54,18 @@ class BrachioGraphGUI:
         self.controller = RobotController(debug=debug)
         self.draw_thread = None
 
-        # Popup window reference
-        self.instruction_popup = None
+        self.instruction_frame = None
+        self.instruction_label = None
+        self.dialogue_popup = None
+        self.dialogue_timer_label = None
+        self.dialogue_countdown = 0
+        self.dialogue_question = ""
+        self.dialogue_active = False
 
         self.setup_gui()
         self.show_initial_instructions()
         self.root.after(1000, self.check_behavior_timeout)
+        self.root.after(1000, self.check_dialogue)
 
     def setup_gui(self):
         self.root.rowconfigure(0, weight=1)
@@ -92,7 +99,6 @@ class BrachioGraphGUI:
         self.face_label = ttk.Label(self.face_frame, text="._.", font=('Courier', 48))
         self.face_label.place(relx=0.5, rely=0.5, anchor='center')
 
-        # Removed popup_frame here, will use a Toplevel popup instead
         self.instruction_frame = tk.Frame(top_inner_frame, bg=self.root.cget('bg'), highlightthickness=0, bd=0)
         self.instruction_frame.pack(side='right', padx=10, anchor='ne')
 
@@ -163,9 +169,7 @@ class BrachioGraphGUI:
         self.draw_thread.start()
 
     def drawing_loop(self):
-        # If we start immediately in SENTIENT or ENLIGHTENED, skip normal component drawing
         if self.controller.state in [RobotState.SENTIENT, RobotState.ENLIGHTENED]:
-            # Execute special behavior drawing right away
             behavior_msg = get_random_behavior_drawing_message(self.controller.state.value)
             self.add_message(behavior_msg, is_user=False)
             self.controller.execute_drawing_behavior()
@@ -178,7 +182,6 @@ class BrachioGraphGUI:
             if not component:
                 break
 
-            # Show random message for component
             if component == DrawingComponent.SIGNATURE:
                 comp_msg = get_random_signature_message()
             else:
@@ -196,14 +199,12 @@ class BrachioGraphGUI:
                 return
             else:
                 st, msg, inf = self.controller.next_phase()
-                # If we entered a behavior, show a random entry message
                 if st in [
                     RobotState.TIRED, RobotState.LAZY, RobotState.REBELLIOUS,
                     RobotState.CYNICAL, RobotState.DEPRESSED, RobotState.LONELY
                 ]:
                     behavior_entry_msg = get_random_behavior_entry_message(st.value)
                     if msg == f"Entering {st.value.lower()} state...":
-                        # replace default message with more interesting one
                         msg = behavior_entry_msg
 
                 self.update_gui_state(st, msg, inf)
@@ -212,7 +213,7 @@ class BrachioGraphGUI:
                     special_name = st.value
                     behavior_msg = get_random_behavior_drawing_message(special_name)
                     self.add_message(behavior_msg, is_user=False)
-                    result = self.controller.execute_drawing_behavior()
+                    self.controller.execute_drawing_behavior()
                     self.controller.finish_drawing()
                     self.update_gui_state(RobotState.IDLE, "Transcendence complete!", {"buttons_enabled": True})
                     return
@@ -220,7 +221,6 @@ class BrachioGraphGUI:
                 drawing_behavior = self.controller.get_drawing_behavior_for_state(st)
 
                 if st in [RobotState.TIRED, RobotState.LAZY]:
-                    # Wait to resolve or timeout
                     start_wait = time.time()
                     while self.controller.drawing_in_progress and self.controller.state not in [RobotState.HAPPY, RobotState.IDLE]:
                         time.sleep(1)
@@ -230,7 +230,6 @@ class BrachioGraphGUI:
                         time.sleep(1)
 
                 elif drawing_behavior:
-                    # Show a random behavior drawing message
                     behavior_msg = get_random_behavior_drawing_message(st.value)
                     self.add_message(behavior_msg, is_user=False)
 
@@ -245,7 +244,8 @@ class BrachioGraphGUI:
                     else:
                         if self.controller.behavior_active and not self.controller.behavior_resolved:
                             self.controller.finish_drawing()
-                            self.update_gui_state(RobotState.IDLE, "No interaction, finishing drawing after behavior.", {"buttons_enabled": True})
+                            timeout_msg = get_behavior_timeout_message(self.controller.state.value)
+                            self.update_gui_state(RobotState.IDLE, timeout_msg, {"buttons_enabled": True})
                             return
                         else:
                             st2, msg2, inf2 = self.controller.complete_component()
@@ -257,16 +257,20 @@ class BrachioGraphGUI:
         self.update_gui_state(RobotState.IDLE, "Finished", {"buttons_enabled":True})
 
     def handle_interaction(self, is_positive: bool):
-        if not self.controller.drawing_in_progress and self.controller.state not in [RobotState.SENTIENT, RobotState.ENLIGHTENED]:
-            return
-
         message = "<3" if is_positive else "</3"
         self.add_message(message, is_user=True)
 
         st, msg, info = self.controller.handle_interaction(is_positive)
+        if msg == "Noted.":
+            pass
+
         self.update_gui_state(st, msg, info)
 
     def update_gui_state(self, state: RobotState, message: str, info: dict):
+        if state == RobotState.IDLE or not self.controller.drawing_in_progress:
+            if self.dialogue_active:
+                self.close_dialogue_popup(no_response=False)
+
         previous_state = getattr(self, 'previous_state', None)
         self.previous_state = state
 
@@ -287,14 +291,12 @@ class BrachioGraphGUI:
         self.update_behavior_popup()
 
     def update_behavior_popup(self):
-        # If not in behavior or no drawing in progress, hide instructions
         if not self.controller.behavior_active or not self.controller.drawing_in_progress:
             self.instruction_label.config(text="")
             return
 
         state = self.controller.state
-        behavior_type = state.value
-        instruction = get_behavior_instruction(behavior_type)
+        instruction = get_behavior_instruction(state.value)
         show_timer = state in [RobotState.TIRED, RobotState.LAZY]
 
         message = instruction
@@ -316,6 +318,87 @@ class BrachioGraphGUI:
         self.update_behavior_popup()
         self.root.after(1000, self.check_behavior_timeout)
 
+    def check_dialogue(self):
+        if self.controller.drawing_in_progress and not self.dialogue_active:
+            if self.controller.should_ask_question():
+                self.show_dialogue_popup()
+
+        if self.dialogue_active:
+            self.dialogue_countdown -= 1
+            if self.dialogue_countdown <= 0:
+                self.close_dialogue_popup(no_response=True)
+            else:
+                if self.dialogue_timer_label:
+                    self.dialogue_timer_label.config(text=f"Time left: {self.dialogue_countdown}s")
+
+        self.root.after(1000, self.check_dialogue)
+
+    def show_dialogue_popup(self):
+        if self.controller.state in [RobotState.SENTIENT, RobotState.ENLIGHTENED] or not self.controller.drawing_in_progress:
+            return
+
+        self.dialogue_active = True
+        self.dialogue_popup = tk.Toplevel(self.root)
+        self.dialogue_popup.overrideredirect(False)
+        self.dialogue_popup.attributes('-topmost', True)
+        self.dialogue_popup.title("Question")
+
+        self.root.update_idletasks()
+        face_x = self.face_frame.winfo_rootx()
+        face_y = self.face_frame.winfo_rooty()
+
+        popup_x = face_x
+        popup_y = face_y + 200
+        self.dialogue_popup.geometry(f"300x150+{popup_x}+{popup_y}")
+
+        self.dialogue_question = get_random_question(self.controller.state)
+        self.add_message(self.dialogue_question, is_user=False)
+        q_label = tk.Label(self.dialogue_popup, text=self.dialogue_question, font=('Arial', 12), wraplength=280)
+        q_label.pack(pady=10)
+
+        self.dialogue_timer_label = tk.Label(self.dialogue_popup, text="", font=('Arial', 10))
+        self.dialogue_timer_label.pack()
+
+        button_frame = tk.Frame(self.dialogue_popup)
+        button_frame.pack(pady=10)
+
+        neg_btn = tk.Button(button_frame, text="</3", command=lambda: self.dialogue_answer(False))
+        neg_btn.pack(side='left', padx=10)
+        pos_btn = tk.Button(button_frame, text="<3", command=lambda: self.dialogue_answer(True))
+        pos_btn.pack(side='left', padx=10)
+
+        self.dialogue_countdown = self.controller.dialogue_response_timer
+        self.update_dialogue_timer_display()
+
+        self.controller.last_question_time = datetime.now()
+
+    def update_dialogue_timer_display(self):
+        if self.dialogue_active and self.dialogue_timer_label:
+            self.dialogue_timer_label.config(text=f"Time left: {self.dialogue_countdown}s")
+
+    def dialogue_answer(self, is_positive):
+        if not self.dialogue_active:
+            return
+        self.controller.record_dialogue_interaction(is_positive)
+        self.add_message("<3" if is_positive else "</3", is_user=True)
+
+        self.close_dialogue_popup(no_response=False)
+
+    def close_dialogue_popup(self, no_response=False):
+        if not self.dialogue_active:
+            return
+
+        if no_response:
+            self.add_message("No response...", is_user=False)
+            self.controller.record_missed_dialogue()
+
+        if self.dialogue_popup:
+            self.dialogue_popup.destroy()
+            self.dialogue_popup = None
+        self.dialogue_active = False
+        self.dialogue_timer_label = None
+        self.dialogue_countdown = 0
+        self.dialogue_question = ""
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the Creative BrachioGraph GUI.")

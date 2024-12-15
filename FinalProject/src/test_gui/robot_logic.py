@@ -1,21 +1,18 @@
 import random
 import time
-# import threading
 import os
 from enums import DrawingComponent, DrawingBehavior, RobotState
 import logging
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime
 from dataclasses import dataclass
 from tqdm import tqdm
 
-# Insert path to BrachioGraphCaricature
 current_dir = os.path.dirname(os.path.abspath(__file__))
 brachiograph_dir = os.path.join(os.path.dirname(current_dir), 'BrachioGraphCaricature')
 sys.path.insert(0, brachiograph_dir)
 
 from brachiograph import BrachioGraph
-
 from file_selection import create_log_directory, select_component_files, select_behavior_file
 
 logging.basicConfig(
@@ -26,9 +23,7 @@ logging.basicConfig(
         logging.StreamHandler(sys.stdout)
     ]
 )
-
 logger = logging.getLogger("BrachioGraph")
-
 
 @dataclass
 class BehaviorThresholds:
@@ -42,13 +37,18 @@ class BehaviorThresholds:
 class RobotController:
     def __init__(self, hardware=False, debug=False):
         self.hardware = hardware
-        
         self.debug = debug
         self.state = RobotState.IDLE
         # Global counters
         self.interaction_positive = 0
         self.interaction_negative = 0
         self.interaction_any = 0
+
+        # Prompted/Unprompted counters (component-level)
+        self.prompted_positive = 0
+        self.prompted_negative = 0
+        self.unprompted_positive = 0
+        self.unprompted_negative = 0
 
         # Behavior-specific counters
         self.interaction_positive_behavior = 0
@@ -63,13 +63,12 @@ class RobotController:
             DrawingComponent.WINDOW3,
             DrawingComponent.SIGNATURE
         ]
-        self.component_draw_time = 10
+        self.component_draw_time = 30
 
-        # For now, we keep a constant behavior_timeout for time-based behaviors
         self.behavior_timeout = 5
-        
-        self.sentient_chance = 0.05
-        self.enlightened_chance = 0.05
+        # Chance that at the start of drawing (when user presses start), it is sentient or enlightened
+        self.sentient_chance = 0.02
+        self.enlightened_chance = 0.02
 
         self.stop_drawing_flag = False
         self.special_interaction_allowed = False
@@ -79,17 +78,21 @@ class RobotController:
         self.behavior_start_time = None
         self.behavior_draw_stop_flag = False
 
-        # We'll generate thresholds when starting a new drawing
         self.thresholds = None
-        
         self.base_data_path = os.path.abspath(os.path.join(current_dir, "../../assets/data"))
         self.logs_path = os.path.join(self.base_data_path, "logs")
-        
-        self.chosen_files = {}  # to store chosen JSON files for components and signature
+
+        self.chosen_files = {}
         self.log_dir = None
         
+        self.last_question_time = None
+        self.dialogue_interval = 10
+        self.dialogue_response_timer = 5
         
-        # Initialize BrachioGraph only if hardware mode
+        self.dialogue_positive = 0
+        self.dialogue_negative = 0
+        self.dialogue_missed = 0
+
         if self.hardware:
             self.bg = BrachioGraph(
                 servo_1_parked_pw=1570,
@@ -97,12 +100,21 @@ class RobotController:
                 virtual=False
             )
         else:
-            self.bg = None  # No hardware, simulate
-        
-        
-        
+            self.bg = None
 
-    def _print_initial_parameters(self):
+        # Initialize default probabilities
+        self._reset_probabilities()
+
+        # Generative limits and rates
+        self.lonely_missed_limit = random.randint(1, 6)
+        self.lonely_rate = random.uniform(0.25, 0.55)
+        self.cynical_positive_limit = random.randint(0,1)
+        self.cynical_rate = random.uniform(0.25, 0.55)
+        self.depressed_negative_limit = random.randint(3,6)
+        self.depressed_rate = random.uniform(0.25, 0.55)
+
+    def _print_all_parameters(self):
+        # Print thresholds if available
         if self.thresholds:
             logger.debug("----- CURRENT THRESHOLDS -----")
             logger.debug(f"  Tired: {self.thresholds.tired}")
@@ -112,23 +124,31 @@ class RobotController:
             logger.debug(f"  Depressed: {self.thresholds.depressed}")
             logger.debug(f"  Lonely: {self.thresholds.lonely}")
             logger.debug("--------------------------------")
+        else:
+            logger.debug("Thresholds have not been generated yet.")
+
+        logger.debug("_____ LIMITS, RATES, AND CHANCES _____")
+        logger.debug(f"  Sentient start chance: {self.sentient_chance*100:.2f}%")
+        logger.debug(f"  Enlightened start chance: {self.enlightened_chance*100:.2f}%")
+        logger.debug(f"  Lonely missed limit: {self.lonely_missed_limit}, rate: {self.lonely_rate}")
+        logger.debug(f"  Cynical positive limit: {self.cynical_positive_limit}, rate: {self.cynical_rate}")
+        logger.debug(f"  Depressed negative limit: {self.depressed_negative_limit}, rate: {self.depressed_rate}")
 
     def _generate_thresholds(self):
-        # Random thresholds within specified ranges
-        # Adjust ranges as desired
         self.thresholds = BehaviorThresholds(
-            tired=random.randint(2, 5),
-            lazy=random.randint(2, 5),
-            rebellious=random.randint(2, 5),
-            cynical=random.randint(2, 5),
-            depressed=random.randint(2, 5),
-            lonely=random.randint(1, 3)
+            tired=random.randint(5, 15),
+            lazy=random.randint(5, 15),
+            rebellious=random.randint(5, 15),
+            cynical=random.randint(5, 15),
+            depressed=random.randint(5, 15),
+            lonely=random.randint(5, 15),
         )
-        self._print_initial_parameters()
 
     def start_new_drawing(self):
         self._reset_state()
         self._generate_thresholds()
+
+        self.last_question_time = datetime.now()
 
         self.log_dir, ts = create_log_directory(self.logs_path)
         log_file_path = os.path.join(self.log_dir, "debug.log")
@@ -150,24 +170,27 @@ class RobotController:
 
         logger.debug(f"Chosen component files: W1={w1}, W2={w2}, W3={w3}, Signature={sig}")
 
+        # Print all parameters including limits, rates, and chances
+        self._print_all_parameters()
+
         self.state = RobotState.HAPPY
         self.drawing_in_progress = True
-        
+
+        # Decide if sentient or enlightened at start (separate from the 2% used in next_phase)
         roll = random.random()
         if roll < self.sentient_chance:
             self.state = RobotState.SENTIENT
             self.special_interaction_allowed = True
-            logger.debug("Started drawing: Transitioned to SENTIENT immediately.")
+            logger.debug("Started drawing: Transitioned to SENTIENT immediately at start.")
             return (self.state, "Achieving sentience...", {"buttons_enabled": True})
         elif roll < (self.sentient_chance + self.enlightened_chance):
             self.state = RobotState.ENLIGHTENED
             self.special_interaction_allowed = True
-            logger.debug("Started drawing: Transitioned to ENLIGHTENED immediately.")
+            logger.debug("Started drawing: Transitioned to ENLIGHTENED immediately at start.")
             return (self.state, "Achieving enlightenment...", {"buttons_enabled": True})
 
         logger.debug("State: HAPPY, drawing in progress.")
         return (self.state, "Starting new drawing!", {"buttons_enabled": True})
-
 
     def _reset_state(self):
         logger.debug("Resetting entire state for new drawing")
@@ -175,6 +198,7 @@ class RobotController:
         self.interaction_negative = 0
         self.interaction_any = 0
         self._reset_behavior_counters()
+        self._reset_component_counters()
         self.current_component_index = 0
         self.stop_drawing_flag = False
         self.behavior_active = False
@@ -182,18 +206,83 @@ class RobotController:
         self.special_interaction_allowed = False
         self.behavior_draw_stop_flag = False
         self.chosen_files = {}
+        self.dialogue_positive = 0
+        self.dialogue_negative = 0
+        self.dialogue_missed = 0
+        self.last_question_time = None
+        self._reset_probabilities()
 
-        # Remove file handlers if any (for previous runs)
         for h in logger.handlers[:]:
             if isinstance(h, logging.FileHandler):
                 logger.removeHandler(h)
                 h.close()
+
+    def _reset_probabilities(self):
+        base = 0.96 / 5
+        self.probabilities = {
+            "TIRED": base,
+            "LAZY": base,
+            "REBELLIOUS": base,
+            "CYNICAL": base,
+            "DEPRESSED": base,
+            "LONELY": 0.0
+        }
+        self._debug_probabilities()
 
     def _reset_behavior_counters(self):
         logger.debug("Resetting behavior-specific counters")
         self.interaction_positive_behavior = 0
         self.interaction_negative_behavior = 0
         self.interaction_any_behavior = 0
+
+    def _reset_component_counters(self):
+        logger.debug("Resetting component-level counters (prompted/unprompted)")
+        self.prompted_positive = 0
+        self.prompted_negative = 0
+        self.unprompted_positive = 0
+        self.unprompted_negative = 0
+        self.dialogue_missed = 0
+
+    def _debug_probabilities(self):
+        logger.debug("Current Probabilities:")
+        logger.debug(f"  Sentient: {self.sentient_chance*100:.2f}%")
+        logger.debug(f"  Enlightened: {self.enlightened_chance*100:.2f}%")
+        remaining = 1.0 - (self.sentient_chance + self.enlightened_chance)
+        logger.debug(f"  Others total: {remaining*100:.2f}%")
+        for k,v in self.probabilities.items():
+            logger.debug(f"  {k}: {v*100:.2f}%")
+
+    def _recalculate_probabilities(self):
+        others = ["TIRED","LAZY","REBELLIOUS","CYNICAL","DEPRESSED","LONELY"]
+        total = sum(self.probabilities[s] for s in others)
+        if total == 0:
+            self._reset_probabilities()
+            return
+        factor = 0.96 / total
+        for s in others:
+            self.probabilities[s] *= factor
+        self._debug_probabilities()
+
+    def _increase_lonely(self):
+        if self.dialogue_missed >= self.lonely_missed_limit:
+            extra_missed = self.dialogue_missed - self.lonely_missed_limit + 1
+            added = self.lonely_rate * extra_missed
+            self.probabilities["LONELY"] = min(self.probabilities["LONELY"] + added, 0.96)
+            self._recalculate_probabilities()
+
+    def _increase_cynical(self):
+        if self.prompted_positive >= self.cynical_positive_limit:
+            extra_pos = self.prompted_positive - self.cynical_positive_limit + 1
+            added = self.cynical_rate * extra_pos
+            self.probabilities["CYNICAL"] = min(self.probabilities["CYNICAL"] + added, 0.96)
+            self._recalculate_probabilities()
+
+    def _increase_depressed(self):
+        if self.prompted_negative >= self.depressed_negative_limit:
+            extra_neg = self.prompted_negative - self.depressed_negative_limit + 1
+            added = self.depressed_rate * extra_neg
+            self.probabilities["DEPRESSED"] = min(self.probabilities["DEPRESSED"] + added, 0.96)
+            self._recalculate_probabilities()
 
     def get_current_component(self):
         if not self.drawing_in_progress:
@@ -212,13 +301,10 @@ class RobotController:
         logger.debug(f"Drawing component: {name}, file: {file_to_draw}")
         
         if self.hardware:
-            # Hardware mode: just call bg.plot_file and wait for it to finish
             if file_to_draw:
                 self.bg.plot_file(file_to_draw)
-            # Once done, return True
             return True
         else:
-            # Simulation mode
             for _ in tqdm(range(duration), desc=f"Drawing {name}", unit="sec"):
                 if self.stop_drawing_flag:
                     logger.debug(f"Stop drawing flag set during {name}")
@@ -226,18 +312,16 @@ class RobotController:
                 time.sleep(1)
             logger.debug(f"Finished drawing component: {name}")
             return True
-    
+
     def draw_behavior(self, name, duration):
         behavior_file = select_behavior_file(self.base_data_path, self.state.value)
         logger.debug(f"Starting behavior: {name}, file: {behavior_file}")
 
         if self.hardware:
-            # In hardware mode, just plot the behavior file
             if behavior_file:
                 self.bg.plot_file(behavior_file)
             return True
         else:
-            # Simulation mode
             for _ in tqdm(range(duration), desc=f"Behavior: {name}", unit="sec"):
                 if self.stop_drawing_flag or self.behavior_draw_stop_flag:
                     logger.debug(f"Stop flag set during behavior: {name}")
@@ -253,7 +337,9 @@ class RobotController:
             RobotState.DEPRESSED: DrawingBehavior.DEPRESSED,
             RobotState.LONELY: DrawingBehavior.LONELY,
             RobotState.SENTIENT: DrawingBehavior.SENTIENT,
-            RobotState.ENLIGHTENED: DrawingBehavior.ENLIGHTENED
+            RobotState.ENLIGHTENED: DrawingBehavior.ENLIGHTENED,
+            RobotState.TIRED: None,
+            RobotState.LAZY: None
         }
         return mapping.get(state, None)
 
@@ -283,30 +369,34 @@ class RobotController:
             logger.debug("Next component is SIGNATURE, no intermediate behavior.")
             return (RobotState.HAPPY, "Final component (Signature) next!", {"buttons_enabled": True})
 
+        # Reroll state based on updated probabilities (for mid-drawing transitions)
         roll = random.random()
+        # Here we use 0.02 and 0.02 again as we decided for mid phases
         if roll < 0.02:
             self.state = RobotState.SENTIENT
-            self.special_interaction_allowed = True
-            logger.debug("Transitioned to SENTIENT")
-            return (self.state, "I've become sentient!", {"buttons_enabled": True})
         elif roll < 0.04:
             self.state = RobotState.ENLIGHTENED
-            self.special_interaction_allowed = True
-            logger.debug("Transitioned to ENLIGHTENED")
-            return (self.state, "I've reached enlightenment!", {"buttons_enabled": True})
         else:
-            behaviors = [RobotState.REBELLIOUS]
-            # behaviors = [RobotState.TIRED, RobotState.LAZY, RobotState.REBELLIOUS, RobotState.CYNICAL, RobotState.DEPRESSED, RobotState.LONELY]
-            chosen = random.choice(behaviors)
-            self.state = chosen
+            remainder = roll - 0.04
+            scale = remainder / 0.96
+            cumulative = 0.0
+            for s in ["TIRED","LAZY","REBELLIOUS","CYNICAL","DEPRESSED","LONELY"]:
+                cumulative += self.probabilities[s]
+                if scale <= cumulative:
+                    self.state = RobotState[s]
+                    break
+
+        if self.state in [RobotState.SENTIENT, RobotState.ENLIGHTENED]:
+            self.special_interaction_allowed = True
+            logger.debug(f"Transitioned to {self.state.value}")
+            msg = "I've become sentient!" if self.state == RobotState.SENTIENT else "I've reached enlightenment!"
+            return (self.state, msg, {"buttons_enabled": True})
+        else:
             self.behavior_active = True
             self.behavior_resolved = False
             self.behavior_start_time = datetime.now()
             self._reset_behavior_counters()
-
-            # Reset the draw stop flag whenever we start a new behavior
             self.behavior_draw_stop_flag = False
-
             logger.debug(f"Transitioned to behavior: {self.state.value}")
             return (self.state, f"Entering {self.state.value.lower()} state...", {"buttons_enabled": True})
 
@@ -321,8 +411,35 @@ class RobotController:
             self.interaction_positive += 1
         else:
             self.interaction_negative += 1
+            
+        in_behavior = self.behavior_active and self.state not in [RobotState.SENTIENT, RobotState.ENLIGHTENED]
+        
+        if self.drawing_in_progress and not in_behavior:
+            # unprompted interaction
+            if is_positive:
+                self.unprompted_positive += 1
+            else:
+                self.unprompted_negative += 1
+                
+        if in_behavior:
+            if is_positive:
+                self.interaction_positive_behavior += 1
+            else:
+                self.interaction_negative_behavior += 1
 
-        # Special handling for SENTIENT and ENLIGHTENED
+            if self.state == RobotState.LONELY:
+                self.interaction_any += 1
+                self.interaction_any_behavior += 1
+        
+        # Update probabilities after interaction
+        self._debug_counters()
+        self._increase_lonely()
+        self._increase_cynical()
+        self._increase_depressed()
+
+        # After adjusting, print probabilities again
+        self._debug_probabilities()
+
         if self.state == RobotState.SENTIENT:
             self._debug_counters()
             if self.special_interaction_allowed:
@@ -341,19 +458,7 @@ class RobotController:
             else:
                 return (self.state, "I will not be diverted from trancension...", {"buttons_enabled": False})
 
-        # In a behavior: increment behavior counters as well
-        if is_positive:
-            self.interaction_positive_behavior += 1
-        else:
-            self.interaction_negative_behavior += 1
-
-        if self.state == RobotState.LONELY:
-            self.interaction_any += 1
-            self.interaction_any_behavior += 1
-
-        self._debug_counters()
-
-        # Check thresholds based on behavior counters
+        # Check thresholds
         if self.state == RobotState.TIRED:
             if self.interaction_positive_behavior >= self.thresholds.tired:
                 return self.resolve_behavior("Feeling energized!")
@@ -387,6 +492,8 @@ class RobotController:
     def resolve_behavior(self, msg):
         logger.debug(f"Behavior {self.state.value} resolved by user.")
         self._reset_behavior_counters()
+        self._reset_component_counters()  
+        self._reset_probabilities()
         self.behavior_active = False
         self.behavior_resolved = True
         self.state = RobotState.HAPPY
@@ -394,13 +501,10 @@ class RobotController:
         return (self.state, msg, {"buttons_enabled": True})
 
     def behavior_timeout_check(self):
-        # Only apply timeout checks if it's a time-based behavior
-        # Time-based behaviors: TIRED, LAZY
         if not self.behavior_active:
             return None
 
         if self.state not in [RobotState.TIRED, RobotState.LAZY]:
-            # Drawing behaviors have no timeout
             return None
 
         if self.behavior_start_time:
@@ -413,6 +517,8 @@ class RobotController:
     def handle_behavior_timeout(self):
         logger.debug(f"Handling timeout for behavior: {self.state.value}")
         self._reset_behavior_counters()
+        self._reset_component_counters()
+        self._reset_probabilities()
         self.behavior_active = False
         self.behavior_resolved = True
 
@@ -422,17 +528,18 @@ class RobotController:
             return (RobotState.IDLE, "Too tired... finishing drawing now.", {"buttons_enabled": True})
 
         elif self.state == RobotState.LAZY:
-            self.current_component_index = 2  # signature index
+            self.current_component_index = 2 
             self.state = RobotState.HAPPY
             logger.debug("Lazy timeout, skipping to signature.")
             return (self.state, "Too lazy, skipping to signature...", {"buttons_enabled": True})
 
-        # Should never reach here for drawing behaviors as we skip them
         return (self.state, "Time's up.", {"buttons_enabled": True})
 
     def complete_component(self):
         self.current_component_index += 1
         logger.debug(f"Completed component, now at index: {self.current_component_index}")
+        self._reset_component_counters()
+        
         if self.current_component_index >= len(self.components):
             self.finish_drawing()
             return (RobotState.IDLE, "Drawing complete!", {"buttons_enabled": True})
@@ -442,6 +549,35 @@ class RobotController:
 
     def _debug_counters(self):
         logger.debug(
-            f"Global counters: P={self.interaction_positive},N={self.interaction_negative},A={self.interaction_any} | "
-            f"Behavior counters: PB={self.interaction_positive_behavior},NB={self.interaction_negative_behavior},AB={self.interaction_any_behavior}"
+            f"Global: P={self.interaction_positive},N={self.interaction_negative},A={self.interaction_any} | "
+            f"Behavior: PB={self.interaction_positive_behavior},NB={self.interaction_negative_behavior},AB={self.interaction_any_behavior} | "
+            f"Prompted: P+={self.prompted_positive},P-={self.prompted_negative} | Unprompted: U+={self.unprompted_positive},U-={self.unprompted_negative} | "
+            f"Dialogue: DP={self.dialogue_positive},DN={self.dialogue_negative},DMissed={self.dialogue_missed}"
         )
+
+    def should_ask_question(self):
+        if not self.drawing_in_progress:
+            return False
+        if self.last_question_time is None:
+            return False
+        elapsed = (datetime.now() - self.last_question_time).total_seconds()
+        return elapsed >= self.dialogue_interval
+
+    def record_dialogue_interaction(self, is_positive):
+        if is_positive:
+            self.dialogue_positive += 1
+            self.prompted_positive += 1
+        else:
+            self.dialogue_negative += 1
+            self.prompted_negative += 1
+
+        self._debug_counters()
+        self._increase_cynical()
+        self._increase_depressed()
+        self._debug_probabilities()
+
+    def record_missed_dialogue(self):
+        self.dialogue_missed += 1
+        self._debug_counters()
+        self._increase_lonely()
+        self._debug_probabilities()

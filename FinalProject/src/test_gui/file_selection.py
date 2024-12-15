@@ -3,7 +3,6 @@ import random
 from datetime import datetime
 
 def create_log_directory(base_path):
-    # base_path could be "CPSC334/FinalProject/assets/data/logs"
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_dir = os.path.join(base_path, timestamp)
     os.makedirs(log_dir, exist_ok=True)
@@ -11,14 +10,12 @@ def create_log_directory(base_path):
 
 def select_component_files(assets_base):
     componets_path = os.path.join(assets_base, "components")
-    # assets_base could be "CPSC334/FinalProject/assets/data"
-    # We'll randomly choose one file from middle/json, top_left/json, top_right/json
     middle_path = os.path.join(componets_path, "middle/json")
     top_left_path = os.path.join(componets_path, "top_left/json")
     top_right_path = os.path.join(componets_path, "top_right/json")
     signature_path = os.path.join(componets_path, "signature/json")
 
-    # Random file from each
+    # random file from each
     def random_file_from_dir(dir_path):
         files = [f for f in os.listdir(dir_path) if f.endswith(".json")]
         return os.path.join(dir_path, random.choice(files))
@@ -27,10 +24,7 @@ def select_component_files(assets_base):
     window2_file = random_file_from_dir(top_left_path)
     window3_file = random_file_from_dir(top_right_path)
 
-    # Signature is constant - assume one json or pick the same file if multiple
-    # If multiple signatures, do the same random process
     signature_files = [f for f in os.listdir(signature_path) if f.endswith(".json")]
-    # If always the same, just choose first file
     signature_file = os.path.join(signature_path, signature_files[0])
 
     return window1_file, window2_file, window3_file, signature_file
