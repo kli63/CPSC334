@@ -6,11 +6,14 @@ class DrawingComponent(Enum):
     WINDOW2 = "Window 2"
     WINDOW3 = "Window 3"
     SIGNATURE = "Signature"
-    MIDDLE_FINGER = "Middle Finger"
-    CROSS_OUT = "Cross Out"
-    SAD_PORTRAIT = "Sad Portrait"
-    SENTIENCE = "Sentience"
-    ENLIGHTENMENT = "Enlightenment"
+
+class DrawingBehavior(Enum):
+    REBELLIOUS = "Rebellious"
+    CYNICAL = "Cynical"
+    DEPRESSED = "Depressed"
+    SENTIENT = "Sentient"
+    ENLIGHTENED = "Enlightened"
+    LONELY = "Lonely"
 
 class RobotState(Enum):
     IDLE = "IDLE"
@@ -21,6 +24,5 @@ class RobotState(Enum):
     CYNICAL = "CYNICAL"
     DEPRESSED = "DEPRESSED"
     LONELY = "LONELY"
-    OVERSTIMULATED = "OVERSTIMULATED"
     SENTIENT = "SENTIENT"
     ENLIGHTENED = "ENLIGHTENED"

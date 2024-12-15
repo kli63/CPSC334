@@ -1,12 +1,22 @@
 import random
 import time
-import threading
-from enum import Enum
+# import threading
+import os
+from enums import DrawingComponent, DrawingBehavior, RobotState
 import logging
 import sys
 from datetime import datetime, timedelta
 from dataclasses import dataclass
 from tqdm import tqdm
+
+# Insert path to BrachioGraphCaricature
+current_dir = os.path.dirname(os.path.abspath(__file__))
+brachiograph_dir = os.path.join(os.path.dirname(current_dir), 'BrachioGraphCaricature')
+sys.path.insert(0, brachiograph_dir)
+
+from brachiograph import BrachioGraph
+
+from file_selection import create_log_directory, select_component_files, select_behavior_file
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -19,31 +29,6 @@ logging.basicConfig(
 
 logger = logging.getLogger("BrachioGraph")
 
-class DrawingComponent(Enum):
-    WINDOW1 = "Window 1"
-    WINDOW2 = "Window 2"
-    WINDOW3 = "Window 3"
-    SIGNATURE = "Signature"
-
-class DrawingBehavior(Enum):
-    REBELLIOUS = "Rebellious"
-    CYNICAL = "Cynical"
-    DEPRESSED = "Depressed"
-    SENTIENT = "Sentient"
-    ENLIGHTENED = "Enlightened"
-    LONELY = "Lonely"
-
-class RobotState(Enum):
-    IDLE = "IDLE"
-    HAPPY = "HAPPY"
-    TIRED = "TIRED"
-    LAZY = "LAZY"
-    REBELLIOUS = "REBELLIOUS"
-    CYNICAL = "CYNICAL"
-    DEPRESSED = "DEPRESSED"
-    LONELY = "LONELY"
-    SENTIENT = "SENTIENT"
-    ENLIGHTENED = "ENLIGHTENED"
 
 @dataclass
 class BehaviorThresholds:
