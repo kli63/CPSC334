@@ -65,7 +65,7 @@ class RobotController:
         ]
         self.component_draw_time = 30
 
-        self.behavior_timeout = 5
+        self.behavior_timeout = 30
         # Chance that at the start of drawing (when user presses start), it is sentient or enlightened
         self.sentient_chance = 0.02
         self.enlightened_chance = 0.02
@@ -86,8 +86,8 @@ class RobotController:
         self.log_dir = None
         
         self.last_question_time = None
-        self.dialogue_interval = 10
-        self.dialogue_response_timer = 5
+        self.dialogue_interval = 30
+        self.dialogue_response_timer = 15
         
         self.dialogue_positive = 0
         self.dialogue_negative = 0
