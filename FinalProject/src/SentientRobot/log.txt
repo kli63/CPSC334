@@ -564,3 +564,149 @@
 2024-12-15 04:52:56,107 [DEBUG] BrachioGraph: Prompted Positive: 1, Prompted Negative: 0
 2024-12-15 04:52:56,107 [DEBUG] BrachioGraph: Unprompted Positive: 42, Unprompted Negative: 0
 2024-12-15 04:52:56,107 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:5, Rebellious:13, Cynical:12, Depressed:9, Loneliness Limit:4, Stimulation Limit:6, Cynical Limit:3, Depressed Limit:4, Overstimulation Interaction Limit:2
+2024-12-15 12:28:34,701 [INFO] BrachioGraph: ----- New Run Started at 2024-12-15 12:28:34 -----
+2024-12-15 12:28:36,270 [DEBUG] BrachioGraph: Starting new drawing with HAPPY state
+2024-12-15 12:28:36,271 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:37,902 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:37,902 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:37,903 [DEBUG] BrachioGraph: Unprompted Positive: 1, Unprompted Negative: 0
+2024-12-15 12:28:37,903 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:38,086 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:38,086 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:38,086 [DEBUG] BrachioGraph: Unprompted Positive: 2, Unprompted Negative: 0
+2024-12-15 12:28:38,086 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:38,253 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:38,253 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:38,253 [DEBUG] BrachioGraph: Unprompted Positive: 3, Unprompted Negative: 0
+2024-12-15 12:28:38,253 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:38,418 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:38,418 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:38,418 [DEBUG] BrachioGraph: Unprompted Positive: 4, Unprompted Negative: 0
+2024-12-15 12:28:38,418 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:38,577 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:38,577 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:38,577 [DEBUG] BrachioGraph: Unprompted Positive: 5, Unprompted Negative: 0
+2024-12-15 12:28:38,577 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:38,740 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:38,740 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:38,740 [DEBUG] BrachioGraph: Unprompted Positive: 6, Unprompted Negative: 0
+2024-12-15 12:28:38,740 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:38,902 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:38,903 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:38,903 [DEBUG] BrachioGraph: Unprompted Positive: 7, Unprompted Negative: 0
+2024-12-15 12:28:38,903 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:39,052 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:39,052 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:39,052 [DEBUG] BrachioGraph: Unprompted Positive: 8, Unprompted Negative: 0
+2024-12-15 12:28:39,052 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:39,216 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:39,216 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:39,217 [DEBUG] BrachioGraph: Unprompted Positive: 9, Unprompted Negative: 0
+2024-12-15 12:28:39,217 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:39,388 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:39,389 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:39,389 [DEBUG] BrachioGraph: Unprompted Positive: 10, Unprompted Negative: 0
+2024-12-15 12:28:39,389 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:39,562 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:39,563 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:39,563 [DEBUG] BrachioGraph: Unprompted Positive: 11, Unprompted Negative: 0
+2024-12-15 12:28:39,563 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:39,917 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:39,917 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:39,917 [DEBUG] BrachioGraph: Unprompted Positive: 12, Unprompted Negative: 0
+2024-12-15 12:28:39,917 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:40,100 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:40,100 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:40,101 [DEBUG] BrachioGraph: Unprompted Positive: 13, Unprompted Negative: 0
+2024-12-15 12:28:40,101 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:40,270 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:40,270 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:40,270 [DEBUG] BrachioGraph: Unprompted Positive: 14, Unprompted Negative: 0
+2024-12-15 12:28:40,270 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:40,442 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:40,442 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:40,442 [DEBUG] BrachioGraph: Unprompted Positive: 15, Unprompted Negative: 0
+2024-12-15 12:28:40,442 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:40,616 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:40,616 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:40,616 [DEBUG] BrachioGraph: Unprompted Positive: 16, Unprompted Negative: 0
+2024-12-15 12:28:40,616 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:40,798 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:40,798 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:40,798 [DEBUG] BrachioGraph: Unprompted Positive: 17, Unprompted Negative: 0
+2024-12-15 12:28:40,798 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:40,994 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:40,994 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:40,994 [DEBUG] BrachioGraph: Unprompted Positive: 18, Unprompted Negative: 0
+2024-12-15 12:28:40,994 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:41,158 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:41,158 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:41,158 [DEBUG] BrachioGraph: Unprompted Positive: 19, Unprompted Negative: 0
+2024-12-15 12:28:41,159 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:28:41,584 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:28:41,585 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:28:41,585 [DEBUG] BrachioGraph: Unprompted Positive: 20, Unprompted Negative: 0
+2024-12-15 12:28:41,585 [DEBUG] BrachioGraph: Thresholds: Tired:9, Lazy:6, Rebellious:9, Cynical:13, Depressed:10, Loneliness Limit:5, Stimulation Limit:6, Cynical Limit:4, Depressed Limit:6, Overstimulation Interaction Limit:2
+2024-12-15 12:31:04,769 [INFO] BrachioGraph: ----- New Run Started at 2024-12-15 12:31:04 -----
+2024-12-15 12:31:06,758 [DEBUG] BrachioGraph: Starting new drawing with HAPPY state
+2024-12-15 12:31:06,758 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:09,313 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:09,313 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:09,324 [DEBUG] BrachioGraph: Unprompted Positive: 1, Unprompted Negative: 0
+2024-12-15 12:31:09,324 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:10,016 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:10,016 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:10,016 [DEBUG] BrachioGraph: Unprompted Positive: 2, Unprompted Negative: 0
+2024-12-15 12:31:10,016 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:10,291 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:10,291 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:10,291 [DEBUG] BrachioGraph: Unprompted Positive: 3, Unprompted Negative: 0
+2024-12-15 12:31:10,292 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:10,473 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:10,474 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:10,474 [DEBUG] BrachioGraph: Unprompted Positive: 4, Unprompted Negative: 0
+2024-12-15 12:31:10,474 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:10,646 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:10,646 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:10,646 [DEBUG] BrachioGraph: Unprompted Positive: 5, Unprompted Negative: 0
+2024-12-15 12:31:10,646 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:10,825 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:10,826 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:10,826 [DEBUG] BrachioGraph: Unprompted Positive: 6, Unprompted Negative: 0
+2024-12-15 12:31:10,826 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:10,999 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:10,999 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:10,999 [DEBUG] BrachioGraph: Unprompted Positive: 7, Unprompted Negative: 0
+2024-12-15 12:31:10,999 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:11,165 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:11,165 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:11,165 [DEBUG] BrachioGraph: Unprompted Positive: 8, Unprompted Negative: 0
+2024-12-15 12:31:11,165 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:11,408 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:11,408 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:11,409 [DEBUG] BrachioGraph: Unprompted Positive: 9, Unprompted Negative: 0
+2024-12-15 12:31:11,409 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:11,590 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:11,590 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:11,590 [DEBUG] BrachioGraph: Unprompted Positive: 10, Unprompted Negative: 0
+2024-12-15 12:31:11,590 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:12,060 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:12,060 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:12,060 [DEBUG] BrachioGraph: Unprompted Positive: 11, Unprompted Negative: 0
+2024-12-15 12:31:12,060 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:12,242 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:12,242 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:12,242 [DEBUG] BrachioGraph: Unprompted Positive: 12, Unprompted Negative: 0
+2024-12-15 12:31:12,242 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:12,635 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:12,635 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:12,635 [DEBUG] BrachioGraph: Unprompted Positive: 13, Unprompted Negative: 0
+2024-12-15 12:31:12,635 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:12,897 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:12,897 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:12,898 [DEBUG] BrachioGraph: Unprompted Positive: 14, Unprompted Negative: 0
+2024-12-15 12:31:12,898 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2
+2024-12-15 12:31:13,180 [DEBUG] BrachioGraph: User response: Positive, was_prompted=False
+2024-12-15 12:31:13,180 [DEBUG] BrachioGraph: Prompted Positive: 0, Prompted Negative: 0
+2024-12-15 12:31:13,180 [DEBUG] BrachioGraph: Unprompted Positive: 15, Unprompted Negative: 0
+2024-12-15 12:31:13,181 [DEBUG] BrachioGraph: Thresholds: Tired:15, Lazy:8, Rebellious:8, Cynical:12, Depressed:13, Loneliness Limit:3, Stimulation Limit:6, Cynical Limit:5, Depressed Limit:3, Overstimulation Interaction Limit:2

@@ -278,7 +278,7 @@ class RobotController:
             logger.debug("Transitioned to ENLIGHTENED")
             return (self.state, "I've reached enlightenment!", {"buttons_enabled": True})
         else:
-            # behaviors = [RobotState.LAZY]
+            # behaviors = [RobotState.LONELY]
             behaviors = [RobotState.TIRED, RobotState.LAZY, RobotState.REBELLIOUS, RobotState.CYNICAL, RobotState.DEPRESSED, RobotState.LONELY]
             chosen = random.choice(behaviors)
             self.state = chosen
