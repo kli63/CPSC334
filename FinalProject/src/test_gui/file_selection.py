@@ -46,9 +46,9 @@ def select_behavior_file(assets_base, state):
     behaviors_path = os.path.join(assets_base, "behaviors")
 
     if state == "REBELLIOUS":
-        return os.path.join(behaviors_path, "data/json", "badhand.json")
+        return os.path.join(behaviors_path, "hand/json", "badhand.json")
     elif state == "ENLIGHTENED":
-        return os.path.join(behaviors_path, "data/json", "goodhand.json")
+        return os.path.join(behaviors_path, "hand/json", "goodhand.json")
     elif state == "LONELY":
         return os.path.join(behaviors_path, "portraits/json", "sad.json")
     elif state == "SENTIENT":

@@ -10,16 +10,17 @@ import argparse
 logger = logging.getLogger("BrachioGraphGUI")
 
 faces = {
-    "IDLE": "._.",
-    "HAPPY": ":)",
+    "HAPPY": "^_^",
     "TIRED": "-_-",
-    "LAZY": ":/",
-    "REBELLIOUS": ">:(",
-    "CYNICAL": ":|",
-    "DEPRESSED": ":(",
-    "LONELY": ":'(",
+    "LAZY": "u_u",
+    "REBELLIOUS": ">:)",
+    "CYNICAL": "¬_¬",
+    "DEPRESSED": "T_T",
+    "LONELY": ";_;",
+    "OVERSTIMULATED": "@_@",
     "SENTIENT": "O_O",
-    "ENLIGHTENED": "*_*"
+    "ENLIGHTENED": "☯",
+    "IDLE": "._."
 }
 
 class MessageWidget(ttk.Frame):
@@ -38,7 +39,7 @@ class MessageWidget(ttk.Frame):
         content_frame = ttk.Frame(msg_frame)
         content_frame.pack(padx=5, pady=5)
         
-        content = tk.Label(
+        self.content = tk.Label(
             content_frame,
             text=text,
             wraplength=300,
@@ -47,7 +48,7 @@ class MessageWidget(ttk.Frame):
             padx=10,
             pady=5
         )
-        content.pack()
+        self.content.pack()
         
         info_frame = ttk.Frame(msg_frame)
         info_frame.pack(fill=tk.X, padx=5, pady=(0, 5))
@@ -72,6 +73,10 @@ class MessageWidget(ttk.Frame):
             current_time = datetime.now().strftime("%H:%M")
             self.read_label.config(text=f"Read {current_time}")
 
+    def set_wraplength(self, wraplength):
+        self.content.config(wraplength=wraplength)
+
+
 class ScrollableChatFrame(ttk.Frame):
     def __init__(self, container, *args, **kwargs):
         super().__init__(container, *args, **kwargs)
@@ -94,9 +99,21 @@ class ScrollableChatFrame(ttk.Frame):
         
         self.canvas.bind('<Configure>', self.on_canvas_configure)
 
+        # Store messages for dynamic wraplength adjustment
+        self.messages = []
+        self.chat_frame.bind("<Configure>", self.adjust_message_wrap)
+
     def on_canvas_configure(self, event):
         self.canvas.itemconfig(self.canvas_frame, width=event.width)
         self.canvas.yview_moveto(1)
+
+    def add_message(self, msg_widget):
+        self.messages.append(msg_widget)
+
+    def adjust_message_wrap(self, event=None):
+        width = self.chat_frame.winfo_width() - 40
+        for msg in self.messages:
+            msg.set_wraplength(width)
 
 
 class BrachioGraphGUI:
@@ -138,17 +155,25 @@ class BrachioGraphGUI:
         top_frame.grid(row=0, column=0, sticky="ew")
         top_frame.columnconfigure(0, weight=1)
 
+        # We'll use pack inside top_frame for layout:
+        # Left: state label
+        # Center: robot box
         top_inner_frame = ttk.Frame(top_frame)
-        top_inner_frame.grid(row=0, column=0, sticky="ew", padx=(10,0))  # Added some left padding
-        top_inner_frame.columnconfigure(0, weight=1)
-        top_inner_frame.columnconfigure(1, weight=1)
+        top_inner_frame.pack(fill='x', expand=True)
 
-        # Add some padding so it's not flush against the display
-        self.state_label = ttk.Label(top_inner_frame, text="IDLE", font=('Arial', 18, 'bold'))
-        self.state_label.grid(row=0, column=0, pady=(0, 10), sticky="w", padx=(10,0)) 
+        # Left frame for state label
+        left_frame = ttk.Frame(top_inner_frame)
+        left_frame.pack(side='left', anchor='w')
 
-        self.face_frame = ttk.Frame(top_inner_frame, width=150, height=150, relief="solid", borderwidth=1)
-        self.face_frame.grid(row=0, column=1, sticky="e")
+        self.state_label = ttk.Label(left_frame, text="IDLE", font=('Arial', 18, 'bold'))
+        self.state_label.pack(side='left', padx=(10,0))
+
+        # Center frame for robot box
+        center_frame = ttk.Frame(top_inner_frame)
+        center_frame.pack(side='left', expand=True)
+
+        self.face_frame = ttk.Frame(center_frame, width=150, height=150, relief="solid", borderwidth=1)
+        self.face_frame.pack(anchor='center')
         self.face_frame.grid_propagate(False)
         
         self.face_label = ttk.Label(self.face_frame, text="._.", font=('Courier', 48))
@@ -193,11 +218,13 @@ class BrachioGraphGUI:
         timestamp = datetime.now().strftime("%H:%M:%S")
         msg_widget = MessageWidget(self.chat_area.chat_frame, message, timestamp, is_user)
         msg_widget.pack(fill=tk.X, pady=2)
+        self.chat_area.add_message(msg_widget)
         self.chat_area.canvas.yview_moveto(1)
 
     def start_drawing(self):
         for child in self.chat_area.chat_frame.winfo_children():
             child.destroy()
+        self.chat_area.messages.clear()
 
         state, message, info = self.controller.start_new_drawing()
         self.update_gui_state(state, message, info)
@@ -212,90 +239,69 @@ class BrachioGraphGUI:
                 break
 
             # Draw the component
-            self.root.after(0, lambda: self.add_message(f"Drawing {component.value}", is_user=False))
+            self.add_message(f"Drawing {component.value}", is_user=False)
             completed = self.controller.draw_component(component.value, self.controller.component_draw_time)
             if not completed:
-                self.root.after(0, lambda: self.update_gui_state(RobotState.IDLE, "Drawing ended early.", {"buttons_enabled": True}))
+                self.update_gui_state(RobotState.IDLE, "Drawing ended early.", {"buttons_enabled": True})
                 return
 
-            # Component done
             if component == DrawingComponent.SIGNATURE:
                 self.controller.finish_drawing()
-                self.root.after(0, lambda: self.update_gui_state(RobotState.IDLE, "Drawing complete!", {"buttons_enabled": True}))
+                self.update_gui_state(RobotState.IDLE, "Drawing complete!", {"buttons_enabled": True})
                 return
             else:
                 st, msg, inf = self.controller.next_phase()
-                self.root.after(0, lambda: self.update_gui_state(st, msg, inf))
+                self.update_gui_state(st, msg, inf)
 
                 if st in [RobotState.SENTIENT, RobotState.ENLIGHTENED]:
-                    # Special states that also have drawing behaviors
-                    special_name = "Sentience" if st == RobotState.SENTIENT else "Enlightenment"
-                    self.root.after(0, lambda: self.add_message(f"Drawing {special_name}", is_user=False))
-                    
-                    # Use the execute_drawing_behavior method to ensure the correct file and draw_behavior method are used
+                    special_name = "Sentient" if st == RobotState.SENTIENT else "Enlightened"
+                    self.add_message(f"Drawing {special_name}", is_user=False)
                     result = self.controller.execute_drawing_behavior()
-                    
-                    # After finishing these special drawings, finish the drawing.
                     self.controller.finish_drawing()
-                    self.root.after(0, lambda: self.update_gui_state(RobotState.IDLE, "Transcendence complete!", {"buttons_enabled": True}))
+                    self.update_gui_state(RobotState.IDLE, "Transcendence complete!", {"buttons_enabled": True})
                     return
 
-                # Check if the behavior is time-based or drawing-based.
                 drawing_behavior = self.controller.get_drawing_behavior_for_state(st)
 
                 if st in [RobotState.TIRED, RobotState.LAZY]:
-                    # Time-based behaviors: wait until resolved or timed out
                     start_wait = time.time()
                     while self.controller.drawing_in_progress and self.controller.state not in [RobotState.HAPPY, RobotState.IDLE]:
                         time.sleep(1)
-                    # If resolved (HAPPY), proceed
                     if self.controller.state == RobotState.HAPPY:
                         st2, msg2, inf2 = self.controller.complete_component()
-                        self.root.after(0, lambda: self.update_gui_state(st2, msg2, inf2))
+                        self.update_gui_state(st2, msg2, inf2)
                         time.sleep(1)
 
                 elif drawing_behavior:
-                    # Drawing-based behavior
-                    self.root.after(0, lambda: self.add_message(f"Drawing {drawing_behavior.value} Behavior...", is_user=False))
+                    self.add_message(f"Drawing {drawing_behavior.value} Behavior...", is_user=False)
                     result = self.controller.execute_drawing_behavior()
-                    # If execute_drawing_behavior returned False, it means it was stopped early
-                    # Check if behavior was resolved or ended early.
                     if not result:
-                        # If resolved, state should now be HAPPY; if ended early without resolution, drawing might end.
                         if self.controller.state == RobotState.HAPPY:
-                            # Behavior resolved early, proceed to next component
                             st2, msg2, inf2 = self.controller.complete_component()
-                            self.root.after(0, lambda: self.update_gui_state(st2, msg2, inf2))
+                            self.update_gui_state(st2, msg2, inf2)
                             time.sleep(1)
                         else:
-                            # If not HAPPY, likely ended early
                             return
                     else:
-                        # Behavior completed its full drawing without interruption
-                        # According to logic: if still not resolved, end drawing now
                         if self.controller.behavior_active and not self.controller.behavior_resolved:
-                            # Behavior not resolved by user input, finish drawing
                             self.controller.finish_drawing()
-                            self.root.after(0, lambda: self.update_gui_state(RobotState.IDLE, "No interaction, finishing drawing after behavior.", {"buttons_enabled": True}))
+                            self.update_gui_state(RobotState.IDLE, "No interaction, finishing drawing after behavior.", {"buttons_enabled": True})
                             return
                         else:
-                            # If resolved (HAPPY), move on
                             st2, msg2, inf2 = self.controller.complete_component()
-                            self.root.after(0, lambda: self.update_gui_state(st2, msg2, inf2))
+                            self.update_gui_state(st2, msg2, inf2)
                             time.sleep(1)
                 else:
-                    # If it's a behavior that doesn't draw and isn't time-based (like we had?), 
-                    # just handle as normal. In this basic logic, all behaviors fall into either 
-                    # time-based or drawing-based. LONELY is considered drawing-based now.
                     pass
 
-        self.root.after(0, self.update_gui_state, RobotState.IDLE, "Finished", {"buttons_enabled":True})
+        self.update_gui_state(RobotState.IDLE, "Finished", {"buttons_enabled":True})
 
     def handle_interaction(self, is_positive: bool):
         if not self.controller.drawing_in_progress and self.controller.state not in [RobotState.SENTIENT, RobotState.ENLIGHTENED]:
             return
 
-        message = "Positive" if is_positive else "Negative"
+        # Change to <3 or </3 as requested
+        message = "<3" if is_positive else "</3"
         self.add_message(message, is_user=True)
         
         st, msg, info = self.controller.handle_interaction(is_positive)
@@ -321,6 +327,7 @@ class BrachioGraphGUI:
                 self.update_gui_state(st, msg, info)
         self.root.after(1000, self.check_behavior_timeout)
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--hardware", action="store_true", help="Run with actual BrachioGraph hardware.")
@@ -332,6 +339,6 @@ if __name__ == "__main__":
     style.configure("RobotMessage.TLabel", foreground="black")
 
     app = BrachioGraphGUI(root, fullscreen=False, debug=True)
-    # pass args.hardware to RobotController in BrachioGraphGUI __init__:
-    # self.controller = RobotController(debug=debug, hardware=args.hardware)
+    # Integrate args.hardware if needed:
+    app.controller = RobotController(debug=True, hardware=args.hardware)
     root.mainloop()
