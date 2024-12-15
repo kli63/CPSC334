@@ -9,4 +9,4 @@ pip install -r requirements.txt
 
 cd ../test_gui
 
-python3 test.py
+python3 test.py --hardware
