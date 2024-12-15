@@ -48,6 +48,7 @@ class BrachioGraphGUI:
         self.draw_thread = None
 
         self.setup_gui()
+        self.show_initial_instructions()
         self.root.after(1000, self.check_behavior_timeout)
 
     def setup_gui(self):
@@ -116,6 +117,8 @@ class BrachioGraphGUI:
             width=10
         )
         self.positive_btn.grid(row=0, column=2, padx=5)
+        
+        
 
     def add_message(self, message: str, is_user: bool = False):
         timestamp = datetime.now().strftime("%H:%M:%S") if is_user else ""
@@ -123,6 +126,17 @@ class BrachioGraphGUI:
         msg_widget.pack(fill=tk.X, pady=2)
         self.chat_area.add_message(msg_widget)
         self.chat_area.canvas.yview_moveto(1.0)
+        
+    def show_initial_instructions(self):
+        """Show initial paper placement instructions."""
+        self.add_message("Waiting to draw... let me help you place the paper!", is_user=False)
+        self.add_message(
+            "1. The arm holding the pen should run along the shorter side of the paper\n"
+            "2. Place the top edge of paper about 3-4 inches above the pen\n"
+            "3. Slide paper underneath so pen rests in the middle horizontally\n"
+            "4. Press Start Drawing when ready!",
+            is_user=False
+        )
 
     def start_drawing(self):
         for child in self.chat_area.chat_frame.winfo_children():
@@ -209,11 +223,17 @@ class BrachioGraphGUI:
         self.update_gui_state(st, msg, info)
 
     def update_gui_state(self, state: RobotState, message: str, info: dict):
+        previous_state = getattr(self, 'previous_state', None)
+        self.previous_state = state
+        
         self.state_label.config(text=state.value)
         self.face_label.config(text=faces.get(state.value, "._."))
 
         if message and message != "Noted.":
             self.add_message(message, is_user=False)
+        
+        if state == RobotState.IDLE and previous_state is not None:
+            self.show_initial_instructions()
 
         button_state = 'disabled' if not info.get('buttons_enabled', True) else 'normal'
         self.positive_btn.config(state=button_state)
