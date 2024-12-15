@@ -141,8 +141,8 @@ class ImageComponentizer:
         
         # **Add signature box to the top-left corner of the entire canvas**
         # This will be a simple rectangle, left empty for now
-        signature_box_width = 500
-        signature_box_height = 200
+        signature_box_width = 800
+        signature_box_height = 150
         draw.rectangle(
             [(50, 50), (50 + signature_box_width, 50 + signature_box_height)],
             outline='black',
@@ -213,11 +213,18 @@ class ImageComponentizer:
                 print(f"  Created {output_path}")
 
     def setup_directories(self):
-        if os.path.exists(self.OUTPUT_BASE_DIR):
-            shutil.rmtree(self.OUTPUT_BASE_DIR)
-        
         for window in ['top_left', 'top_right', 'middle']:
-            os.makedirs(os.path.join(self.OUTPUT_BASE_DIR, window), exist_ok=True)
+            window_dir = os.path.join(self.OUTPUT_BASE_DIR, window)
+            
+            # Clear only the relevant subdirectory
+            if os.path.exists(window_dir):
+                for file in os.listdir(window_dir):
+                    file_path = os.path.join(window_dir, file)
+                    if os.path.isfile(file_path):
+                        os.remove(file_path)
+            
+            # Ensure the subdirectory exists
+            os.makedirs(window_dir, exist_ok=True)
 
 def main():
     if not os.path.exists("../../assets/images/cropped"):
