@@ -267,7 +267,7 @@ class RobotController:
             return (RobotState.HAPPY, "Final component (Signature) next!", {"buttons_enabled": True})
 
         roll = random.random()
-        if roll < 1:
+        if roll < 0.02:
             self.state = RobotState.SENTIENT
             self.special_interaction_allowed = True
             logger.debug("Transitioned to SENTIENT")

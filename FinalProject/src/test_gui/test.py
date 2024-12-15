@@ -322,8 +322,10 @@ class BrachioGraphGUI:
         self.root.after(1000, self.check_behavior_timeout)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--hardware", action="store_true", help="Run with actual BrachioGraph hardware.")
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Run the Creative BrachioGraph GUI.")
+    parser.add_argument("--hardware", action="store_true", help="Run with the actual BrachioGraph hardware.")
     args = parser.parse_args()
 
     root = tk.Tk()
@@ -331,7 +333,10 @@ if __name__ == "__main__":
     style.configure("UserMessage.TLabel", foreground="blue")
     style.configure("RobotMessage.TLabel", foreground="black")
 
+    # Pass the value of args.hardware to your RobotController
+    # assuming your BrachioGraphGUI class takes a 'hardware' parameter
     app = BrachioGraphGUI(root, fullscreen=False, debug=True)
-    # pass args.hardware to RobotController in BrachioGraphGUI __init__:
-    # self.controller = RobotController(debug=debug, hardware=args.hardware)
+    app.controller = RobotController(debug=True, hardware=args.hardware)  # integrate the hardware flag here
+    
     root.mainloop()
+
