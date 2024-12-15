@@ -201,7 +201,7 @@ class BrachioGraphGUI:
                 st, msg, inf = self.controller.next_phase()
                 if st in [
                     RobotState.TIRED, RobotState.LAZY, RobotState.REBELLIOUS,
-                    RobotState.CYNICAL, RobotState.DEPRESSED, RobotState.LONELY
+                    RobotState.CYNICAL, RobotState.DEPRESSED, RobotState.LONELY, RobotState.OVERSTIMULATED
                 ]:
                     behavior_entry_msg = get_random_behavior_entry_message(st.value)
                     if msg == f"Entering {st.value.lower()} state...":
@@ -220,7 +220,7 @@ class BrachioGraphGUI:
 
                 drawing_behavior = self.controller.get_drawing_behavior_for_state(st)
 
-                if st in [RobotState.TIRED, RobotState.LAZY]:
+                if st in [RobotState.TIRED, RobotState.LAZY, RobotState.OVERSTIMULATED]:
                     start_wait = time.time()
                     while self.controller.drawing_in_progress and self.controller.state not in [RobotState.HAPPY, RobotState.IDLE]:
                         time.sleep(1)
@@ -297,7 +297,7 @@ class BrachioGraphGUI:
 
         state = self.controller.state
         instruction = get_behavior_instruction(state.value)
-        show_timer = state in [RobotState.TIRED, RobotState.LAZY]
+        show_timer = state in [RobotState.TIRED, RobotState.LAZY, RobotState.OVERSTIMULATED]
 
         message = instruction
         if show_timer and self.controller.behavior_start_time and self.controller.behavior_timeout:
