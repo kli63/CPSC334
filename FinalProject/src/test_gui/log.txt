@@ -1,0 +1,308 @@
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph: ----- INITIAL PARAMETERS -----
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph: Component Draw Time: 45s
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph: Behavior Timeout: 30s
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph: Behavior Thresholds:
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 05:41:41,661 [DEBUG] BrachioGraph: ------------------------------
+2024-12-15 05:41:43,379 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 05:41:43,379 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:41:43,379 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 05:41:43,381 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 45s
+2024-12-15 05:42:03,806 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:03,807 [DEBUG] BrachioGraph: Global counters: P=1,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:04,508 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:04,508 [DEBUG] BrachioGraph: Global counters: P=2,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:04,730 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:04,731 [DEBUG] BrachioGraph: Global counters: P=3,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:04,883 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:04,883 [DEBUG] BrachioGraph: Global counters: P=4,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:07,230 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:07,230 [DEBUG] BrachioGraph: Global counters: P=5,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:07,395 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:07,395 [DEBUG] BrachioGraph: Global counters: P=6,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:07,607 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:07,607 [DEBUG] BrachioGraph: Global counters: P=7,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:07,732 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:07,732 [DEBUG] BrachioGraph: Global counters: P=8,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:07,889 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:42:07,889 [DEBUG] BrachioGraph: Global counters: P=9,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:42:28,459 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 05:42:28,459 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 05:42:28,459 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:42:28,459 [DEBUG] BrachioGraph: Transitioned to behavior: LONELY
+2024-12-15 05:42:32,523 [DEBUG] BrachioGraph: User interaction: Positive in state LONELY
+2024-12-15 05:42:32,523 [DEBUG] BrachioGraph: Global counters: P=10,N=0,A=1 | Behavior counters: PB=1,NB=0,AB=1
+2024-12-15 05:42:32,524 [DEBUG] BrachioGraph: Behavior LONELY resolved by user.
+2024-12-15 05:42:32,524 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:42:32,524 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:42:33,466 [DEBUG] BrachioGraph: Behavior HAPPY resolved by user.
+2024-12-15 05:42:33,466 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:42:33,467 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:42:33,467 [DEBUG] BrachioGraph: Completed component, now at index: 1
+2024-12-15 05:42:33,467 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 05:42:34,469 [DEBUG] BrachioGraph: Starting to draw component: Window 2, duration: 45s
+2024-12-15 05:43:19,539 [DEBUG] BrachioGraph: Finished drawing component: Window 2
+2024-12-15 05:43:19,539 [DEBUG] BrachioGraph: Moving to next phase after component index: 1
+2024-12-15 05:43:19,539 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:43:19,539 [DEBUG] BrachioGraph: Transitioned to behavior: DEPRESSED
+2024-12-15 05:43:19,542 [DEBUG] BrachioGraph: Behavior DEPRESSED resolved by user.
+2024-12-15 05:43:19,542 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:43:19,542 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:43:19,543 [DEBUG] BrachioGraph: Completed component, now at index: 2
+2024-12-15 05:43:19,543 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 05:43:20,551 [DEBUG] BrachioGraph: Starting to draw component: Window 3, duration: 45s
+2024-12-15 05:43:55,802 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:43:55,802 [DEBUG] BrachioGraph: Global counters: P=11,N=0,A=1 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:44:05,620 [DEBUG] BrachioGraph: Finished drawing component: Window 3
+2024-12-15 05:44:05,620 [DEBUG] BrachioGraph: Moving to next phase after component index: 2
+2024-12-15 05:44:05,620 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:44:05,620 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 05:44:05,621 [DEBUG] BrachioGraph: Behavior CYNICAL resolved by user.
+2024-12-15 05:44:05,622 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:44:05,622 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:44:05,622 [DEBUG] BrachioGraph: Completed component, now at index: 3
+2024-12-15 05:44:05,622 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 05:44:06,628 [DEBUG] BrachioGraph: Starting to draw component: Signature, duration: 45s
+2024-12-15 05:44:15,823 [DEBUG] BrachioGraph: User interaction: Positive in state HAPPY
+2024-12-15 05:44:15,823 [DEBUG] BrachioGraph: Global counters: P=12,N=0,A=1 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:44:51,695 [DEBUG] BrachioGraph: Finished drawing component: Signature
+2024-12-15 05:44:51,695 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph: ----- INITIAL PARAMETERS -----
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph: Component Draw Time: 15s
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph: Behavior Timeout: 5s
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph: Behavior Thresholds:
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 05:45:17,523 [DEBUG] BrachioGraph: ------------------------------
+2024-12-15 05:45:18,855 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 05:45:18,855 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:45:18,855 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 05:45:18,858 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 15s
+2024-12-15 05:45:33,889 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 05:45:33,889 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 05:45:33,890 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:45:33,890 [DEBUG] BrachioGraph: Transitioned to behavior: DEPRESSED
+2024-12-15 05:45:38,236 [DEBUG] BrachioGraph: User interaction: Negative in state DEPRESSED
+2024-12-15 05:45:38,237 [DEBUG] BrachioGraph: Global counters: P=0,N=1,A=0 | Behavior counters: PB=0,NB=1,AB=0
+2024-12-15 05:45:38,912 [DEBUG] BrachioGraph: User interaction: Negative in state DEPRESSED
+2024-12-15 05:45:38,912 [DEBUG] BrachioGraph: Global counters: P=0,N=2,A=0 | Behavior counters: PB=0,NB=2,AB=0
+2024-12-15 05:45:39,315 [DEBUG] BrachioGraph: User interaction: Negative in state DEPRESSED
+2024-12-15 05:45:39,316 [DEBUG] BrachioGraph: Global counters: P=0,N=3,A=0 | Behavior counters: PB=0,NB=3,AB=0
+2024-12-15 05:45:39,459 [DEBUG] BrachioGraph: User interaction: Negative in state DEPRESSED
+2024-12-15 05:45:39,459 [DEBUG] BrachioGraph: Global counters: P=0,N=4,A=0 | Behavior counters: PB=0,NB=4,AB=0
+2024-12-15 05:45:39,537 [DEBUG] BrachioGraph: Behavior DEPRESSED timed out
+2024-12-15 05:45:39,537 [DEBUG] BrachioGraph: Handling timeout for behavior: DEPRESSED
+2024-12-15 05:45:39,537 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:45:39,537 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 05:45:57,891 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 05:45:57,892 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:45:57,892 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 05:45:57,895 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 15s
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph: ----- INITIAL PARAMETERS -----
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph: Component Draw Time: 10s
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph: Behavior Timeout: 5s
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph: Behavior Thresholds:
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 05:46:18,163 [DEBUG] BrachioGraph: ------------------------------
+2024-12-15 05:46:19,554 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 05:46:19,554 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:19,555 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 05:46:19,557 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s
+2024-12-15 05:46:29,587 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 05:46:29,587 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 05:46:29,587 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:29,588 [DEBUG] BrachioGraph: Transitioned to behavior: DEPRESSED
+2024-12-15 05:46:31,361 [DEBUG] BrachioGraph: User interaction: Positive in state DEPRESSED
+2024-12-15 05:46:31,361 [DEBUG] BrachioGraph: Global counters: P=1,N=0,A=0 | Behavior counters: PB=1,NB=0,AB=0
+2024-12-15 05:46:32,331 [DEBUG] BrachioGraph: User interaction: Positive in state DEPRESSED
+2024-12-15 05:46:32,331 [DEBUG] BrachioGraph: Global counters: P=2,N=0,A=0 | Behavior counters: PB=2,NB=0,AB=0
+2024-12-15 05:46:32,331 [DEBUG] BrachioGraph: Behavior DEPRESSED resolved by user.
+2024-12-15 05:46:32,331 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:32,331 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:46:32,592 [DEBUG] BrachioGraph: Behavior HAPPY resolved by user.
+2024-12-15 05:46:32,593 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:32,593 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:46:32,593 [DEBUG] BrachioGraph: Completed component, now at index: 1
+2024-12-15 05:46:32,593 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 05:46:33,596 [DEBUG] BrachioGraph: Starting to draw component: Window 2, duration: 10s
+2024-12-15 05:46:43,613 [DEBUG] BrachioGraph: Finished drawing component: Window 2
+2024-12-15 05:46:43,613 [DEBUG] BrachioGraph: Moving to next phase after component index: 1
+2024-12-15 05:46:43,613 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:43,613 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 05:46:43,616 [DEBUG] BrachioGraph: Behavior CYNICAL resolved by user.
+2024-12-15 05:46:43,616 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:43,616 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:46:43,616 [DEBUG] BrachioGraph: Completed component, now at index: 2
+2024-12-15 05:46:43,616 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 05:46:44,620 [DEBUG] BrachioGraph: Starting to draw component: Window 3, duration: 10s
+2024-12-15 05:46:54,637 [DEBUG] BrachioGraph: Finished drawing component: Window 3
+2024-12-15 05:46:54,637 [DEBUG] BrachioGraph: Moving to next phase after component index: 2
+2024-12-15 05:46:54,637 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:54,637 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 05:46:54,638 [DEBUG] BrachioGraph: Behavior REBELLIOUS resolved by user.
+2024-12-15 05:46:54,638 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:46:54,638 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:46:54,639 [DEBUG] BrachioGraph: Completed component, now at index: 3
+2024-12-15 05:46:54,639 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 05:46:55,640 [DEBUG] BrachioGraph: Starting to draw component: Signature, duration: 10s
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph: ----- INITIAL PARAMETERS -----
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph: Component Draw Time: 10s
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph: Behavior Timeout: 5s
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph: Behavior Thresholds:
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 05:51:46,115 [DEBUG] BrachioGraph: ------------------------------
+2024-12-15 05:51:47,209 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 05:51:47,209 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:51:47,209 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 05:51:47,212 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s
+2024-12-15 05:51:57,241 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 05:51:57,241 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 05:51:57,241 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:51:57,241 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 05:52:01,911 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 05:52:01,911 [DEBUG] BrachioGraph: Global counters: P=0,N=1,A=0 | Behavior counters: PB=0,NB=1,AB=0
+2024-12-15 05:52:02,347 [DEBUG] BrachioGraph: User interaction: Negative in state CYNICAL
+2024-12-15 05:52:02,347 [DEBUG] BrachioGraph: Global counters: P=0,N=2,A=0 | Behavior counters: PB=0,NB=2,AB=0
+2024-12-15 05:52:02,348 [DEBUG] BrachioGraph: Behavior CYNICAL resolved by user.
+2024-12-15 05:52:02,348 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:52:02,348 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:52:02,993 [DEBUG] BrachioGraph: User interaction: Negative in state HAPPY
+2024-12-15 05:52:02,993 [DEBUG] BrachioGraph: Global counters: P=0,N=3,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 05:52:03,254 [DEBUG] BrachioGraph: Behavior HAPPY resolved by user.
+2024-12-15 05:52:03,254 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 05:52:03,255 [DEBUG] BrachioGraph: Behavior resolved, state -> HAPPY
+2024-12-15 05:52:03,255 [DEBUG] BrachioGraph: Completed component, now at index: 1
+2024-12-15 05:52:03,255 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 05:52:04,258 [DEBUG] BrachioGraph: Starting to draw component: Window 2, duration: 10s
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph: ----- INITIAL PARAMETERS -----
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph: Component Draw Time: 10s
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph: Behavior Timeout: 5s
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph: Behavior Thresholds:
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 06:03:52,635 [DEBUG] BrachioGraph: ------------------------------
+2024-12-15 06:03:54,112 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 06:03:54,112 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:03:54,112 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 06:03:54,115 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s
+2024-12-15 06:04:04,149 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 06:04:04,149 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 06:04:04,149 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:04:04,150 [DEBUG] BrachioGraph: Transitioned to behavior: CYNICAL
+2024-12-15 06:04:04,152 [DEBUG] BrachioGraph: Executing drawing behavior: Cynical
+2024-12-15 06:04:04,155 [DEBUG] BrachioGraph: Starting behavior: Cynical, duration: 10s
+2024-12-15 06:04:09,648 [DEBUG] BrachioGraph: Behavior CYNICAL timed out
+2024-12-15 06:04:09,648 [DEBUG] BrachioGraph: Handling timeout for behavior: CYNICAL
+2024-12-15 06:04:09,648 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:04:09,648 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 06:04:10,165 [DEBUG] BrachioGraph: Stop flag set during behavior: Cynical
+2024-12-15 06:04:10,165 [DEBUG] BrachioGraph: Drawing behavior Cynical stopped early.
+2024-12-15 06:04:22,425 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 06:04:22,426 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:04:22,426 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 06:04:22,428 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s
+2024-12-15 06:04:32,446 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 06:04:32,446 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 06:04:32,446 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:04:32,446 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 06:04:32,448 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 06:04:32,449 [DEBUG] BrachioGraph: Starting behavior: Rebellious, duration: 10s
+2024-12-15 06:04:37,662 [DEBUG] BrachioGraph: Behavior REBELLIOUS timed out
+2024-12-15 06:04:37,662 [DEBUG] BrachioGraph: Handling timeout for behavior: REBELLIOUS
+2024-12-15 06:04:37,662 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:04:37,662 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 06:04:38,457 [DEBUG] BrachioGraph: Stop flag set during behavior: Rebellious
+2024-12-15 06:04:38,458 [DEBUG] BrachioGraph: Drawing behavior Rebellious stopped early.
+2024-12-15 06:08:32,967 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 06:08:32,967 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:08:32,967 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph:   Tired: 4
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph:   Cynical: 3
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 06:08:32,968 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 06:08:32,970 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s
+2024-12-15 06:08:43,001 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 06:08:43,001 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 06:08:43,001 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:08:43,001 [DEBUG] BrachioGraph: Transitioned to behavior: LAZY
+2024-12-15 06:08:48,156 [DEBUG] BrachioGraph: Behavior LAZY timed out
+2024-12-15 06:08:48,157 [DEBUG] BrachioGraph: Handling timeout for behavior: LAZY
+2024-12-15 06:08:48,157 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:08:48,157 [DEBUG] BrachioGraph: Lazy timeout, skipping to signature.
+2024-12-15 06:08:49,009 [DEBUG] BrachioGraph: Completed component, now at index: 4
+2024-12-15 06:08:49,009 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph:   Tired: 4
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph:   Lazy: 4
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph:   Rebellious: 3
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph:   Depressed: 3
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 06:11:39,154 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 06:11:39,157 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s
+2024-12-15 06:11:49,193 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 06:11:49,193 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 06:11:49,193 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:11:49,193 [DEBUG] BrachioGraph: Transitioned to behavior: LAZY
+2024-12-15 06:11:54,758 [DEBUG] BrachioGraph: Behavior LAZY timed out
+2024-12-15 06:11:54,758 [DEBUG] BrachioGraph: Handling timeout for behavior: LAZY
+2024-12-15 06:11:54,758 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:11:54,758 [DEBUG] BrachioGraph: Lazy timeout, skipping to signature.
+2024-12-15 06:11:55,201 [DEBUG] BrachioGraph: Completed component, now at index: 3
+2024-12-15 06:11:55,201 [DEBUG] BrachioGraph: Ready for next component, state -> HAPPY
+2024-12-15 06:11:56,204 [DEBUG] BrachioGraph: Starting to draw component: Signature, duration: 10s
+2024-12-15 06:12:06,221 [DEBUG] BrachioGraph: Finished drawing component: Signature
+2024-12-15 06:12:06,221 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 06:12:28,193 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph:   Tired: 3
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph:   Depressed: 5
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 06:12:28,194 [DEBUG] BrachioGraph: Starting new drawing - State: HAPPY
+2024-12-15 06:12:28,196 [DEBUG] BrachioGraph: Starting to draw component: Window 1, duration: 10s
+2024-12-15 06:12:38,223 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 06:12:38,223 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 06:12:38,223 [DEBUG] BrachioGraph: Transitioned to SENTIENT
+2024-12-15 06:12:38,223 [DEBUG] BrachioGraph: Starting to draw component: Sentience, duration: 10s
+2024-12-15 06:12:38,923 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 06:12:38,923 [DEBUG] BrachioGraph: Global counters: P=1,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 06:12:38,923 [DEBUG] BrachioGraph: Special interaction received during SENTIENT/ENLIGHTENED
+2024-12-15 06:12:39,976 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 06:12:39,976 [DEBUG] BrachioGraph: Global counters: P=2,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 06:12:48,241 [DEBUG] BrachioGraph: Finished drawing component: Sentience
+2024-12-15 06:12:48,242 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
