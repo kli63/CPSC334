@@ -5,6 +5,7 @@ import time
 import logging
 from datetime import datetime
 from robot_logic import RobotController, RobotState, DrawingComponent, DrawingBehavior
+import argparse
 
 logger = logging.getLogger("BrachioGraphGUI")
 
@@ -321,10 +322,16 @@ class BrachioGraphGUI:
         self.root.after(1000, self.check_behavior_timeout)
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--hardware", action="store_true", help="Run with actual BrachioGraph hardware.")
+    args = parser.parse_args()
+
     root = tk.Tk()
     style = ttk.Style(root)
     style.configure("UserMessage.TLabel", foreground="blue")
     style.configure("RobotMessage.TLabel", foreground="black")
 
     app = BrachioGraphGUI(root, fullscreen=False, debug=True)
+    # pass args.hardware to RobotController in BrachioGraphGUI __init__:
+    # self.controller = RobotController(debug=debug, hardware=args.hardware)
     root.mainloop()

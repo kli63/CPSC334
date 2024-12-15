@@ -14,7 +14,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 brachiograph_dir = os.path.join(os.path.dirname(current_dir), 'BrachioGraphCaricature')
 sys.path.insert(0, brachiograph_dir)
 
-# from brachiograph import BrachioGraph
+from brachiograph import BrachioGraph
 
 from file_selection import create_log_directory, select_component_files, select_behavior_file
 
@@ -40,7 +40,9 @@ class BehaviorThresholds:
     lonely: int
 
 class RobotController:
-    def __init__(self, debug=False):
+    def __init__(self, hardware=False, debug=False):
+        self.hardware = hardware
+        
         self.debug = debug
         self.state = RobotState.IDLE
         # Global counters
@@ -83,6 +85,16 @@ class RobotController:
         self.chosen_files = {}  # to store chosen JSON files for components and signature
         self.log_dir = None
         
+        # Initialize BrachioGraph only if hardware mode
+        if self.hardware:
+            self.bg = BrachioGraph(
+                servo_1_parked_pw=1570,
+                servo_2_parked_pw=1450,
+                virtual=False
+            )
+        else:
+            self.bg = None  # No hardware, simulate
+        
         
         
 
@@ -114,9 +126,7 @@ class RobotController:
         self._reset_state()
         self._generate_thresholds()
 
-        # Create a log directory with timestamp
         self.log_dir, ts = create_log_directory(self.logs_path)
-        # Add a file handler to logger
         log_file_path = os.path.join(self.log_dir, "debug.log")
         fh = logging.FileHandler(log_file_path, mode='w')
         fh.setLevel(logging.DEBUG)
@@ -128,7 +138,6 @@ class RobotController:
         logger.debug("Generated thresholds:")
         logger.debug(f"Tired: {self.thresholds.tired}, Lazy: {self.thresholds.lazy}, Rebellious: {self.thresholds.rebellious}, Cynical: {self.thresholds.cynical}, Depressed: {self.thresholds.depressed}, Lonely: {self.thresholds.lonely}")
 
-        # Select component files
         w1, w2, w3, sig = select_component_files(self.base_data_path)
         self.chosen_files['WINDOW1'] = w1
         self.chosen_files['WINDOW2'] = w2
@@ -177,44 +186,48 @@ class RobotController:
         return None
 
     def draw_component(self, name, duration):
-        # name is from the enum, to get the file:
-        comp_enum = [c for c in self.components if c.value == name]
-        # We'll assume name matches exactly one enum. If not, we can find current_component.
-        # Let's just find the current component file from chosen_files:
         if self.current_component_index < len(self.components):
-            comp_key = self.components[self.current_component_index].name  # WINDOW1, WINDOW2,...
+            comp_key = self.components[self.current_component_index].name
             file_to_draw = self.chosen_files.get(comp_key, None)
         else:
             file_to_draw = None
 
-        logger.debug(f"Starting to draw component: {name}, duration: {duration}s, file: {file_to_draw}")
-
-        # In a real scenario:
-        # self.bg.plot_file(file_to_draw)
-        # For simulation:
-        for _ in tqdm(range(duration), desc=f"Drawing {name}", unit="sec"):
-            if self.stop_drawing_flag:
-                logger.debug(f"Stop drawing flag set during {name}")
-                return False
-            time.sleep(1)
-
-        logger.debug(f"Finished drawing component: {name}")
-        return True
+        logger.debug(f"Drawing component: {name}, file: {file_to_draw}")
+        
+        if self.hardware:
+            # Hardware mode: just call bg.plot_file and wait for it to finish
+            if file_to_draw:
+                self.bg.plot_file(file_to_draw)
+            # Once done, return True
+            return True
+        else:
+            # Simulation mode
+            for _ in tqdm(range(duration), desc=f"Drawing {name}", unit="sec"):
+                if self.stop_drawing_flag:
+                    logger.debug(f"Stop drawing flag set during {name}")
+                    return False
+                time.sleep(1)
+            logger.debug(f"Finished drawing component: {name}")
+            return True
     
     def draw_behavior(self, name, duration):
-        # For behaviors, we must select the behavior file depending on current state
         behavior_file = select_behavior_file(self.base_data_path, self.state.value)
-        logger.debug(f"Starting behavior: {name}, duration: {duration}s, file: {behavior_file}")
+        logger.debug(f"Starting behavior: {name}, file: {behavior_file}")
 
-        # Real scenario: self.bg.plot_file(behavior_file)
-        for _ in tqdm(range(duration), desc=f"Behavior: {name}", unit="sec"):
-            if self.stop_drawing_flag or self.behavior_draw_stop_flag:
-                logger.debug(f"Stop flag set during behavior: {name}")
-                return False
-            time.sleep(1)
-
-        logger.debug(f"Finished behavior: {name}")
-        return True
+        if self.hardware:
+            # In hardware mode, just plot the behavior file
+            if behavior_file:
+                self.bg.plot_file(behavior_file)
+            return True
+        else:
+            # Simulation mode
+            for _ in tqdm(range(duration), desc=f"Behavior: {name}", unit="sec"):
+                if self.stop_drawing_flag or self.behavior_draw_stop_flag:
+                    logger.debug(f"Stop flag set during behavior: {name}")
+                    return False
+                time.sleep(1)
+            logger.debug(f"Finished behavior: {name}")
+            return True
 
     def get_drawing_behavior_for_state(self, state: RobotState):
         mapping = {
@@ -230,7 +243,7 @@ class RobotController:
     def execute_drawing_behavior(self):
         behavior = self.get_drawing_behavior_for_state(self.state)
         if not behavior:
-            logger.debug(f"State {self.state.value} does not correspond to a drawing behavior.")
+            logger.debug(f"State {self.state.value} not a drawing behavior.")
             return True
 
         logger.debug(f"Executing drawing behavior: {behavior.value}")

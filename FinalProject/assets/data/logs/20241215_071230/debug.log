@@ -1,0 +1,6 @@
+2024-12-15 07:12:30,580 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_071230
+2024-12-15 07:12:30,580 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 07:12:30,580 [DEBUG] BrachioGraph: Tired: 5, Lazy: 2, Rebellious: 2, Cynical: 2, Depressed: 3, Lonely: 2
+2024-12-15 07:12:30,581 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_12_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_2_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_11_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 07:12:30,581 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 07:12:30,586 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_12_middle.json
