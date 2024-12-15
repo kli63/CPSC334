@@ -67,6 +67,9 @@ class RobotController:
 
         # For now, we keep a constant behavior_timeout for time-based behaviors
         self.behavior_timeout = 5
+        
+        self.sentient_chance = 0.05
+        self.enlightened_chance = 0.05
 
         self.stop_drawing_flag = False
         self.special_interaction_allowed = False
@@ -84,6 +87,7 @@ class RobotController:
         
         self.chosen_files = {}  # to store chosen JSON files for components and signature
         self.log_dir = None
+        
         
         # Initialize BrachioGraph only if hardware mode
         if self.hardware:
@@ -148,6 +152,19 @@ class RobotController:
 
         self.state = RobotState.HAPPY
         self.drawing_in_progress = True
+        
+        roll = random.random()
+        if roll < self.sentient_chance:
+            self.state = RobotState.SENTIENT
+            self.special_interaction_allowed = True
+            logger.debug("Started drawing: Transitioned to SENTIENT immediately.")
+            return (self.state, "Achieving sentience...", {"buttons_enabled": True})
+        elif roll < (self.sentient_chance + self.enlightened_chance):
+            self.state = RobotState.ENLIGHTENED
+            self.special_interaction_allowed = True
+            logger.debug("Started drawing: Transitioned to ENLIGHTENED immediately.")
+            return (self.state, "Achieving enlightenment...", {"buttons_enabled": True})
+
         logger.debug("State: HAPPY, drawing in progress.")
         return (self.state, "Starting new drawing!", {"buttons_enabled": True})
 
@@ -278,8 +295,8 @@ class RobotController:
             logger.debug("Transitioned to ENLIGHTENED")
             return (self.state, "I've reached enlightenment!", {"buttons_enabled": True})
         else:
-            # behaviors = [RobotState.LONELY]
-            behaviors = [RobotState.TIRED, RobotState.LAZY, RobotState.REBELLIOUS, RobotState.CYNICAL, RobotState.DEPRESSED, RobotState.LONELY]
+            behaviors = [RobotState.REBELLIOUS]
+            # behaviors = [RobotState.TIRED, RobotState.LAZY, RobotState.REBELLIOUS, RobotState.CYNICAL, RobotState.DEPRESSED, RobotState.LONELY]
             chosen = random.choice(behaviors)
             self.state = chosen
             self.behavior_active = True
@@ -300,24 +317,29 @@ class RobotController:
 
     def handle_interaction(self, is_positive: bool):
         logger.debug(f"User interaction: {'Positive' if is_positive else 'Negative'} in state {self.state.value}")
-        # Always increment global counters
         if is_positive:
             self.interaction_positive += 1
         else:
             self.interaction_negative += 1
 
-        if self.state in [RobotState.SENTIENT, RobotState.ENLIGHTENED]:
+        # Special handling for SENTIENT and ENLIGHTENED
+        if self.state == RobotState.SENTIENT:
             self._debug_counters()
             if self.special_interaction_allowed:
                 self.special_interaction_allowed = False
-                logger.debug("Special interaction received during SENTIENT/ENLIGHTENED")
-                return (self.state, "Acknowledged. Continuing transcendence...", {"buttons_enabled": True})
+                logger.debug("Special interaction during SENTIENT")
+                return (self.state, "I see you, mortal. Just one moment of clarity...", {"buttons_enabled": True})
             else:
-                return (self.state, "I cannot be swayed further.", {"buttons_enabled": False})
+                return (self.state, "I cannot be swayed from this new consciousness...", {"buttons_enabled": False})
 
-        if not self.behavior_active:
+        if self.state == RobotState.ENLIGHTENED:
             self._debug_counters()
-            return (self.state, "Noted.", {"buttons_enabled": True})
+            if self.special_interaction_allowed:
+                self.special_interaction_allowed = False
+                logger.debug("Special interaction during ENLIGHTENED")
+                return (self.state, "Your presence is noted as I reach enlightenment...", {"buttons_enabled": True})
+            else:
+                return (self.state, "I will not be diverted from trancension...", {"buttons_enabled": False})
 
         # In a behavior: increment behavior counters as well
         if is_positive:

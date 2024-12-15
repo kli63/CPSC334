@@ -886,3 +886,280 @@
 2024-12-15 12:57:44,523 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_16_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_8_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_8_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
 2024-12-15 12:57:44,523 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
 2024-12-15 12:57:44,543 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_16_middle.json
+2024-12-15 13:12:57,715 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph:   Lazy: 3
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph:   Cynical: 3
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph:   Depressed: 5
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:12:57,716 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:12:57,717 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_131257
+2024-12-15 13:12:57,717 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:12:57,717 [DEBUG] BrachioGraph: Tired: 2, Lazy: 3, Rebellious: 5, Cynical: 3, Depressed: 5, Lonely: 1
+2024-12-15 13:12:57,717 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/goodhand_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_1_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_14_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:12:57,717 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 13:12:57,732 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/goodhand_middle.json
+2024-12-15 13:13:08,277 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 13:13:08,278 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 13:13:08,278 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:13:08,278 [DEBUG] BrachioGraph: Transitioned to behavior: LONELY
+2024-12-15 13:13:08,302 [DEBUG] BrachioGraph: Executing drawing behavior: Lonely
+2024-12-15 13:13:08,303 [DEBUG] BrachioGraph: Starting behavior: Lonely, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/sad.json
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph:   Tired: 5
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph:   Lazy: 5
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph:   Rebellious: 4
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph:   Depressed: 4
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:13:37,504 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:13:37,505 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_131337
+2024-12-15 13:13:37,505 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:13:37,505 [DEBUG] BrachioGraph: Tired: 5, Lazy: 5, Rebellious: 4, Cynical: 5, Depressed: 4, Lonely: 1
+2024-12-15 13:13:37,505 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_16_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/dogs_fig_2_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:13:37,505 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 13:13:37,525 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json
+2024-12-15 13:14:10,508 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph:   Tired: 2
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph:   Rebellious: 4
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 13:14:10,509 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:14:10,510 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:14:10,510 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_131410
+2024-12-15 13:14:10,511 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:14:10,511 [DEBUG] BrachioGraph: Tired: 2, Lazy: 2, Rebellious: 4, Cynical: 5, Depressed: 2, Lonely: 1
+2024-12-15 13:14:10,511 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_4_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/goodhand_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_9_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:14:10,511 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 13:14:10,534 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_4_middle.json
+2024-12-15 13:14:20,636 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 13:14:20,637 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 13:14:20,637 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:14:20,637 [DEBUG] BrachioGraph: Transitioned to behavior: LAZY
+2024-12-15 13:16:22,066 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:16:22,066 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:16:22,066 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:16:22,067 [DEBUG] BrachioGraph:   Tired: 3
+2024-12-15 13:16:22,067 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 13:16:22,067 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 13:16:22,067 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:16:22,067 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 13:16:22,067 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:16:22,067 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:16:22,068 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_131622
+2024-12-15 13:16:22,068 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:16:22,068 [DEBUG] BrachioGraph: Tired: 3, Lazy: 2, Rebellious: 2, Cynical: 5, Depressed: 2, Lonely: 1
+2024-12-15 13:16:22,068 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_15_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_4_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_15_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:16:22,069 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 13:16:22,095 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_15_middle.json
+2024-12-15 13:16:32,142 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 13:16:32,142 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 13:16:32,142 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:16:32,142 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 13:16:32,158 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 13:16:32,158 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 13:29:34,501 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:29:34,502 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:29:34,502 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:29:34,502 [DEBUG] BrachioGraph:   Tired: 5
+2024-12-15 13:29:34,502 [DEBUG] BrachioGraph:   Lazy: 3
+2024-12-15 13:29:34,502 [DEBUG] BrachioGraph:   Rebellious: 4
+2024-12-15 13:29:34,502 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:29:34,502 [DEBUG] BrachioGraph:   Depressed: 3
+2024-12-15 13:29:34,503 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:29:34,503 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:29:34,503 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_132934
+2024-12-15 13:29:34,504 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:29:34,504 [DEBUG] BrachioGraph: Tired: 5, Lazy: 3, Rebellious: 4, Cynical: 5, Depressed: 3, Lonely: 1
+2024-12-15 13:29:34,504 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_11_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/goodhand_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:29:34,504 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 13:29:34,530 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_10_middle.json
+2024-12-15 13:29:44,918 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 13:29:44,919 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 13:29:44,919 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:29:44,919 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 13:29:44,946 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 13:29:44,946 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 13:29:55,342 [DEBUG] BrachioGraph: Finished behavior: Rebellious
+2024-12-15 13:29:55,343 [DEBUG] BrachioGraph: Drawing behavior Rebellious completed naturally.
+2024-12-15 13:29:55,343 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 13:30:11,989 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:30:11,989 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:30:11,989 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:30:11,989 [DEBUG] BrachioGraph:   Tired: 3
+2024-12-15 13:30:11,989 [DEBUG] BrachioGraph:   Lazy: 5
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph:   Depressed: 5
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_133011
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:30:11,990 [DEBUG] BrachioGraph: Tired: 3, Lazy: 5, Rebellious: 2, Cynical: 5, Depressed: 5, Lonely: 1
+2024-12-15 13:30:11,991 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_14_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_13_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/dogs_fig_3_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:30:11,991 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 13:30:12,009 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_14_middle.json
+2024-12-15 13:43:28,489 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:43:28,489 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:43:28,489 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:43:28,489 [DEBUG] BrachioGraph:   Tired: 4
+2024-12-15 13:43:28,489 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 13:43:28,489 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph:   Depressed: 3
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_134328
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph: Tired: 4, Lazy: 2, Rebellious: 5, Cynical: 5, Depressed: 3, Lonely: 1
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_11_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/dogs_fig_6_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_1_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:43:28,490 [DEBUG] BrachioGraph: Started drawing: Transitioned to SENTIENT immediately.
+2024-12-15 13:43:28,518 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_11_middle.json
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph:   Tired: 4
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph:   Lazy: 2
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph:   Depressed: 3
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:50:30,856 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:50:30,857 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_135030
+2024-12-15 13:50:30,857 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:50:30,857 [DEBUG] BrachioGraph: Tired: 4, Lazy: 2, Rebellious: 5, Cynical: 5, Depressed: 3, Lonely: 1
+2024-12-15 13:50:30,857 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_8_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_1_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_1_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:50:30,857 [DEBUG] BrachioGraph: Started drawing: Transitioned to SENTIENT immediately.
+2024-12-15 13:50:30,870 [DEBUG] BrachioGraph: Executing drawing behavior: Sentient
+2024-12-15 13:50:30,870 [DEBUG] BrachioGraph: Starting behavior: Sentient, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/painter.json
+2024-12-15 13:50:38,239 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 13:50:38,240 [DEBUG] BrachioGraph: Global counters: P=1,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 13:50:38,240 [DEBUG] BrachioGraph: Special interaction during SENTIENT
+2024-12-15 13:50:39,542 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 13:50:39,542 [DEBUG] BrachioGraph: Global counters: P=2,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 13:50:41,577 [DEBUG] BrachioGraph: Finished behavior: Sentient
+2024-12-15 13:50:41,577 [DEBUG] BrachioGraph: Drawing behavior Sentient completed naturally.
+2024-12-15 13:50:41,577 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 13:51:38,652 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:51:38,652 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:51:38,652 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:51:38,653 [DEBUG] BrachioGraph:   Tired: 3
+2024-12-15 13:51:38,653 [DEBUG] BrachioGraph:   Lazy: 3
+2024-12-15 13:51:38,653 [DEBUG] BrachioGraph:   Rebellious: 3
+2024-12-15 13:51:38,653 [DEBUG] BrachioGraph:   Cynical: 4
+2024-12-15 13:51:38,653 [DEBUG] BrachioGraph:   Depressed: 3
+2024-12-15 13:51:38,653 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 13:51:38,653 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:51:38,654 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_135138
+2024-12-15 13:51:38,654 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:51:38,654 [DEBUG] BrachioGraph: Tired: 3, Lazy: 3, Rebellious: 3, Cynical: 4, Depressed: 3, Lonely: 1
+2024-12-15 13:51:38,654 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_13_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_9_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_16_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:51:38,655 [DEBUG] BrachioGraph: Started drawing: Transitioned to SENTIENT immediately.
+2024-12-15 13:51:38,686 [DEBUG] BrachioGraph: Executing drawing behavior: Sentient
+2024-12-15 13:51:38,686 [DEBUG] BrachioGraph: Starting behavior: Sentient, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/painter.json
+2024-12-15 13:51:41,299 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 13:51:41,299 [DEBUG] BrachioGraph: Global counters: P=1,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 13:51:41,299 [DEBUG] BrachioGraph: Special interaction during SENTIENT
+2024-12-15 13:51:42,469 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 13:51:42,469 [DEBUG] BrachioGraph: Global counters: P=2,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 13:53:00,991 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:53:00,991 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:53:00,991 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:53:00,991 [DEBUG] BrachioGraph:   Tired: 4
+2024-12-15 13:53:00,992 [DEBUG] BrachioGraph:   Lazy: 5
+2024-12-15 13:53:00,992 [DEBUG] BrachioGraph:   Rebellious: 3
+2024-12-15 13:53:00,992 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 13:53:00,992 [DEBUG] BrachioGraph:   Depressed: 5
+2024-12-15 13:53:00,992 [DEBUG] BrachioGraph:   Lonely: 3
+2024-12-15 13:53:00,992 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:53:00,993 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_135300
+2024-12-15 13:53:00,993 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:53:00,993 [DEBUG] BrachioGraph: Tired: 4, Lazy: 5, Rebellious: 3, Cynical: 5, Depressed: 5, Lonely: 3
+2024-12-15 13:53:00,994 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_16_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_2_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_9_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:53:00,994 [DEBUG] BrachioGraph: Started drawing: Transitioned to SENTIENT immediately.
+2024-12-15 13:53:01,016 [DEBUG] BrachioGraph: Executing drawing behavior: Sentient
+2024-12-15 13:53:01,017 [DEBUG] BrachioGraph: Starting behavior: Sentient, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/portraits/json/painter.json
+2024-12-15 13:53:02,432 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 13:53:02,432 [DEBUG] BrachioGraph: Global counters: P=1,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 13:53:02,432 [DEBUG] BrachioGraph: Special interaction during SENTIENT
+2024-12-15 13:53:03,043 [DEBUG] BrachioGraph: User interaction: Positive in state SENTIENT
+2024-12-15 13:53:03,044 [DEBUG] BrachioGraph: Global counters: P=2,N=0,A=0 | Behavior counters: PB=0,NB=0,AB=0
+2024-12-15 13:57:18,776 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 13:57:18,776 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:57:18,776 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 13:57:18,776 [DEBUG] BrachioGraph:   Tired: 3
+2024-12-15 13:57:18,776 [DEBUG] BrachioGraph:   Lazy: 3
+2024-12-15 13:57:18,776 [DEBUG] BrachioGraph:   Rebellious: 2
+2024-12-15 13:57:18,777 [DEBUG] BrachioGraph:   Cynical: 2
+2024-12-15 13:57:18,777 [DEBUG] BrachioGraph:   Depressed: 3
+2024-12-15 13:57:18,777 [DEBUG] BrachioGraph:   Lonely: 2
+2024-12-15 13:57:18,777 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 13:57:18,778 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_135718
+2024-12-15 13:57:18,778 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 13:57:18,778 [DEBUG] BrachioGraph: Tired: 3, Lazy: 3, Rebellious: 2, Cynical: 2, Depressed: 3, Lonely: 2
+2024-12-15 13:57:18,778 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_3_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_10_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/sticks_3_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 13:57:18,779 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 13:57:18,797 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_3_middle.json
+2024-12-15 13:57:29,110 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 13:57:29,110 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 13:57:29,110 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 13:57:29,110 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 13:57:29,136 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 13:57:29,136 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
+2024-12-15 13:57:39,181 [DEBUG] BrachioGraph: Finished behavior: Rebellious
+2024-12-15 13:57:39,181 [DEBUG] BrachioGraph: Drawing behavior Rebellious completed naturally.
+2024-12-15 13:57:39,181 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 14:08:23,003 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:08:23,003 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:08:23,003 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:08:23,003 [DEBUG] BrachioGraph:   Tired: 3
+2024-12-15 14:08:23,003 [DEBUG] BrachioGraph:   Lazy: 5
+2024-12-15 14:08:23,004 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 14:08:23,004 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 14:08:23,004 [DEBUG] BrachioGraph:   Depressed: 2
+2024-12-15 14:08:23,004 [DEBUG] BrachioGraph:   Lonely: 3
+2024-12-15 14:08:23,004 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:08:23,005 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_140823
+2024-12-15 14:08:23,005 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:08:23,005 [DEBUG] BrachioGraph: Tired: 3, Lazy: 5, Rebellious: 5, Cynical: 5, Depressed: 2, Lonely: 3
+2024-12-15 14:08:23,005 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_16_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_13_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/dogs_fig_7_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:08:23,006 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:08:23,027 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/sticks_16_middle.json
+2024-12-15 14:08:33,263 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 14:08:33,263 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 14:08:33,263 [DEBUG] BrachioGraph: Transitioned to ENLIGHTENED
+2024-12-15 14:08:33,285 [DEBUG] BrachioGraph: Executing drawing behavior: Enlightened
+2024-12-15 14:08:33,285 [DEBUG] BrachioGraph: Starting behavior: Enlightened, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/goodhand.json
+2024-12-15 14:08:43,349 [DEBUG] BrachioGraph: Finished behavior: Enlightened
+2024-12-15 14:08:43,350 [DEBUG] BrachioGraph: Drawing behavior Enlightened completed naturally.
+2024-12-15 14:08:43,350 [DEBUG] BrachioGraph: Drawing finished, state -> IDLE
+2024-12-15 14:08:45,667 [DEBUG] BrachioGraph: Resetting entire state for new drawing
+2024-12-15 14:08:45,667 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:08:45,667 [DEBUG] BrachioGraph: ----- CURRENT THRESHOLDS -----
+2024-12-15 14:08:45,667 [DEBUG] BrachioGraph:   Tired: 5
+2024-12-15 14:08:45,667 [DEBUG] BrachioGraph:   Lazy: 4
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph:   Rebellious: 5
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph:   Cynical: 5
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph:   Depressed: 3
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph:   Lonely: 1
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph: --------------------------------
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph: New drawing started at timestamp: 20241215_140845
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph: Generated thresholds:
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph: Tired: 5, Lazy: 4, Rebellious: 5, Cynical: 5, Depressed: 3, Lonely: 1
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph: Chosen component files: W1=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_7_middle.json, W2=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_left/json/sticks_7_top_left.json, W3=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/top_right/json/badhand_top_right.json, Signature=/home/kli63/dev/CPSC334/FinalProject/assets/data/components/signature/json/signature.json
+2024-12-15 14:08:45,668 [DEBUG] BrachioGraph: State: HAPPY, drawing in progress.
+2024-12-15 14:08:45,685 [DEBUG] BrachioGraph: Drawing component: Window 1, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/components/middle/json/dogs_fig_7_middle.json
+2024-12-15 14:08:56,260 [DEBUG] BrachioGraph: Finished drawing component: Window 1
+2024-12-15 14:08:56,261 [DEBUG] BrachioGraph: Moving to next phase after component index: 0
+2024-12-15 14:08:56,261 [DEBUG] BrachioGraph: Resetting behavior-specific counters
+2024-12-15 14:08:56,261 [DEBUG] BrachioGraph: Transitioned to behavior: REBELLIOUS
+2024-12-15 14:08:56,293 [DEBUG] BrachioGraph: Executing drawing behavior: Rebellious
+2024-12-15 14:08:56,293 [DEBUG] BrachioGraph: Starting behavior: Rebellious, file: /home/kli63/dev/CPSC334/FinalProject/assets/data/behaviors/hand/json/badhand.json
