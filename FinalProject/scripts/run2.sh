@@ -4,7 +4,7 @@
 BASE_DIR="/home/student334/CPSC334/FinalProject"
 VENV_DIR="$BASE_DIR/env"
 BRACHIO_DIR="$BASE_DIR/src/BrachioGraphCaricature"
-ROBOT_DIR="$BASE_DIR/src/SentientRobot"
+ROBOT_DIR="$BASE_DIR/src/test_gui"
 
 # Create virtual environment if it doesn't exist
 if [ ! -d "$VENV_DIR" ]; then
@@ -34,4 +34,4 @@ pip install -r requirements.txt --break-system-packages
 
 # Go to Robot directory and run
 cd "$ROBOT_DIR"
-python3 GUI.py --hardware
+python3 test.py --hardware
