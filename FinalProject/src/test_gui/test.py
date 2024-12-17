@@ -410,6 +410,6 @@ if __name__ == "__main__":
     style.configure("UserMessage.TLabel", foreground="blue")
     style.configure("RobotMessage.TLabel", foreground="black")
 
-    app = BrachioGraphGUI(root, fullscreen=False, debug=True)
+    app = BrachioGraphGUI(root, fullscreen=True, debug=True)
     app.controller = RobotController(debug=True, hardware=args.hardware)
     root.mainloop()

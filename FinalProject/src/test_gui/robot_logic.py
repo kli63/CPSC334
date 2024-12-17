@@ -67,8 +67,8 @@ class RobotController:
         self.component_draw_time = 30
 
         self.behavior_timeout = 30
-        self.sentient_chance = 0.02
-        self.enlightened_chance = 0.02
+        self.sentient_chance = 0.1
+        self.enlightened_chance = 0.1
 
         self.stop_drawing_flag = False
         self.special_interaction_allowed = False

@@ -1,0 +1,19 @@
+[Unit]
+Description=Robot Drawing Service
+After=network.target graphical.target pigpiod.service
+Wants=network-online.target pigpiod.service
+
+[Service]
+Type=simple
+User=student334
+WorkingDirectory=/home/student334/CPSC334/FinalProject/scripts
+ExecStartPre=/bin/sleep 10
+ExecStart=/bin/bash /home/student334/CPSC334/FinalProject/scripts/run.sh
+Environment=DISPLAY=:0
+Environment=PYTHONPATH=/usr/lib/python3/dist-packages
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical.target

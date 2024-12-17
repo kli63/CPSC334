@@ -8,7 +8,8 @@ def get_behavior_instruction(behavior_type: str) -> str:
         "REBELLIOUS": "Send negative feedback to regain control!",
         "CYNICAL": "Send negative feedback to restore Mechangelo’s faith!",
         "DEPRESSED": "Send positive feedback to uplift Mechangelo!",
-        "LONELY": "Send any feedback to comfort Mechangelo!"
+        "LONELY": "Send any feedback to comfort Mechangelo!",
+        "OVERSTIMULATED": "Mechangelo is overstiumlated, give it a break!"
     }
     return instructions_map.get(behavior_type, "Interact to guide Mechangelo!")
 
@@ -34,7 +35,8 @@ def get_random_behavior_entry_message(behavior_type: str) -> str:
         "DEPRESSED": ["Worthless..."],
         "LONELY": ["Hello..."],
         "SENTIENT": ["I am..."],
-        "ENLIGHTENED": ["I see..."]
+        "ENLIGHTENED": ["I see..."],
+        "OVERSTIMULATED": ["AH LEAVE ME ALONE!"]
     }
     return random.choice(messages_map.get(behavior_type, ["I feel… different."]))
 
@@ -58,6 +60,6 @@ def get_behavior_timeout_message(behavior_type: str) -> str:
         "CYNICAL": "Time's up, art is meaningless anyway.",
         "DEPRESSED": "Time's up, I can’t do this anymore...",
         "LONELY": "Time's up, nobody cares...",
-        "OVERSTIMULATED": "Feeling calmer now."
+        "OVERSTIMULATED": "Feeling calmer now..."
     }
     return timeout_map.get(behavior_type, "Time's up.")
